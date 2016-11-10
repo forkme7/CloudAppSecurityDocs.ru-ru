@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
+ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
 
 
 ---
@@ -24,11 +24,6 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 Соединители приложений используют API поставщиков приложений, чтобы расширить возможности видимости и контроля в Cloud App Security для приложений, к которым вы подключаетесь.  
   
 Cloud App Security использует API, предоставляемые поставщиком облачных служб; при этом каждая служба имеет свою собственную платформу и ограничения API. Система Cloud App Security работает со службами для оптимизации использования API и достижения наилучшей производительности. Принимая во внимание различные ограничения, налагаемые службами на API (например, регулирование, ограничения API, динамический сдвиг окон API и т. д.), подсистемы Cloud App Security используют допустимые ресурсы. Некоторые операции, такие как сканирование всех файлов в клиенте, требуют большого числа API и поэтому растягиваются на более продолжительное время. Некоторые политики могут выполняться в течение нескольких часов и даже дней.  
-  
-**ExpressRoute**  
-  
-Служба Cloud App Security развертывается в Azure и полностью интегрирована с [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Все взаимодействия с приложениями Cloud App Security и трафик, передаваемый в Cloud App Security, в том числе отправка журналов обнаружения, маршрутизируются через **открытый пиринг** ExpressRoute в целях снижения задержки, а также повышения производительности и безопасности. Со стороны клиента никаких действий по настройке не требуется.  
-Дополнительные сведения об открытом пиринге см. в статье [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/) (Цепи и домены маршрутизации ExpressRoute).  
   
 ## <a name="how-it-works"></a>Принцип работы  
 Cloud App Security развертывается с правами системного администратора, чтобы обеспечить полный доступ ко всем объектам в вашей среде.  
@@ -71,10 +66,9 @@ Cloud App Security развертывается с правами системн
      Возможность удалять токены.  
   
 В следующей таблице перечислены возможности, которые поддерживаются с помощью соединителей приложений для отдельных облачных приложений:  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**Список учетных записей**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Группа**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Привилегии**|✔|✔|Не поддерживается поставщиком|✔|✔|✔|✔||  
@@ -121,6 +115,12 @@ Cloud App Security развертывается с правами системн
 |ServiceNow|Eureka и выше|Admin + роль RestAPI|  
 |Salesforce||Администратор|  
   
+
+**ExpressRoute**  
+  
+Служба Cloud App Security развертывается в Azure и полностью интегрирована с [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Все взаимодействия с приложениями Cloud App Security и трафик, передаваемый в Cloud App Security, в том числе отправка журналов обнаружения, маршрутизируются через **открытый пиринг** ExpressRoute в целях снижения задержки, а также повышения производительности и безопасности. Со стороны клиента никаких действий по настройке не требуется.  
+Дополнительные сведения об открытом пиринге см. в статье [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/) (Цепи и домены маршрутизации ExpressRoute).  
+  
 ## <a name="see-also"></a>См. также  
 [Ежедневные мероприятия для защиты облачной среды](daily-activities-to-protect-your-cloud-environment.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +129,6 @@ Cloud App Security развертывается с правами системн
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
