@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 
 
 ---
@@ -48,17 +48,16 @@ ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
 После завершения обработки файлов журналов вы получите по электронной почте уведомление об этом. 
   
 9. В верхней части портала в строке состояния появится баннер со сведениями о ходе обработки файлов журнала.  
-  
 ![строка меню с сообщением об обработке файлов журнала](./media/processing-log-file-menu-bar.png) 
-  
-     After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully.  
    
-10. На этом этапе можно просмотреть отчет, щелкнув ссылку в строке состояния либо значок параметров в виде шестеренки и выбрав пункт **Параметры Cloud Discovery**.   
+10. После отправки журналов появится уведомление о том, что обработка файлов журнала успешно завершена. На этом этапе можно просмотреть отчет, щелкнув ссылку в строке состояния либо значок параметров в виде шестеренки и выбрав пункт **Параметры Cloud Discovery**.   
   
      ![Вкладка параметров обнаружения](./media/discovery-settings-tab.png)
 11. Затем щелкните пункт **Управление отчетами о снимках** и выберите отчет о снимке.
  
 ![управление отчетами о снимках](./media/snapshot-report-managment.png)
+
+  
       
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
@@ -69,6 +68,6 @@ ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

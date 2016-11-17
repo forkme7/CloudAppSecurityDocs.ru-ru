@@ -1,5 +1,5 @@
 # [Общие сведения и знакомство с возможностями](what-is-cloud-app-security.md)
-## [Что такое Cloud App Discovery](what-is-cloud-app-security.md)
+## [Что такое CAS?](what-is-cloud-app-security.md)
 ## [Заметки о выпуске](release-notes.md)
 # [Приступая к работе](getting-started-with-cloud-app-security.md)
 ## [Общая настройка](general-setup.md)
@@ -7,7 +7,6 @@
 ### [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Работа с данными Cloud Discovery](working-with-cloud-discovery-data.md)
-# [Развертывание](deploy.md)
 ## [Включение мгновенной видимости, защиты и действий управления для приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Подключение Box к Microsoft Cloud App Security](connect-box-to-microsoft-cloud-app-security.md)
 ### [Подключение Google Apps к Microsoft Cloud App Security](connect-google-apps-to-microsoft-cloud-app-security.md)
@@ -28,15 +27,17 @@
 # [Использование](daily-activities-to-protect-your-cloud-environment.md)
 ## [Анализ](investigate.md)
 ### [Справочник по встроенным отчетам](built-in-report-reference.md)
-### [Фильтры файлов](file-filters.md)
-### [Фильтры действий](activity-filters.md)
+### [Файлы](file-filters.md)
+### [Действия](activity-filters.md)
 ### [Оповещения](monitor-alerts.md)
+### [Интеграция с Azure Information Protection](azip-integration.md)
 ## [Управление](control.md)
-## [Действия управления](governance-actions.md)
+### [Управление разрешениями приложения](manage-app-permissions.md)
+## [Журнал управления](governance-actions.md)
 # [Устранение неполадок](troubleshooting.md)
 ## [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
