@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
-ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
+ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
+ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
     <section id="hero-content">
       <h1>Документация по Cloud App Security</h1>
       <h2>Узнайте, как настроить и использовать решение Cloud App Security, чтобы получить преимущества облачных приложений, а также осуществлять управление за счет улучшенного контроля активности и повышенной защиты важных данных компании. </h2>
-      <h3>Хотите ознакомиться с возможностями Cloud App Security? <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">Посетите сайт продукта &rarr;</a></h3>
+      <h3>Хотите ознакомиться с возможностями Cloud App Security? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Посетите сайт продукта &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>Готовы приобрести?</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">Купить сейчас</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">Купить сейчас</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -195,14 +195,14 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
         <aside class="alert alert-social">
       <p>Следите за новостями о Cloud App Security <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Официальный сайт Cloud App Security</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Техническая поддержка Cloud App Security</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Официальный сайт Cloud App Security</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Техническая поддержка Cloud App Security</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
