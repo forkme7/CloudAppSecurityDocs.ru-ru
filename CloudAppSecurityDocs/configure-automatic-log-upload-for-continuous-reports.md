@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 2a079813677020b1181648394c818edd5f294786
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Шаг 1. Конфигурация веб-портала: определение источников данных и связывание их со сборщиком журналируемых данных  
   
 1.  Перейдите на страницу настройки автоматической отправки:  
-    На портале Cloud App Security щелкните значок параметров ![значок параметров](./media/settings-icon.png "settings icon"), выберите пункт **Параметры Cloud Discovery**, а затем откройте вкладку **Отправлять журналы автоматически**.  
+    На портале Cloud App Security щелкните значок параметров ![значок параметров](./media/settings-icon.png "settings icon"), выберите пункт **Сборщики журналов**, а затем откройте вкладку **Сборщики журналов**.  
   
 3.  Для каждого брандмауэра или прокси-сервера, с которого вы хотите отправить журналы, создайте соответствующий источник данных:  
   
@@ -77,7 +77,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
   > - Скопируйте содержимое экрана, так как эта информация потребуется при настройке взаимодействия сборщика журналируемых данных с Cloud App Security. Если вы выбрали системный журнал, эта информация будет включать сведения о порте, на котором будет работать прослушиватель системного журнала.
 4.  **Загрузите** новую виртуальную машину сборщика журналируемых данных, щелкнув Hyper-V или VMWare, и распакуйте архив с помощью пароля, полученного на портале.  
   
-### <a name="step-2-onpremises-deployment-of-the-virtual-machine-and-network-configuration"></a>Шаг 2. Локальное развертывание виртуальной машины и конфигурации сети   
+### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Шаг 2. Локальное развертывание виртуальной машины и конфигурации сети   
 
 > [!NOTE] 
 > Ниже описывается развертывание в Hyper-V. Этапы развертывания для низкоуровневой оболочки виртуальной машины немного отличаются.  
@@ -114,7 +114,7 @@ sudo network_config
 
 На этом этапе сборщик журналируемых данных должен быть подключен к сети и иметь доступ к порталу Cloud App Security.  
 
-### <a name="step-3-onpremises-configuration-of-the-log-collection"></a>Шаг 3. Локальная конфигурация коллекции журналов 
+### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>Шаг 3. Локальная конфигурация коллекции журналов 
 Чтобы войти в сборщик журналируемых данных в первый раз и импортировать его конфигурацию с портала, выполните указанные ниже действия. 
 
 1.  Войдите в сборщик журналируемых данных по протоколу SSH с использованием учетных данных интерактивного администратора, предоставленных вам на портале. (Если вы входите в консоль впервые, вам необходимо сменить пароль и после этого выполнить вход еще раз. Если используется сеанс терминала, его может потребоваться перезапустить. )
@@ -133,7 +133,7 @@ sudo network_config
   
       d. Введите имя сборщика журналируемых данных, который требуется настроить, например ``` CloudAppSecurityLogCollector01  ```.
 
-### <a name="step-4-onpremises-configuration-of-your-network-appliances"></a>Шаг 4. Локальная конфигурация сетевых устройств
+### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Шаг 4. Локальная конфигурация сетевых устройств
 
 Настройте сетевые брандмауэры и прокси-серверы для периодического экспорта журналов на выделенный порт Syslog FTP-каталога согласно указаниям в диалоговом окне, например:  
   
@@ -141,7 +141,7 @@ sudo network_config
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-### <a name="step-5-verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Шаг 5. Проверка успешного развертывания на портале Cloud App Security
+### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Шаг 5. Проверка успешного развертывания на портале Cloud App Security
 
 Чтобы убедиться, что журналы периодически отправляются на портал, воспользуйтесь журналом управления.  
   
@@ -152,12 +152,12 @@ sudo network_config
 ## <a name="see-also"></a>См. также  
 [Работа с данными Cloud Discovery](working-with-cloud-discovery-data.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
     
       
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

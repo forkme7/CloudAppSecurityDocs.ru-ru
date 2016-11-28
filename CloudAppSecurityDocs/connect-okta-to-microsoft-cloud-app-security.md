@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: f5f355a42321e4467ce3ef487c48508522a286ab
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
   
          ![значение токена в okta](./media/okta-token-value.png "okta token value")  
   
-3.  В консоли Cloud App Security щелкните **Сведения**, а затем — **Санкционированные приложения**.  
+3.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
   
-4.  Перейдя в строку Okta, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **Okta**.  
+4.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Okta**.  
   
      ![подключение okta](./media/connect-okta.png "connect okta")  
   
-5.  На странице API в поле **Домен** введите домен Okta и вставьте токен в поле **Токен**.  
+5.  Во всплывающем окне в поле **Домен** укажите домен Okta и вставьте токен в поле **Токен**.  
   
 6.  Щелкните **Подключить**, чтобы создать токен для Okta в Cloud App Security.  
   
@@ -68,11 +68,11 @@ ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
   
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

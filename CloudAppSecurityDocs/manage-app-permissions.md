@@ -14,8 +14,8 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
 
 Для доступа к вкладке "Разрешения приложения" выполните следующие действия.
 
-1. На портале Cloud App Security щелкните **Сведения** и затем в разделе "Санкционированные приложения" выберите **Office 365**. 
+1. На портале Cloud App Security щелкните **Исследовать** и затем в разделе **Подключенные приложения** выберите **Office 365**. 
 > [!Note]
 > Для работы с разрешениями приложения необходимо сначала подключить Cloud App Security к Office 365.
 
@@ -110,11 +110,11 @@ ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
   
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

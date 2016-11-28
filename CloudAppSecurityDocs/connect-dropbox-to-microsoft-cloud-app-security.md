@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
 
 
 ---
@@ -28,13 +28,13 @@ ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Порядок подключения Dropbox к Cloud App Security  
   
-1.  В консоли Cloud App Security щелкните **Сведения**, а затем — **Санкционированные приложения**.  
+1.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
   
-2.  Перейдя в строку Dropbox, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **Dropbox**.  
+2.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Dropbox**.  
   
      ![подключение dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  На вкладке "API" страницы параметров Dropbox введите адрес электронной почты учетной записи администратора.  
+3.  Во всплывающем окне введите адрес электронной почты учетной записи администратора.  
   
 4.  Щелкните **Создать ссылку**.  
   
@@ -58,11 +58,11 @@ ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
   
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

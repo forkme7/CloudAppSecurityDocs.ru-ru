@@ -16,14 +16,6 @@
 ### [Подключение Okta к Microsoft Cloud App Security](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Подключение ServiceNow к Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Подключение Salesforce к Microsoft Cloud App Security](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)
-### [Политики Cloud Discovery](cloud-discovery-policies.md)
-#### [Политика обнаружения аномалий Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
-### [Политики действий пользователей](user-activity-policies.md)
-#### [Политика обнаружения аномалий](anomaly-detection-policy.md)
-### [Политики защиты данных](data-protection-policies.md)
-#### [Проверка содержимого](content-inspection.md)
-#### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
 # [Использование](daily-activities-to-protect-your-cloud-environment.md)
 ## [Анализ](investigate.md)
 ### [Справочник по встроенным отчетам](built-in-report-reference.md)
@@ -32,12 +24,20 @@
 ### [Оповещения](monitor-alerts.md)
 ### [Интеграция с Azure Information Protection](azip-integration.md)
 ## [Управление](control.md)
+### [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)
+#### [Политики Cloud Discovery](cloud-discovery-policies.md)
+##### [Политика обнаружения аномалий Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
+#### [Политики действий пользователей](user-activity-policies.md)
+##### [Политика обнаружения аномалий](anomaly-detection-policy.md)
+#### [Политики защиты данных](data-protection-policies.md)
+##### [Проверка содержимого](content-inspection.md)
+##### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
 ### [Управление разрешениями приложения](manage-app-permissions.md)
-## [Журнал управления](governance-actions.md)
+## [Управление](governance-actions.md)
 # [Устранение неполадок](troubleshooting.md)
 ## [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

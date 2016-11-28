@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
+ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
+ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
          ![профили управления пользователями salesforce](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Выберите профиль, используемый для развертывания Cloud App Security, и нажмите кнопку **Изменить**.  
+    -   Выберите профиль, используемый для развертывания Cloud App Security, и нажмите кнопку **Изменить**. Это профиль для использования учетной записи службы Cloud App Security при настройке соединителя приложения.  
   
          ![изменение профиля salesforce](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
     5.  Нажмите кнопку **Сохранить**.  
   
-4.  В консоли Cloud App Security щелкните **Сведения**, а затем — **Санкционированные приложения**.  
+4.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
   
-5.  Перейдя в строку Salesforce, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **Salesforce**.  
+5.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Salesforce**.  
   
      ![подключение salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -100,11 +100,11 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
   
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

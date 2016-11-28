@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
 
 
 ---
@@ -45,13 +45,13 @@ ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
     > [!NOTE]  
     >  Если вы являетесь действующим клиентом Adallom и URL-адрес консоли предназначен для Adallom, а не Cloud App Security, используйте следующий серийный номер приложения: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
-2.  На портале Cloud App Security щелкните **Сведения** и затем **Санкционированные приложения**.  
+2.  На портале Cloud App Security выберите пункты **Исследовать** и **Подключенные приложения**.  
   
-3.  Перейдя в строку Box, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **Box**.  
+3.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Box**.  
   
      ![подключение box](./media/connect-box.png "connect box")  
   
-4.  На вкладке **API** страницы **Box settings** (Параметры Box) щелкните **Перейти по ссылке**.  
+4.  Во всплывающем окне **Параметры Box** выберите пункт **Перейдите по этой ссылке**.  
   
 5.  Открывается страница входа в Box. Введите свои учетные данные, чтобы разрешить Cloud App Security доступ к приложению Box вашей группы.  
   
@@ -72,11 +72,11 @@ Box теперь подключен к Cloud App Security.
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
   
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

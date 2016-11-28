@@ -14,8 +14,8 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 1565d094f9cbce883ce9bb5300ee5e1f7752d4dd
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
 >- Чтобы записывать в журнал действия пользователей в Exchange Online, необходимо включить ведение журнала аудита почтовых ящиков Exchange для каждого пользовательского почтового ящика. См. статью [Действия, связанные с почтовыми ящиками Exchange](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- Если включены приложения Office, группы, входящие в Office 365, также создаются в отдельных приложениях Office. Например, если включена система SharePoint, группы Office 365 будут созданы в SharePoint.
  
-1.  Перейдя в строку Office 365, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **Office 365**.  
+1.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Office 365**.  
 
 2.  Во всплывающем окне Office 365 щелкните "Подключить Office 365".
 
@@ -53,11 +53,11 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
   
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
