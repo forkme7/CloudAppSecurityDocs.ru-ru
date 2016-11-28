@@ -5,9 +5,9 @@
  -------- | ----- 
  Total Files | 209
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 54
+[ Handoff Success Files ](#handoff-success-list)| 57
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 124
+[ Archive Success Files ](#archive-success-list)| 121
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 12
@@ -40,6 +40,9 @@
  [CloudAppSecurityDocs\getting-started-with-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/eceb326c4ab14852ecd284cfbaa0d2eb07149168/CloudAppSecurityDocs/getting-started-with-cloud-app-security.md) | HandedOffSuccess | [Details](#57ba1ea49d009dd10797609885463948f359e11e29)
  [CloudAppSecurityDocs\governance-actions.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/9565d8a51e4c06963861d9dfaef9595944bda1ff/CloudAppSecurityDocs/governance-actions.md) | HandedOffSuccess | [Details](#43069f7a9f91dc34f4ce3ebb52ca399441bbb1f130)
  [CloudAppSecurityDocs\investigate.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/fd3be51a8a81b688383b40a19582f5739c889580/CloudAppSecurityDocs/investigate.md) | HandedOffSuccess | [Details](#f1b32304a8218316f744defa4632b3e8a6af771d34)
+ [CloudAppSecurityDocs\media\activity-drawer.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/97f270813beae64bf0572ac9e806290e4c2fcd22/CloudAppSecurityDocs/media/activity-drawer.png) | HandedOffSuccess | [Details](#d2fe61823962df511b67e3a338fd1da0b146a8ff38)
+ [CloudAppSecurityDocs\media\activity-log-filter-advanced.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/media/activity-log-filter-advanced.png) | HandedOffSuccess | [Details](#4589b5d9982258b54edee13d36665404d0a2e2b739)
+ [CloudAppSecurityDocs\media\activity-log-filter-basic.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/media/activity-log-filter-basic.png) | HandedOffSuccess | [Details](#7dadbed12d84ac49a1c713ca858caff91900bc4a40)
  [CloudAppSecurityDocs\media\azip-confidentiality-policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/d427d4f5dc07a31f40fa7c503c1cee93a9df3701/CloudAppSecurityDocs/media/azip-confidentiality-policy.png) | HandedOffSuccess | [Details](#179df58badd5c0129cc8ca1f763c6bdc8df63d8471)
  [CloudAppSecurityDocs\media\azip-file-drawer.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/d427d4f5dc07a31f40fa7c503c1cee93a9df3701/CloudAppSecurityDocs/media/azip-file-drawer.png) | HandedOffSuccess | [Details](#ea4873b7c4329f13039cf468974b1443420e8c4772)
  [CloudAppSecurityDocs\media\azip-file-tags-all-filter.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/d427d4f5dc07a31f40fa7c503c1cee93a9df3701/CloudAppSecurityDocs/media/azip-file-tags-all-filter.png) | HandedOffSuccess | [Details](#6961b28278dba437dbf16ad11783f8ab42b829e273)
@@ -80,9 +83,6 @@
  ----------- | ------ | ------- 
  [CloudAppSecurityDocs\media\access-from-o365.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/access-from-o365.png) | ArchivedSuccess | [Details](#53f98a5fdbf84c20c0efe94e935738a95f7d2e3b36)
  [CloudAppSecurityDocs\media\activity_policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e7efcbe212d8a5e7abc51bb101bbe036d39f3458/CloudAppSecurityDocs/media/activity_policy.png) | ArchivedSuccess | [Details](#629f4065348f5d082518eda592e0303bf8f05dca46)
- [CloudAppSecurityDocs\media\activity-drawer.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/97f270813beae64bf0572ac9e806290e4c2fcd22/CloudAppSecurityDocs/media/activity-drawer.png) | ArchivedSuccess | [Details](#d2fe61823962df511b67e3a338fd1da0b146a8ff38)
- [CloudAppSecurityDocs\media\activity-log-filter-advanced.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/media/activity-log-filter-advanced.png) | ArchivedSuccess | [Details](#4589b5d9982258b54edee13d36665404d0a2e2b739)
- [CloudAppSecurityDocs\media\activity-log-filter-basic.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/media/activity-log-filter-basic.png) | ArchivedSuccess | [Details](#7dadbed12d84ac49a1c713ca858caff91900bc4a40)
  [CloudAppSecurityDocs\media\activity-policy-menu.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/activity-policy-menu.png) | ArchivedSuccess | [Details](#cec0c28a7cf2d752465835d07d3e16cf6786380f41)
  [CloudAppSecurityDocs\media\activity-policy-ref6.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/activity-policy-ref6.png) | ArchivedSuccess | [Details](#1ee2f195d857eb93ce9404ef6139613b3754a2bb44)
  [CloudAppSecurityDocs\media\alert-menu.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/alert-menu.png) | ArchivedSuccess | [Details](#7471df17b39f72a30479d4b4587c4ff57f0d24ad48)
@@ -298,8 +298,8 @@
 ##### <a name='40fd28f568aa9af32f9e2399435f48372ea624134'></a> Source: [CloudAppSecurityDocs\activity-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/52f2245779568abbf41d47c4b45cdcced302529b/CloudAppSecurityDocs/activity-filters.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ru-ru.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/7d1b25ecf4b9375b906df028d4ee906f00f62145/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/ht/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ru-ru.xlf)
-* Handoff Datetime: 2016-11-28 20:42:25
+* Handoff File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ru-ru.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/ad7a67ef3ca2d5359489a4eacea9a5d13234213b/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ru-ru.xlf)
+* Handoff Datetime: 2016-11-28 21:09:39
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -846,40 +846,40 @@
 * [Back to Top](#report-top)
 
 ##### <a name='d2fe61823962df511b67e3a338fd1da0b146a8ff38'></a> Source: [CloudAppSecurityDocs\media\activity-drawer.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/97f270813beae64bf0572ac9e806290e4c2fcd22/CloudAppSecurityDocs/media/activity-drawer.png)
-* Status: ArchivedSuccess
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [d2fe61823962df511b67e3a338fd1da0b146a8ff.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/d34fc4266431a0ba1f89b5e0bac2a3bd04b2fbfa/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/ht/d2fe61823962df511b67e3a338fd1da0b146a8ff.png)
-* Handoff Datetime: 2016-11-08 19:57:47
+* Handoff File: [d2fe61823962df511b67e3a338fd1da0b146a8ff.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/ad7a67ef3ca2d5359489a4eacea9a5d13234213b/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/d2fe61823962df511b67e3a338fd1da0b146a8ff.png)
+* Handoff Datetime: 2016-11-28 21:09:39
 * Handoff Reason: IsDependency
 * Dependency From: CloudAppSecurityDocs\activity-filters.md
-* Archive File: [d2fe61823962df511b67e3a338fd1da0b146a8ff.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/86eb3c5ded5363290ddbb42a8e1b75b1e02064cf/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/ht/d2fe61823962df511b67e3a338fd1da0b146a8ff.png)
-* Archive Datetime: 2016-11-10 01:24:44
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='4589b5d9982258b54edee13d36665404d0a2e2b739'></a> Source: [CloudAppSecurityDocs\media\activity-log-filter-advanced.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/media/activity-log-filter-advanced.png)
-* Status: ArchivedSuccess
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [4589b5d9982258b54edee13d36665404d0a2e2b7.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/74a490bc395fa4215d3c8683ceb3c1e92e67133e/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/ht/4589b5d9982258b54edee13d36665404d0a2e2b7.png)
-* Handoff Datetime: 2016-10-31 19:58:21
+* Handoff File: [4589b5d9982258b54edee13d36665404d0a2e2b7.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/ad7a67ef3ca2d5359489a4eacea9a5d13234213b/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/4589b5d9982258b54edee13d36665404d0a2e2b7.png)
+* Handoff Datetime: 2016-11-28 21:09:39
 * Handoff Reason: IsDependency
 * Dependency From: CloudAppSecurityDocs\activity-filters.md
-* Archive File: [4589b5d9982258b54edee13d36665404d0a2e2b7.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/63567decc4d716776f8e73a1091d070d868e4a9e/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/ht/4589b5d9982258b54edee13d36665404d0a2e2b7.png)
-* Archive Datetime: 2016-11-03 13:01:32
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='7dadbed12d84ac49a1c713ca858caff91900bc4a40'></a> Source: [CloudAppSecurityDocs\media\activity-log-filter-basic.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/media/activity-log-filter-basic.png)
-* Status: ArchivedSuccess
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [7dadbed12d84ac49a1c713ca858caff91900bc4a.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/74a490bc395fa4215d3c8683ceb3c1e92e67133e/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/ht/7dadbed12d84ac49a1c713ca858caff91900bc4a.png)
-* Handoff Datetime: 2016-10-31 19:58:21
+* Handoff File: [7dadbed12d84ac49a1c713ca858caff91900bc4a.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/ad7a67ef3ca2d5359489a4eacea9a5d13234213b/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/7dadbed12d84ac49a1c713ca858caff91900bc4a.png)
+* Handoff Datetime: 2016-11-28 21:09:39
 * Handoff Reason: IsDependency
 * Dependency From: CloudAppSecurityDocs\activity-filters.md
-* Archive File: [7dadbed12d84ac49a1c713ca858caff91900bc4a.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/63567decc4d716776f8e73a1091d070d868e4a9e/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ru-ru/live/ht/7dadbed12d84ac49a1c713ca858caff91900bc4a.png)
-* Archive Datetime: 2016-11-03 13:01:32
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
