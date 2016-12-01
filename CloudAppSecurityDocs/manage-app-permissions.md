@@ -30,7 +30,7 @@ ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 
 Для доступа к вкладке "Разрешения приложения" выполните следующие действия.
 
-1. На портале Cloud App Security щелкните **Исследовать** и затем в разделе **Подключенные приложения** выберите **Office 365**. 
+1. На портале Cloud App Security щелкните **Исследовать** и затем в разделе **Подключенные приложения** выберите **Office 365**. 
 > [!Note]
 > Для работы с разрешениями приложения необходимо сначала подключить Cloud App Security к Office 365.
 
@@ -110,11 +110,11 @@ ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
