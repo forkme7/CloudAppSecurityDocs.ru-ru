@@ -1,11 +1,11 @@
 ---
-title: "Подключение Google Apps к Microsoft Cloud App Security | Документы Майкрософт"
+title: "Подключение Google Apps | Microsoft Docs"
 description: "В этом разделе приводятся сведения о подключении Google Apps к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
@@ -112,7 +112,7 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
   
      ![google24](./media/google24.png "google24")  
   
-14. Скопируйте присвоенное службе значение **Email address** (Адрес электронной почты) — оно понадобится позже.  
+14. Скопируйте присвоенное службе значение **Email address** (Адрес электронной почты) — оно понадобится позже.  
   
      ![google25](./media/google25.png "google25")  
   
@@ -144,7 +144,7 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
   
 17. В списке **Enabled APIs** (Включенные API) выберите значок параметров с шестеренкой рядом с **Google Apps Marketplace SDK** и откройте вкладку **Configuration** (Конфигурация).  
   
-    -   Скопируйте отображаемое сверху значение **Project number (App ID)** (Номер проекта — идентификатор приложения) для использования в дальнейшем.  
+    -   Скопируйте отображаемое сверху значение **Project number (App ID)** (Номер проекта — идентификатор приложения) для использования в дальнейшем.  
   
     -   **Application Name** (Имя приложения): Cloud App Security for Google.  
   
@@ -164,7 +164,7 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
   
         -   **URL-адрес политики конфиденциальности**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   В поле **областей OAuth 2.0** введите следующие адреса (по одному на строку; нажимайте клавишу ВВОД для подтверждения):  
+    -   В поле **областей OAuth 2.0** введите следующие адреса (по одному на строку; нажимайте клавишу ВВОД для подтверждения):  
   
         -   https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -222,7 +222,7 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
   
 1.  На портале Cloud App Security выберите пункты **Исследовать** и **Подключенные приложения**.  
   
-2.  На странице **Соединитель приложения** нажмите кнопку **Подключить приложение** и выберите **Google Apps**.  
+2.  На странице **Connected apps** (Подключенные приложения) щелкните знак "плюс" и выберите **Google Apps**.  
   
      ![подключение google apps](./media/connect-google-apps.png "connect google apps")  
   
@@ -232,7 +232,7 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
   
     1.  **Google Service Account email address** (Адрес электронной почты учетной записи службы Google), скопированный на шаге 14.  
   
-    2.  **Google Project number (App ID)** (Номер проекта — идентификатор приложения), скопированный в шаге 17.  
+    2.  **Google Project number (App ID)** (Номер проекта — идентификатор приложения), скопированный в шаге 17.  
   
     3.  Отправьте **Google Certificate** (Сертификат Google) P12, сохраненный на шаге 10.  
   
@@ -253,7 +253,7 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
          После получения уведомления об успешном выполнении нажмите кнопку **Готово** и закройте страницу Google Apps.  
   
   
-После подключения Google Apps вы получите события за 60 дней, предшествовавших подключению.
+После подключения Google Apps вы получите события за 60 дней, предшествовавших подключению.
   
 После подключения Google Apps служба Cloud App Security выполняет полное сканирование. В зависимости от количества файлов и пользователей полное сканирование может занять некоторое время. Чтобы обеспечить сканирование почти в реальном времени, файлы, действия с которыми обнаружены, перемещаются в начало очереди сканирования. Например, файл, который изменяется, обновляется или предоставляется, сканируется немедленно, так что вам не приходится ждать, когда он будет обработан стандартным процессом сканирования. Это не относится к файлам, содержимое которых не изменяется, например к файлам, которые просматриваются, печатаются или экспортируются.
   
@@ -261,11 +261,11 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

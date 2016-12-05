@@ -1,5 +1,5 @@
 ---
-title: "Подключение AWS к Microsoft Cloud App Security | Документы Майкрософт"
+title: "Подключение AWS | Microsoft Docs"
 description: "В этом разделе приводятся сведения о подключении приложения AWS к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: d78f324cc8fba6c45a49c1260c157fb4f4feaab7
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -98,7 +98,7 @@ ms.openlocfilehash: d78f324cc8fba6c45a49c1260c157fb4f4feaab7
   
 11. На портале Cloud App Security выберите пункты **Исследовать** и **Подключенные приложения**.  
   
-12. На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **AWS**.  
+12. На странице **App connectors** (Соединители с приложениями) щелкните знак "плюс", а затем — **AWS**.  
   
      ![подключение AWS](./media/connect-aws.png "connect AWS")  
   
@@ -108,16 +108,16 @@ ms.openlocfilehash: d78f324cc8fba6c45a49c1260c157fb4f4feaab7
   
      Проверка может занять несколько минут. После завершения выдается уведомление об успехе или неудаче. После получения уведомления об успешном выполнении нажмите кнопку **Готово**.  
   
-После подключения AWS вы получите события за 7 дней, предшествовавших подключению.
+После подключения AWS вы получите события за 7 дней, предшествовавших подключению.
   
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

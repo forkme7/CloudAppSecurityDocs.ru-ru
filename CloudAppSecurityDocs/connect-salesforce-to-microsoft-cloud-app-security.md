@@ -1,5 +1,5 @@
 ---
-title: "Подключение Salesforce к Microsoft Cloud App Security | Документация Майкрософт"
+title: "Подключение Salesforce | Microsoft Docs"
 description: "В этой статье приводятся сведения о подключении приложения Salesforce к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
-ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -72,9 +72,9 @@ ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
   
     5.  Нажмите кнопку **Сохранить**.  
   
-4.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
+4.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
   
-5.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Salesforce**.  
+5.  На странице **App connectors** (Соединители с приложениями) щелкните знак "плюс", а затем — **Salesforce**.  
   
      ![подключение salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -95,16 +95,16 @@ ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
      Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Готово**.  
   
   
-После подключения SalesForce вы будете получать события следующим образом: триггеры —с момента подключения; события входа и журнал аудита настройки — за 60 дней, предшествовавших подключению; EventMonitoring — за 30 или 1 предшествующий день в зависимости от лицензии SalesForce EventMonitoring.
+После подключения SalesForce вы будете получать события следующим образом: триггеры —с момента подключения; события входа и журнал аудита настройки — за 60 дней, предшествовавших подключению; EventMonitoring — за 30 или 1 предшествующий день в зависимости от лицензии SalesForce EventMonitoring.
   
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

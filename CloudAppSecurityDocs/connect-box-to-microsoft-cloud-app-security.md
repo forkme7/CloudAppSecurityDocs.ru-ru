@@ -1,5 +1,5 @@
 ---
-title: "Подключение Box к Microsoft Cloud App Security | Документы Майкрософт"
+title: "Подключение Box | Microsoft Docs"
 description: "В этом разделе приводятся сведения о подключении приложения Box к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
   
 2.  На портале Cloud App Security выберите пункты **Исследовать** и **Подключенные приложения**.  
   
-3.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Box**.  
+3.  На странице **App connectors** (Соединители приложений) щелкните знак "плюс" и выберите **Box**.  
   
      ![подключение box](./media/connect-box.png "connect box")  
   
@@ -65,18 +65,18 @@ ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
   
 Box теперь подключен к Cloud App Security.  
  
-После подключения Box вы получите события за 60 дней, предшествовавших подключению.
+После подключения Box вы получите события за 60 дней, предшествовавших подключению.
   
 После подключения Box служба Cloud App Security выполняет полное сканирование. В зависимости от количества файлов и пользователей полное сканирование может занять некоторое время. Чтобы обеспечить сканирование почти в реальном времени, файлы, действия с которыми обнаружены, перемещаются в начало очереди сканирования. Например, файл, который изменяется, обновляется или предоставляется, сканируется немедленно, так что вам не приходится ждать, когда он будет обработан стандартным процессом сканирования. Это не относится к файлам, содержимое которых не изменяется, например к файлам, которые просматриваются, печатаются или экспортируются.
   
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Подключение Dropbox к Microsoft Cloud App Security | Документы Майкрософт"
+title: "Подключение Dropbox | Microsoft Docs"
 description: "В этом разделе приводятся сведения о подключении приложения Dropbox к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -28,9 +28,9 @@ ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Порядок подключения Dropbox к Cloud App Security  
   
-1.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
+1.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
   
-2.  На странице **Соединители приложений** нажмите кнопку **Подключить приложение**, а затем — **Dropbox**.  
+2.  На странице **App connectors** (Соединители приложений) щелкните знак "плюс", а затем — **Dropbox**.  
   
      ![подключение dropbox](./media/connect-dropbox.png "connect dropbox")  
   
@@ -50,7 +50,7 @@ ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
   
      Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Закрыть**.  
   
-После подключения Dropbox вы получите события за 60 дней, предшествовавших подключению.
+После подключения Dropbox вы получите события за 60 дней, предшествовавших подключению.
 
 > [!NOTE] 
 > События добавления файлов в Dropbox будут отображаться в Cloud App Security как события отправки файлов для обеспечения соответствия с другими приложениями, подключенными к Cloud App Security. 
@@ -58,11 +58,11 @@ ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier](https://premier.microsoft.com/).  
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
