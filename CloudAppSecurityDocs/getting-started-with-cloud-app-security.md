@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,42 +14,42 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: 57ba1ea49d009dd10797609885463948f359e11e
+ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
+ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
 
 
 ---
 
 # <a name="deploy-cloud-app-security"></a>Развертывание Cloud App Security
-Cloud App Security поможет получить преимущества облачных приложений и сохранить контроль над корпоративными ресурсами. Эта служба повышает прозрачность действий в облаке и помогает повысить безопасность корпоративных данных. В этом разделе представлено пошаговое руководство для настройки Cloud App Security и работы с ней.  
+Cloud App Security позволяет вам использовать ценные возможности, которые дают облачные приложения, сохраняя при этом контроль над ресурсами организации. Эта служба повышает прозрачность действий в облаке и помогает повысить безопасность корпоративных данных. В этом разделе представлено пошаговое руководство для настройки Cloud App Security и работы с ней.  
 
 Для использования Cloud App Security ваша организация должна иметь лицензию. Дополнительные сведения см. в статье [Приобретение Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
 
 >[!NOTE]
->Для использования Cloud App Security не требуется лицензия Office 365.  
+>Для использования Cloud App Security не требуется лицензия Office 365.  
 
 ## <a name="prerequisites"></a>Предварительные условия  
   
 -   Для использования продукта ваша организация должна иметь лицензию на Cloud App Security. Дополнительные сведения см. в статье [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Приобретение Cloud App Security), а также ознакомьтесь со статьей [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Ресурсы по лицензированию).  
   
-     Сведения о поддержке активации клиента см. в статье [Обращение в службу поддержки Office 365 для бизнеса: справка для администраторов](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
+     Сведения о поддержке активации клиента см. в статье [Обращение в службу поддержки Office 365 для бизнеса: справка для администраторов](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
 > [!NOTE] 
-> Лицензия Office 365 не требуется для Cloud App Security.  
+> Лицензия Office 365 не требуется для Cloud App Security.  
   
 -   После приобретения лицензии на Cloud App Security вы получите сообщение электронной почты со сведениями об активации и ссылкой на портал Cloud App Security.  
   
--   Для настройки Cloud App Security необходимо быть глобальным администратором, администратором соответствия требованиям или администратором безопасности в Azure Active Directory или Office 365. Важно понимать, что пользователь, которому назначена роль администратора, будет иметь одни и те же разрешения во всех облачных приложениях, на которые подписана ваша организация. При этом не важно, назначена ли роль на портале Office 365, на классическом портале Azure или с помощью модуля Azure AD для [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Дополнительные сведения см. в статьях [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) (Назначение пролей администратора в Office 365) и [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) (Назначение пролей администратора в Azure Active Directory).  
+-   Для настройки Cloud App Security необходимо быть глобальным администратором, администратором соответствия требованиям или администратором безопасности в Azure Active Directory или Office 365. Важно понимать, что пользователь, которому назначена роль администратора, будет иметь одни и те же разрешения во всех облачных приложениях, на которые подписана ваша организация. При этом не важно, назначена ли роль на портале Office 365, на классическом портале Azure или с помощью модуля Azure AD для [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Дополнительные сведения см. в статьях [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) (Назначение пролей администратора в Office 365) и [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) (Назначение пролей администратора в Azure Active Directory).  
   
--   Для работы с порталом Cloud App Security используйте Internet Explorer 11, Microsoft Edge (последней версии), Google Chrome (последней версии), Mozilla Firefox (последней версии) или Apple Safari (последней версии).  
+-   Для работы с порталом Cloud App Security используйте Internet Explorer 11, Microsoft Edge (последней версии), Google Chrome (последней версии), Mozilla Firefox (последней версии) или Apple Safari (последней версии).  
 
 ## <a name="to-access-the-portal"></a>Доступ к порталу
 
 Для доступа к порталу Cloud App Security перейдите по адресу [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
   
-Вы также можете использовать для этого **Центр администрирования Office 365**, щелкнув значок "Центры управления" ![Значок "Центры управления" в Office 365](./media/o365-admin-centers-icon.png "O365 admin centers icon") и выбрав **Cloud App Security**.  
+Портал также можно открыть из **Центра администрирования Office 365**: щелкните значок "Центры администрирования" (![Центры администрирования Office 365](./media/o365-admin-centers-icon.png "Центры администрирования Office 365")) и выберите **Cloud App Security**.  
   
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
+![Доступ из Office 365](./media/access-from-o365.png "Доступ из Office 365")  
   
 
 
@@ -167,6 +167,6 @@ Cloud App Security поможет получить преимущества об
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

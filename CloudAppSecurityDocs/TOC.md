@@ -6,11 +6,12 @@
 ## [Развертывание Cloud Discovery](set-up-cloud-discovery.md)
 ### [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](configure-automatic-log-upload-for-continuous-reports.md)
+### [Анонимизация данных Cloud Discovery](cloud-discovery-anonymizer.md)
 ### [Настройка Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Подключение приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Подключение Box](connect-box-to-microsoft-cloud-app-security.md)
 ### [Подключение Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
-### [Подключение Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
+### [Подключение Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [Подключение AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Подключение Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
 ### [Подключение Okta](connect-okta-to-microsoft-cloud-app-security.md)
@@ -22,7 +23,6 @@
 ### [Файлы](file-filters.md)
 ### [Действия](activity-filters.md)
 ### [Оповещения](monitor-alerts.md)
-### [Интеграция с Azure Information Protection](azip-integration.md)
 ## [Управление](control.md)
 ### [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)
 #### [Политики Cloud Discovery](cloud-discovery-policies.md)
@@ -34,11 +34,14 @@
 ##### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
 ### [Управление разрешениями приложения](manage-app-permissions.md)
 ## [Система управления](governance-actions.md)
+## Интеграция
+### [Интеграция Azure Information Protection](azip-integration.md)
+### [Интеграция SIEM](siem.md)
 # [Устранение неполадок](troubleshooting.md)
 ## [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
 ## [Устранение проблем с проверкой содержимого](troubleshooting-content-inspection.md)
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

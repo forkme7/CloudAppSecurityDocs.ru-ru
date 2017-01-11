@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
 
 
 ---
@@ -35,7 +35,8 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 3.  На экране **Новый проект** выполните следующее:  
   
-    1.  Назовите проект **Cloud App Security for Google**.  
+    1.  Назовите проект следующим образом:</br>
+    **Cloud App Security для Google** 
   
     2.  Укажите, требуется ли подписаться на обновления.  
   
@@ -70,7 +71,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
     -   Gmail API  
   
-         ![предупреждение google11](./media/google11-warning.png "google11 warning")  
+         ![предупреждение google11](./media/google11-warning.png "предупреждение google11")  
   
 7.  В списке **Enabled APIs** (Включенные API) должно быть пять элементов:  
   
@@ -102,7 +103,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 11. В правой части вкладки **Credentials** (Учетные данные) щелкните **Manage service accounts** (Управление учетными записями служб).  
   
-     ![данные учетной записи службы google apps](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![данные учетной записи службы google apps](./media/google-apps-credentials-service-account.png "данные учетной записи службы google apps")  
   
 12. Щелкните три точки справа от созданной учетной записи службы и выберите **Изменить**.  
   
@@ -112,13 +113,13 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
      ![google24](./media/google24.png "google24")  
   
-14. Скопируйте присвоенное службе значение **Email address** (Адрес электронной почты) — оно понадобится позже.  
+14. Скопируйте присвоенное службе значение **Email address** (Адрес электронной почты) — оно понадобится позже.  
   
      ![google25](./media/google25.png "google25")  
   
 15. Откройте меню Google, щелкнув три горизонтальные линии рядом с Google Cloud Platform, и выберите **API manager** (Диспетчер API).  
   
-     ![меню google](./media/google-menu.png "google menu")  
+     ![меню google](./media/google-menu.png "меню google")  
   
      Выберите **Enabled APIs** (Включенные API).  
   
@@ -144,7 +145,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 17. В списке **Enabled APIs** (Включенные API) выберите значок параметров с шестеренкой рядом с **Google Apps Marketplace SDK** и откройте вкладку **Configuration** (Конфигурация).  
   
-    -   Скопируйте отображаемое сверху значение **Project number (App ID)** (Номер проекта — идентификатор приложения) для использования в дальнейшем.  
+    -   Скопируйте отображаемое сверху значение **Project number (App ID)** (Номер проекта — идентификатор приложения) для использования в дальнейшем.  
   
     -   **Application Name** (Имя приложения): Cloud App Security for Google.  
   
@@ -164,7 +165,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
         -   **URL-адрес политики конфиденциальности**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   В поле **областей OAuth 2.0** введите следующие адреса (по одному на строку; нажимайте клавишу ВВОД для подтверждения):  
+    -   В поле **областей OAuth 2.0** введите следующие адреса (по одному на строку; нажимайте клавишу ВВОД для подтверждения):  
   
         -   https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -208,15 +209,15 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 18. Выберите **Security** (Безопасность) в списке элементов управления. Если этот параметр отсутствует, выберите "More controls" (Дополнительные элементы управления) на серой панели в нижней части страницы, а затем выберите **Security** (Безопасность).  
   
-     ![безопасность google apps](./media/google-apps-security.png "google apps security")  
+     ![система безопасности google apps](./media/google-apps-security.png "система безопасности google apps")  
   
 19. Выберите **API reference** (Справочник по API).  
   
-     ![справочник по api google](./media/google-api-ref.png "google api ref")  
+     ![справочник по api google](./media/google-api-ref.png "справочник по api google")  
   
 20. Выберите **Enable API Access** (Включить доступ к API) и нажмите кнопку **Save changes** (Сохранить изменения).  
   
-     ![доступ к api google](./media/google-api-access.png "google api access")  
+     ![доступ к api google](./media/google-api-access.png "доступ к api google")  
   
 ## <a name="configure-cloud-app-security"></a>Настройка Cloud App Security  
   
@@ -224,15 +225,15 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 2.  На странице **Connected apps** (Подключенные приложения) щелкните знак "плюс" и выберите **Google Apps**.  
   
-     ![подключение google apps](./media/connect-google-apps.png "connect google apps")  
+     ![подключение google apps](./media/connect-google-apps.png "подключение google apps")  
   
 3.  Во всплывающем окне введите следующее:  
   
-     ![Настройка Google Apps в Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+     ![Настройка Google Apps в Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Настройка Google Apps в Cloud App Security")  
   
     1.  **Google Service Account email address** (Адрес электронной почты учетной записи службы Google), скопированный на шаге 14.  
   
-    2.  **Google Project number (App ID)** (Номер проекта — идентификатор приложения), скопированный в шаге 17.  
+    2.  **Google Project number (App ID)** (Номер проекта — идентификатор приложения), скопированный в шаге 17.  
   
     3.  Отправьте **Google Certificate** (Сертификат Google) P12, сохраненный на шаге 10.  
   
@@ -244,7 +245,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
     7.  **Перейдите по ссылке** для подключения к Google Apps. При этом открывается Google Apps и предлагается авторизовать доступ для Cloud App Security.  
   
-         ![Запрос авторизации Google Apps](./media/google-apps-authorization-request.png "Google Apps authorization request")  
+         ![Запрос авторизации Google Apps](./media/google-apps-authorization-request.png "Запрос авторизации Google Apps")  
   
     8.  Убедитесь, что подключение установлено, щелкнув элемент **Тестирование API**.  
   
@@ -253,7 +254,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
          После получения уведомления об успешном выполнении нажмите кнопку **Готово** и закройте страницу Google Apps.  
   
   
-После подключения Google Apps вы получите события за 60 дней, предшествовавших подключению.
+После подключения Google Apps вы получите события за 60 дней, предшествовавших подключению.
   
 После подключения Google Apps служба Cloud App Security выполняет полное сканирование. В зависимости от количества файлов и пользователей полное сканирование может занять некоторое время. Чтобы обеспечить сканирование почти в реальном времени, файлы, действия с которыми обнаружены, перемещаются в начало очереди сканирования. Например, файл, который изменяется, обновляется или предоставляется, сканируется немедленно, так что вам не приходится ждать, когда он будет обработан стандартным процессом сканирования. Это не относится к файлам, содержимое которых не изменяется, например к файлам, которые просматриваются, печатаются или экспортируются.
   
@@ -266,6 +267,6 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 
