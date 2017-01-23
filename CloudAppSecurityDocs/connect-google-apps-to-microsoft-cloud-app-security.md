@@ -1,11 +1,11 @@
 ---
-title: "Подключение Google Apps к Microsoft Cloud App Security | Документы Майкрософт"
+title: "Подключение Google Apps | Microsoft Docs"
 description: "В этом разделе приводятся сведения о подключении Google Apps к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Подключение Google Apps к Microsoft Cloud App Security
-Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Google Apps с помощью интерфейсов API соединителя.  
+Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Google Apps с помощью интерфейсов API соединителя.
+
+  
   
 ## <a name="configure-google-apps"></a>Настройка Google Apps  
   
@@ -33,7 +35,8 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 3.  На экране **Новый проект** выполните следующее:  
   
-    1.  Назовите проект **Cloud App Security for Google**.  
+    1.  Назовите проект следующим образом:</br>
+    **Cloud App Security для Google** 
   
     2.  Укажите, требуется ли подписаться на обновления.  
   
@@ -68,7 +71,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
     -   Gmail API  
   
-         ![предупреждение google11](./media/google11-warning.png "google11 warning")  
+         ![предупреждение google11](./media/google11-warning.png "предупреждение google11")  
   
 7.  В списке **Enabled APIs** (Включенные API) должно быть пять элементов:  
   
@@ -100,7 +103,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 11. В правой части вкладки **Credentials** (Учетные данные) щелкните **Manage service accounts** (Управление учетными записями служб).  
   
-     ![данные учетной записи службы google apps](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![данные учетной записи службы google apps](./media/google-apps-credentials-service-account.png "данные учетной записи службы google apps")  
   
 12. Щелкните три точки справа от созданной учетной записи службы и выберите **Изменить**.  
   
@@ -116,7 +119,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 15. Откройте меню Google, щелкнув три горизонтальные линии рядом с Google Cloud Platform, и выберите **API manager** (Диспетчер API).  
   
-     ![меню google](./media/google-menu.png "google menu")  
+     ![меню google](./media/google-menu.png "меню google")  
   
      Выберите **Enabled APIs** (Включенные API).  
   
@@ -206,27 +209,27 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 18. Выберите **Security** (Безопасность) в списке элементов управления. Если этот параметр отсутствует, выберите "More controls" (Дополнительные элементы управления) на серой панели в нижней части страницы, а затем выберите **Security** (Безопасность).  
   
-     ![безопасность google apps](./media/google-apps-security.png "google apps security")  
+     ![система безопасности google apps](./media/google-apps-security.png "система безопасности google apps")  
   
 19. Выберите **API reference** (Справочник по API).  
   
-     ![справочник по api google](./media/google-api-ref.png "google api ref")  
+     ![справочник по api google](./media/google-api-ref.png "справочник по api google")  
   
 20. Выберите **Enable API Access** (Включить доступ к API) и нажмите кнопку **Save changes** (Сохранить изменения).  
   
-     ![доступ к api google](./media/google-api-access.png "google api access")  
+     ![доступ к api google](./media/google-api-access.png "доступ к api google")  
   
 ## <a name="configure-cloud-app-security"></a>Настройка Cloud App Security  
   
-1.  На портале Cloud App Security щелкните **Сведения** и затем **Санкционированные приложения**.  
+1.  На портале Cloud App Security выберите пункты **Исследовать** и **Подключенные приложения**.  
   
-2.  Перейдя в строку Google Apps, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **Google Apps**.  
+2.  На странице **Connected apps** (Подключенные приложения) щелкните знак "плюс" и выберите **Google Apps**.  
   
-     ![подключение google apps](./media/connect-google-apps.png "connect google apps")  
+     ![подключение google apps](./media/connect-google-apps.png "подключение google apps")  
   
-3.  На странице параметров Google Apps введите следующие данные:  
+3.  Во всплывающем окне введите следующее:  
   
-     ![Настройка Google Apps в Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+     ![Настройка Google Apps в Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Настройка Google Apps в Cloud App Security")  
   
     1.  **Google Service Account email address** (Адрес электронной почты учетной записи службы Google), скопированный на шаге 14.  
   
@@ -242,7 +245,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
     7.  **Перейдите по ссылке** для подключения к Google Apps. При этом открывается Google Apps и предлагается авторизовать доступ для Cloud App Security.  
   
-         ![Запрос авторизации Google Apps](./media/google-apps-authorization-request.png "Google Apps authorization request")  
+         ![Запрос авторизации Google Apps](./media/google-apps-authorization-request.png "Запрос авторизации Google Apps")  
   
     8.  Убедитесь, что подключение установлено, щелкнув элемент **Тестирование API**.  
   
@@ -264,6 +267,6 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Подключение ServiceNow к Microsoft Cloud App Security | Документы Майкрософт"
+title: "Подключение ServiceNow | Microsoft Docs"
 description: "В этом разделе приводятся сведения о подключении приложения ServiceNow к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -36,13 +36,13 @@ ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
   
      ![учетная запись servicenow](./media/servicenow-account.png "servicenow account")  
   
-4.  На портале Cloud App Security щелкните **Сведения** и затем **Санкционированные приложения**.  
+4.  На портале Cloud App Security выберите пункты **Исследовать** и **Подключенные приложения**.  
   
-5.  Перейдя в строку ServiceNow, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **ServiceNow**.  
+5.  На странице **App connectors** (Соединители с приложениями) щелкните знак "плюс", а затем — **ServiceNow**.  
   
      ![подключение servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  На вкладке "API" страницы параметров ServiceNow добавьте имя пользователя, пароль и URL-адрес экземпляра ServiceNow в соответствующих полях.  
+6.  Во всплывающем окне добавьте имя пользователя, пароль и URL-адрес экземпляра ServiceNow в соответствующих полях.  
   
 7.  Нажмите кнопку **Подключить**.  
   
@@ -52,7 +52,7 @@ ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
   
      Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Закрыть**.  
   
-После подключения ServiceNow вы получите события за 60 дней, предшествовавших подключению.
+После подключения ServiceNow вы получите события за 60 дней, предшествовавших подключению.
   
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
@@ -62,6 +62,6 @@ ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

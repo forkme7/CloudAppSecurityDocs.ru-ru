@@ -1,5 +1,5 @@
 ---
-title: "Подключение Dropbox к Microsoft Cloud App Security | Документы Майкрософт"
+title: "Подключение Dropbox | Microsoft Docs"
 description: "В этом разделе приводятся сведения о подключении приложения Dropbox к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -28,13 +28,13 @@ ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Порядок подключения Dropbox к Cloud App Security  
   
-1.  В консоли Cloud App Security щелкните **Сведения**, а затем — **Санкционированные приложения**.  
+1.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
   
-2.  Перейдя в строку Dropbox, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **Dropbox**.  
+2.  На странице **App connectors** (Соединители приложений) щелкните знак "плюс", а затем — **Dropbox**.  
   
      ![подключение dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  На вкладке "API" страницы параметров Dropbox введите адрес электронной почты учетной записи администратора.  
+3.  Во всплывающем окне введите адрес электронной почты учетной записи администратора.  
   
 4.  Щелкните **Создать ссылку**.  
   
@@ -50,7 +50,7 @@ ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
   
      Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Закрыть**.  
   
-После подключения Dropbox вы получите события за 60 дней, предшествовавших подключению.
+После подключения Dropbox вы получите события за 60 дней, предшествовавших подключению.
 
 > [!NOTE] 
 > События добавления файлов в Dropbox будут отображаться в Cloud App Security как события отправки файлов для обеспечения соответствия с другими приложениями, подключенными к Cloud App Security. 
@@ -63,6 +63,6 @@ ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Настройка Cloud Discovery | Документы Майкрософт"
+title: "Развертывание Cloud Discovery | Microsoft Docs"
 description: "В этом разделе описывается процедура настройки для запуска Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: cfca549e1e16ca83972876626771a55d698530a2
+ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
+ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
 
 
 ---
@@ -28,6 +28,10 @@ Cloud Discovery анализирует журналы трафика на осн
 3.  Непрерывный анализ использования облачных приложений группой аналитиков Cloud App Security (для таких атрибутов, как шифрование хранимых данных).
 4.  Запросы на проверку на основе подаваемых клиентами запросов на внесение изменений в каталог облачных приложений. Все запросы проверяются нашей группой аналитиков и обновляются в соответствии с результатами.
   
+## <a name="cloud-discovery-data-anonymization"></a>Анонимизация данных Cloud Discovery
+
+Анонимизация данных Cloud Discovery позволяет защищать конфиденциальность пользователей. После отправки журнала данных на портал Cloud App Security из журнала удаляются имена пользователей и заменяются зашифрованными именами пользователей. Таким образом, все действия в облаке остаются анонимными. Дополнительные сведения см. в статье [Cloud Discovery anonymization](cloud-discovery-anonymizer.md) (Анонимизация Cloud Discovery).
+
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Отчеты о снимках и непрерывной оценке рисков 
 
 Вы можете создавать отчеты двух типов. 
@@ -50,7 +54,7 @@ Cloud Discovery анализирует журналы трафика на осн
 >[!NOTE]
 >Данные непрерывных отчетов анализируются два раза в день.
  
-## <a name="using-traffic-logs-for-cloud-discovery"></a>Использование журналов трафика для Cloud Discovery
+## <a name="using-traffic-logs-for--cloud-discovery"></a>Использование журналов трафика для Cloud Discovery
 Служба Cloud Discovery использует данные из ваших журналов трафика. Чем подробнее журнал, тем выше уровень контроля. Службе Cloud Discovery требуются данные веб-трафика со следующими атрибутами:
 - Дата транзакции
 - Исходный IP-адрес
@@ -86,6 +90,7 @@ Cloud Discovery анализирует журналы трафика на осн
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
 - Sophos SG
+- Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)
 - Websense — Web Security Solutions — подробный аналитический отчет (CSV)
@@ -119,8 +124,7 @@ Cloud Discovery анализирует журналы трафика на осн
 |Zscaler|**Да**|Нет|**Да**|Нет|**Да**|Нет|
 
 
- 
-Для получения дополнительных сведений см. 
+## <a name="see-also"></a>См. также:
  
 [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
@@ -131,6 +135,6 @@ Cloud Discovery анализирует журналы трафика на осн
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO4-->
 
 

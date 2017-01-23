@@ -5,7 +5,7 @@ title: "Cloud App Security | Документы Майкрософт"
 description: "Техническая документация по Cloud App Security"
 author: msmbaldwin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/11/2017
 ms.topic: hubpage
 ms.prod: azure
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
+ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
     <section id="hero-content">
       <h1>Документация по Cloud App Security</h1>
       <h2>Узнайте, как настроить и использовать решение Cloud App Security, чтобы получить преимущества облачных приложений, а также осуществлять управление за счет улучшенного контроля активности и повышенной защиты важных данных компании. </h2>
-      <h3>Хотите ознакомиться с возможностями Cloud App Security? <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">Посетите сайт продукта &rarr;</a></h3>
+      <h3>Хотите ознакомиться с возможностями Cloud App Security? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Посетите сайт продукта &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>Готовы приобрести?</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">Купить сейчас</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">Купить сейчас</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>Общая настройка</h3>
-                    <p>Выполните основные действия по настройке Cloud App Security.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Настройка Cloud Discovery</h3>
                     <p>Используйте компонент Cloud Discovery для отслеживания использования облачных приложений и получения информации о теневых ИТ-ресурсах в организации.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>Настройка автоматической отправки журналов</h3>
-                    <p>Настройте автоматическую отправку журналов для непрерывных отчетов Cloud Discovery.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>Развертывание</p>
-                </div>
-                <p class="description column-two-thirds">Обеспечьте улучшенный контроль над подключениями к API и разверните политики для управления приложениями.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>Включение соединителей API</h3>
-                    <p>Включите соединители API для улучшенного контроля над приложениями, включая Office 365, Google Apps, Box, Dropbox и многие другие.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Подключение Office 365 к Cloud App Security</h3>
-                    <p>Подключите Cloud App Security к существующей учетной записи Microsoft Office 365 с помощью API соединителя приложений.</p>
+                    <h3>Подключение приложений</h3>
+                    <p>Подключите облачные приложения к Cloud App Security, чтобы повысить их видимость и управляемость.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>Управление облачными приложениями с помощью политик</h3>
-                    <p>Настройте политики, чтобы контролировать использование облачных приложений в организации и управлять им.</p>
+                    <p>Настройте политики для отслеживания облачных приложений, используемых в вашей организации, и управления ими.</p>
                   </a>
                 </li>
               </ul>
@@ -183,7 +145,7 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>Журнал управления</h3>
+                    <h3>Управление</h3>
                     <p>Журнал управления содержит записи о состоянии каждой задачи, настроенной для выполнения в Cloud App Security как вручную, так и автоматически.</p>
                   </a>
                 </li>
@@ -197,7 +159,7 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
         <ul class="journeys-list">
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="./troubleshooting.md">
+              <a href="./troubleshooting-cloud-discovery.md">
                 <div class="title column-third">
                   <span class="step-number">5</span>
                   <p>Устранение неполадок</p>
@@ -208,7 +170,7 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./troubleshooting.md">
+                  <a href="./troubleshooting-cloud-discovery.md">
                     <h3>Устранение неполадок</h3>
                     <p>С помощью этих руководств можно устранить неполадки Cloud Discovery и соединителей API.</p>
                   </a>
@@ -233,14 +195,14 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
         <aside class="alert alert-social">
       <p>Следите за новостями о Cloud App Security <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Официальный сайт Cloud App Security</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Техническая поддержка Cloud App Security</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Официальный сайт Cloud App Security</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Техническая поддержка Cloud App Security</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
