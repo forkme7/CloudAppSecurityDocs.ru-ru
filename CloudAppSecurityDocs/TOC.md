@@ -1,23 +1,27 @@
-# [Общие сведения и знакомство с возможностями](what-is-cloud-app-security.md)
+# Общие сведения и знакомство с возможностями
 ## [Что такое CAS?](what-is-cloud-app-security.md)
 ## [Заметки о выпуске](release-notes.md)
-# [Развертывание](getting-started-with-cloud-app-security.md)
+# Развертывание
+## [Начало работы](getting-started-with-cloud-app-security.md)
 ## [Настройка портала](general-setup.md)
+### [Группы пользователей](user-groups.md)
+### [Теги и диапазоны IP-адресов](ip-tags.md)
 ## [Развертывание Cloud Discovery](set-up-cloud-discovery.md)
 ### [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Анонимизация данных Cloud Discovery](cloud-discovery-anonymizer.md)
-### [Настройка Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Подключение приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Подключение Box](connect-box-to-microsoft-cloud-app-security.md)
-### [Подключение Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [Подключение G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [Подключение Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [Подключение AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Подключение Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
 ### [Подключение Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Подключение ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Подключение Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [Использование](daily-activities-to-protect-your-cloud-environment.md)
+# Используйте
+## [Ежедневные мероприятия для защиты облачной среды](daily-activities-to-protect-your-cloud-environment.md)
+## [Работа с Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Анализ](investigate.md)
 ### [Справочник по встроенным отчетам](built-in-report-reference.md)
 ### [Файлы](file-filters.md)
@@ -28,20 +32,18 @@
 #### [Политики Cloud Discovery](cloud-discovery-policies.md)
 ##### [Политика обнаружения аномалий Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Политики действий](user-activity-policies.md)
-##### [Политика обнаружения аномалий](anomaly-detection-policy.md)
+#### [Политика обнаружения аномалий](anomaly-detection-policy.md)
 #### [Политики файлов](data-protection-policies.md)
 ##### [Проверка содержимого](content-inspection.md)
 ##### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
+#### [Ссылка на шаблон политики](policy-template-reference.md)
 ### [Управление разрешениями приложения](manage-app-permissions.md)
-## [Система управления](governance-actions.md)
+### [Управление подключенными приложениями](governance-actions.md)
+### [Управление обнаруженными приложениями](governance-discovery.md)
 ## Интеграция
 ### [Интеграция Azure Information Protection](azip-integration.md)
 ### [Интеграция SIEM](siem.md)
-# [Устранение неполадок](troubleshooting.md)
+# Устранение неполадок
 ## [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
 ## [Устранение проблем с проверкой содержимого](troubleshooting-content-inspection.md)
-
-<!--HONumber=Jan17_HO1-->
-
-

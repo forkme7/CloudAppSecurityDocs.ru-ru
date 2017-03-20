@@ -1,11 +1,11 @@
 ---
-title: "Работа с подсистемой регулярных выражений | Документы Майкрософт"
+title: "Использование обработчика регулярных выражений в политиках проверки содержимого | Microsoft Docs"
 description: "В этом разделе приводятся инструкции по использованию регулярных выражений для сопоставления шаблонов в политиках Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
-
-
+ms.openlocfilehash: c386cbbdadaf97297e6d876cdac9f7d3e2142b73
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="working-with-the-regex-engine"></a>Работа с подсистемой регулярных выражений
  
 Политики проверки содержимого Cloud App Security используют регулярное выражение для сопоставления шаблонов. Проверка содержимого может применяться в рамках политик файлов. Для тестирования регулярных выражений можно использовать следующие веб-сайты:  
@@ -36,7 +33,7 @@ ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
   
 -   Поиск всегда выполняется без учета регистра.  
    
--   Разрешенные квантификаторы: {n,m}, где n, m < 10.  
+-   Разрешенные квантификаторы: {n,m}, где n, m < 10.  
   
 -   Все группы должны быть незахватываемыми, например: (?:xxx).  
   
@@ -67,8 +64,3 @@ ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
