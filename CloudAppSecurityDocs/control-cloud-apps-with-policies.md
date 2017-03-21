@@ -1,11 +1,11 @@
 ---
-title: "Управление облачными приложениями с помощью политик | Документы Майкрософт"
+title: "Контроль использования облачных приложений путем создания политик в Cloud App Security | Microsoft Docs"
 description: "В этом разделе приводятся сведения об использовании и настройке политик для контроля использования облачных приложений."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
-
-
+ms.openlocfilehash: e913b589babc66ef5aff5f05af9fb5de22f308d1
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Управление облачными приложениями с помощью политик
 
@@ -161,8 +159,3 @@ Cloud App Security помогает снизить разнообразные р
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

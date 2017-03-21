@@ -1,11 +1,11 @@
 ---
-title: "Анонимизация данных Cloud Discovery | Microsoft Docs"
+title: "Защита конфиденциальности пользователей в Cloud App Security при помощи анонимизации данных | Microsoft Docs"
 description: "В этой статье рассказывается об анонимизации имен пользователей в данных Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 049494e45caf670f753f6b5fbfbbf117462b7156
-
-
+ms.openlocfilehash: 5e3b10cc8fa00deb296076063a6b5f6cde76999e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
-
 ## <a name="cloud-discovery-data-anonymization"></a>Анонимизация данных Cloud Discovery
 
 Анонимизация данных Cloud Discovery позволяет защищать конфиденциальность пользователей. После отправки журнала данных на портал Cloud App Security из журнала удаляются имена пользователей и заменяются зашифрованными именами пользователей. Таким образом, все действия в облаке остаются анонимными. При необходимости администраторы смогут раскрыть имя пользователя для служебного расследования (например, при нарушении целостности системы безопасности или при подозрительных действиях со стороны пользователя). Если администратор имеет основания подозревать конкретного пользователя, он также может использовать в своем расследовании зашифрованное имя пользователя. Преобразование каждого имени пользователя фиксируется в **журнале управления** на портале.
@@ -77,8 +73,3 @@ ms.openlocfilehash: 049494e45caf670f753f6b5fbfbbf117462b7156
     
       
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

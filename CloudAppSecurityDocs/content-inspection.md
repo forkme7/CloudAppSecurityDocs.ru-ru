@@ -1,11 +1,11 @@
 ---
-title: "Проверка содержимого | Microsoft Docs"
+title: "Как служба Cloud App Security проверяет содержимое | Microsoft Docs"
 description: "В этой статье описывается процесс проверки содержимого службой Cloud App Security для защиты от потери данных в облаке."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
-
-
+ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="content-inspection"></a>Проверка содержимого
 В этой статье описывается процесс проверки содержимого службой Cloud App Security для защиты от потери данных в облаке. 
 
@@ -32,7 +29,7 @@ ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
 
 После проверки файла производятся указанные ниже действия.
 
-1. Cloud App Security применяет все настраиваемые политики, которые относятся к метаданным, а не к самому содержимому. Например, это может быть политика, оповещающая о том, что размер файла превышает 20 МБ, или о том, что DOCX-файл сохраняется в OneDrive. 
+1. Cloud App Security применяет все настраиваемые политики, которые относятся к метаданным, а не к самому содержимому. Например, это может быть политика, оповещающая о том, что размер файла превышает 20 МБ, или о том, что DOCX-файл сохраняется в OneDrive. 
 
 2. Если имеется политика, требующая проверки содержимого, и файл подлежит такой проверке, содержимое помещается в очередь на проверку. Длина очереди зависит от размера клиента и количества файлов, требующих проверки. 
 
@@ -46,7 +43,7 @@ ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
 - Адреса электронной почты. 
 - Номера кредитных карт. 
   - Все компании, предоставляющие кредитные карты (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay). 
-  - Разделители — пробел, точка или тире.
+  - Разделители — пробел, точка или тире.
   - В эту проверку также входит проверка Luhn.
 - Коды SWIFT.
 - Номера загранпаспортов.
@@ -70,8 +67,3 @@ ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
