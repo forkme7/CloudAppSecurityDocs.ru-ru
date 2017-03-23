@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e31fd5f40aa432fd149cef0b5923818247aed326
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Интеграция Azure Information Protection
@@ -86,7 +86,8 @@ Cloud App Security позволяет исследовать файлы и за�
 
 ![Теги Azure Information Protection в Cloud App Security](./media/azip-tags-in-cas.png)
 
-**Политика 1 — конфиденциальные данные на компьютере с доступом извне:**
+> ![Примечание] Метки защиты идентификации Azure, отключенные в файле, будут отображаться как отключенные в Cloud App Security. Удаленные метки не отображаются.
+> **Политика 1 — конфиденциальные данные на компьютере с доступом извне:**
 
 1.    Создайте политику файла.
 2.    Задайте название, уровень серьезности и категорию политики.
