@@ -35,7 +35,7 @@
 ##### [Политика обнаружения аномалий Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Политики действий](user-activity-policies.md)
 #### [Политика обнаружения аномалий](anomaly-detection-policy.md)
-##### [Политики файлов](data-protection-policies.md)
+#### [Политики файлов](data-protection-policies.md)
 ##### [Проверка содержимого](content-inspection.md)
 ##### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
 #### [Ссылка на шаблон политики](policy-template-reference.md)
