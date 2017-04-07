@@ -1,11 +1,11 @@
 ---
-title: "Политики Cloud Discovery | Документы Майкрософт"
+title: "Создание политик для приложений Cloud Discovery в Cloud App Security | Microsoft Docs"
 description: "В этом разделе приводятся сведения о работе с политиками Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
-
-
+ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-policies"></a>Политики Cloud Discovery
     
 ## <a name="creating-an-app-discovery-policy"></a>Создание политики обнаружения приложения  
@@ -29,7 +26,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
   
 2.  Щелкните **Создание политики** и выберите политику **Обнаружение приложений**.  
   
-     ![меню политики обнаружения приложений](./media/app-discovery-policy-menu.png "app discovery policy menu")  
+     ![меню политики обнаружения приложений](./media/app-discovery-policy-menu.png "меню политики обнаружения приложений")  
   
 3.  Назначьте политике имя и описание. При необходимости можно использовать в качестве основы политики шаблон. Дополнительные сведения о шаблонах политик см. в статье [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md).  
   
@@ -52,7 +49,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
 В нижней части задайте пороговые значения, которые должны активировать оповещение для определенного обнаруженного приложения, только если это приложение использовали более 100 сотрудников в среде и только если они скачали из службы определенный объем данных.   
 Кроме того, можно задать предельное количество получаемых ежедневно оповещений.  
   
-![пример политики обнаружения приложений](./media/app-discovery-policy-example.png "app discovery policy example")  
+![пример политики для обнаружения приложений](./media/app-discovery-policy-example.png "пример политики для обнаружения приложений")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Обнаружение аномалий Cloud Discovery  
 Cloud App Security ищет аномалии во всех журналах в Cloud Discovery. Например, когда пользователь, который раньше никогда не использовал Dropbox, внезапно отправляет в Dropbox 600 ГБ, или для определенного приложения присутствует гораздо больше транзакций, чем обычно. По умолчанию политика обнаружения аномалий включена, поэтому не нужно настраивать новую политику для включения этой функции, но можно настроить, для каких именно видов аномалий требуется выводить оповещения в политике по умолчанию.  
@@ -61,7 +58,7 @@ Cloud App Security ищет аномалии во всех журналах в C
   
 2.  Щелкните **Создание политики** и выберите **Cloud Discovery anomaly detection policy** (Политика обнаружения аномалий Cloud Discovery).  
   
-     ![меню политики обнаружения аномалий cloud discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
+     ![меню политики для обнаружения аномалий cloud discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "меню политики для обнаружения аномалий cloud discovery")  
   
 3.  Назначьте политике имя и описание. При необходимости можно использовать в качестве основы политики шаблон. Дополнительные сведения о шаблонах политик см. в статье [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md).  
   
@@ -78,7 +75,7 @@ Cloud App Security ищет аномалии во всех журналах в C
   
 9. Нажмите кнопку **Create** (Создать).  
   
-![новая политика обнаружения аномалий](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
+![новая политика для обнаружения аномалий](./media/new-discovery-anomaly-policy.png "новая политика для обнаружения аномалий")  
   
 ## <a name="see-also"></a>См. также  
 [Политики действий пользователей](user-activity-policies.md)   
@@ -86,8 +83,3 @@ Cloud App Security ищет аномалии во всех журналах в C
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
