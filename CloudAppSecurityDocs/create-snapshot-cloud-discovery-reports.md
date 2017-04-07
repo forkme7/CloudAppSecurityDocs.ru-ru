@@ -1,11 +1,11 @@
 ---
-title: "Создание отчетов о снимках Cloud Discovery | Документы Майкрософт"
+title: "Создание отчетов со снимками данных об использовании облачного приложения Cloud Discovery | Microsoft Docs"
 description: "В этой статье приводится информация об отправке журналов вручную для создания отчета о снимке приложений Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
-ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
-
-
+ms.openlocfilehash: 7987786ed6db8593f8ec7baa60d1c6523ac00272
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="create-snapshot-cloud-discovery-reports"></a>Создание отчетов о снимках Cloud Discovery
 Перед тем как пытаться использовать автоматический сборщик журналируемых данных, важно отправить журнал вручную и позволить службе Cloud App Security произвести его анализ.
 Если у вас еще нет журнала и вы хотите увидеть его пример, следуйте процедурам ниже и скачайте пример файла журнала.
@@ -60,7 +57,7 @@ ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
      ![Вкладка параметров обнаружения](./media/discovery-settings-tab.png)
 11. Затем щелкните пункт **Управление отчетами о снимках** и выберите отчет о снимке.
  
-![управление отчетами о снимках](./media/snapshot-report-managment.png)
+![Управление отчетами о моментальных снимках](./media/snapshot-report-managment.png)
 
   
       
@@ -71,8 +68,3 @@ ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
     
       
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
