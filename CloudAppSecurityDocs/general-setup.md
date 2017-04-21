@@ -1,11 +1,11 @@
 ---
-title: "Настройка портала | Microsoft Docs"
+title: "Настройка портала Cloud App Security для получения наилучших результатов | Документы Майкрософт"
 description: "В этой статье описываются первые действия для настройки портала."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
-ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
-
-
+ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="customize-the-portal"></a>Настройка портала
 В следующей процедуре представлены инструкции по настройке портала Cloud App Security.
   
@@ -66,7 +63,7 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
   
 ![управление административным доступом](./media/manage-admin-access.png "управление административным доступом")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Настройка параметров администратора  
+##  <a name="Adminsettings"></a> Настройка параметров администратора  
 Чтобы задать для себя параметры администратора Cloud App Security, щелкните свое имя в строке меню портала и выберите пункт **Параметры пользователей** для настройки следующих параметров:  
   
 1.  Щелкните **Параметры учетной записи**. Здесь можно настроить язык портала. Можно оставить язык портала по умолчанию или выбрать другой язык.  
@@ -82,49 +79,17 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
   
 3. Завершив настройку, нажмите кнопку **Сохранить**.  
   
-##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> Задание диапазонов IP-адресов  
+##  <a name="IPtagsandRanges"></a> Задание диапазонов IP-адресов  
 Чтобы легко определять известные IP-адреса, например IP-адреса физического офиса, необходимо задать диапазоны IP-адресов, позволяющие использовать теги и классификацию, а также настроить способ отображения журналов и оповещений.   
-Каждую группу диапазонов IP-адресов можно классифицировать по имеющемуся списку категорий IP-адресов или пометить собственными тегами IP-адресов. Кроме того, этот параметр позволяет переопределить открытые сведения о географическом положении с учетом сведений о внутренней сети.  
+Дополнительные сведения см. в разделе [Теги IP-адресов](ip-tags.md).
   
-Поддерживаются форматы IPv4 и IPv6.  
-  
-В строке меню щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Диапазоны IP-адресов**. Щелкните **+Добавить диапазон IP-адресов** и укажите следующее:  
-  
-> [!NOTE]  
->  Параметры "Расположение" и "Зарегистрированный поставщик услуг Интернета" переопределяют значения по умолчанию.   
-> при этом теги IP-адресов добавляются в действие без переопределения данных.  
-  
-1.  Назначьте **Имя** для диапазона IP-адресов. Оно не отображается в журнале действий, а используется только для управления вашим диапазоном IP-адресов.  
-  
-     Чтобы включить диапазон IP-адресов в категорию IP-адресов, выберите ее в раскрывающемся меню.  
-  
-2.  Введите **Диапазон IP-адресов**, который требуется настроить, и нажмите кнопку "+". Можно добавить любое число IP-адресов и подсетей, используя нотацию сетевых префиксов (которая также называется CIDR-нотацией), например 192.168.1.0/32.  
-  
-3.  Чтобы **переопределить поля расположения** или организации (поставщика услуг Интернета) для этих адресов, введите новое значение. Например, если имеется IP-адрес, который обычно относится к Ирландии, но вы знаете, что он находится в США, этот параметр можно переопределить.  
-  
-4.  Введите значение **Зарегистрированный поставщик услуг Интернета**. При этом переопределяются данные в ваших действиях.  
-  
-5.  Чтобы пометить тегом действия с этих IP-адресов, введите значение **Тег**. При вводе слова в этом поле создается тег. Уже настроенный тег можно легко добавить в дополнительные диапазоны IP-адресов, выбрав его из списка. Для каждого диапазона можно добавить любое число тегов IP-адресов. Теги IP-адресов можно использовать при создании политик.  Наряду с тегами IP-адресов, которые настраиваете вы, в Cloud App Security есть встроенные теги, которые изменять нельзя. Список тегов можно просмотреть в разделе [IP tags filter](activity-filters.md) (Фильтр тегов IP-адресов).  
-  
-6.  **Категории IP-адресов** позволяют легко распознавать действия с интересных IP-адресов. Эти категории доступны на портале, но пользователю требуется настроить их, указав включаемые в каждую из них IP-адреса, кроме категории "Рискованные", которая содержит два тега IP-адресов: для анонимного прокси-сервера и Tor.  
-  
-     Доступны следующие категории IP-адресов:  
-  
-    -   **Административные**: это должны быть IP-адреса администраторов.  
-  
-    -   **Внутренние**: это должны быть IP-адреса внутренней сети, филиалов и адреса роуминга Wi-Fi.  
-  
-    -   **Рискованные**: это должны быть IP-адреса, которые считаются опасными. Сюда могут входить подозрительные IP-адреса, с которыми вы уже сталкивались, IP-адреса в сетях ваших конкурентов и т. д.  
-  
-    -   **VPN**: это должны быть IP-адреса, используемые для удаленных работников.  
-  
-    -   **Облачный прокси-сервер**: это должен быть IP-адрес прокси-сервера в облаке.  
-  
-7.  Завершив настройку, нажмите кнопку **Создать**.  
-  
-     ![новый диапазон ip-адресов](./media/newipaddress-range.png "новый диапазон ip-адресов")  
-  
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> Персонализация работы  
+## <a name="import-user-groups"></a>Импорт групп пользователей
+
+При подключении приложений с помощью соединителей API служба Cloud App Security позволяет импортировать группы пользователей, например, из Office 365 и Azure Active Directory.
+
+Дополнительные сведения см. в разделе [Группы пользователей](user-groups.md).
+
+##  <a name="Adallom_mailsettings"></a> Персонализация работы  
 В строке меню щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Параметры почты**, чтобы задать параметры для уведомлений электронной почты, отправляемых из Cloud App Security администраторам, запрашивающим предупреждения, и уведомлений, отправляемых конечным пользователям по поводу нарушений, к которым они имеют отношение.  
   
 ![меню "параметры почты"](./media/mail-setting-menu.png "меню "параметры почты"")  
@@ -152,12 +117,10 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
          %%content%% — заполнитель для содержимого, которое будет включено для конечных пользователей; задается политикой.  
   
      Ниже приведен пример шаблона сообщения электронной почты: 
-
-
-           
-          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-          <html>  
-          <head>  
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>  
+       <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
           </head>  
@@ -206,30 +169,25 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
           </table>  
             </body>  
           </html>  
-         
+    ```
 
   
-3.  Щелкните **Отправить шаблон...** и выберите созданный файл.  
+3.  Click **Upload a template...** and select the file you created.  
   
-     Щелкните **Отправить тестовое письмо**, чтобы отправить себе тестовое сообщение в качестве примера созданного шаблона.  
-     Сообщение направляется в учетную запись, которую вы использовали для входа на портал. В тестовом сообщении можно просмотреть поля метаданных, шаблон, тему сообщения, заголовок в тексте сообщения и содержимое.  
+     Then, click **Send a test email** to send yourself a test email to see an example of the template you created.  
+     The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
-## <a name="single-sign-on"></a>Единый вход  
-Cloud App Security связывается с Azure Active Directory для выполнения действий, связанных с проверкой подлинности, подготовкой и лицензированием. Сведения об управлении единым входом см. в статье [Список совместимости с федерацией Azure Active Directory: использование сторонних поставщиков удостоверений для реализации единого входа](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
+## Single sign-on  
+Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
 
 
 > [!NOTE] 
-> Если вы используете ExpressRoute, служба Cloud App Security развертывается в Azure и полностью интегрируется с [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Все взаимодействия с приложениями Cloud App Security и трафик, передаваемый в Cloud App Security, в том числе отправка журналов обнаружения, маршрутизируются через **открытый пиринг** ExpressRoute в целях снижения задержки, а также повышения производительности и безопасности. Со стороны клиента никаких действий по настройке не требуется.  
-    Дополнительные сведения об открытом пиринге см. в статье [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/) (Цепи и домены маршрутизации ExpressRoute).  
+> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
-## <a name="see-also"></a>См. также  
-[Настройка Cloud Discovery](set-up-cloud-discovery.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+## See Also  
+[Set up Cloud Discovery](set-up-cloud-discovery.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

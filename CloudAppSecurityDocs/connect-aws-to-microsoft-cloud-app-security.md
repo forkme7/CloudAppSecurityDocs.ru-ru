@@ -1,11 +1,11 @@
 ---
-title: "Подключение AWS | Microsoft Docs"
+title: "Подключение AWS к Cloud App Security для видимости и контроля использования | Документы Майкрософт"
 description: "В этом разделе приводятся сведения о подключении приложения AWS к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,47 +13,40 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
-
-
+ms.openlocfilehash: 68d4c221626706ca641a5d3e1986da543771561a
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Подключение AWS к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Amazon Web Services с помощью интерфейсов API соединителя.  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Порядок подключения Amazon Web Services к Cloud App Security  
   
-1.  В консоли Amazon Web Services щелкните **Управление идентификацией и доступом**.  
+1.  В [консоли Amazon Web Services](https://console.aws.amazon.com/) в разделе **Безопасность, идентификация и соответствие** щелкните **IAM**.  
   
-     ![удостоверение и доступ к aws](./media/aws-identity-and-access.png "aws identity and access")  
+     ![идентификация и доступ aws](./media/aws-identity-and-access.png "идентификация и доступ aws")  
   
-2.  Откройте вкладку **Пользователи**.  
+2.  Откройте вкладку **Пользователи** и нажмите кнопку **Добавить пользователя**.  
   
-     ![пользователи aws](./media/aws-users.png "aws users")  
+     ![пользователи aws](./media/aws-users.png "пользователи aws")      
   
-3.  Щелкните **Создание новых пользователей**.  
-  
-     ![Создание пользователя в AWS](./media/aws-create-user.png "AWS create user")  
-  
-4.  Создайте пользователя для Cloud App Security и установите флажок **Generate an access key for each user** (Создать ключ доступа для каждого пользователя).  
-  
-5.  Щелкните **Download Credentials** (Скачать учетные данные).  
-  
-     ![скачивание учетных данных в aws](./media/aws-dl-cred.png "aws dl cred")  
-  
-6.  На вкладке **Permissions** (Разрешения) нажмите кнопку **Attach Policy** (Присоединить политику).  
-  
-     ![присоединение политики пользователя в aws](./media/aws-attach-user-policy.png "aws attach user policy")  
-  
-7.  Откроется экран **Review Policy** (Просмотр политики).
- 
-     ![просмотр политики](./media/aws-review-policy.png "aws review policy")  
-  
+4.  На шаге **Сведения** укажите новое имя пользователя для Cloud App Security, в поле **Тип доступа** выберите **Программный доступ** и нажмите кнопку **Next Permissions** (Далее — разрешения).  
 
-8. В поле **Policy Name** (Имя политики) введите "AdallomTrustPolicy". 
-10. Скопируйте следующий фрагмент и вставьте его в области **Policy Document** (Документ политики):  
+     ![Создание пользователя в AWS](./media/aws-create-user.png "Создание пользователя в AWS")
+
+5. На шаге **Разрешения** щелкните **Attach existing policies directly** (Присоединить существующие политики напрямую), а затем нажмите кнопку **Create policy** (Создать политику).
+
+   ![присоединение пользователя в AWS](./media/aws-attach-user-policy.png "присоединение существующей политики в AWS")
+
+6.  В разделе **Create Policy** (Создание политики) выберите **Create Your Own Policy** (Создать собственную политику).
+ 
+    ![создание собственной политики в AWS](./media/aws-create-own-policy.png "создание политики в AWS")
+ 
+7.  В разделе **Review Policy** (Просмотр политики) в поле **Policy Name** (Имя политики) введите имя, например CloudAppSecurityPolicy.
+
+    ![просмотр политики в AWS](./media/aws-review-policy.png "просмотр политики в AWS")
+
+8. Вставьте следующий фрагмент в поле **Policy Document** (Документ политики), а затем нажмите кнопку **Create policy** (Создать политику):
   
     ```     
     {  
@@ -61,8 +54,7 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
       "Statement" : [{  
           "Action" : [  
             "cloudtrail:DescribeTrails",  
-  
-           "cloudtrail:LookupEvents",  
+            "cloudtrail:LookupEvents",  
             "cloudtrail:GetTrailStatus",  
             "cloudwatch:Describe*",  
             "cloudwatch:Get*",  
@@ -78,37 +70,44 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
   
     ```  
   
-9. В скачанном файле `credentials.csv` найдите учетные данные нового пользователя. Позднее они еще понадобятся.  
+9. Вернитесь на страницу **Добавление пользователя**, при необходимости обновите список, выберите только что созданного пользователя и нажмите кнопку **Далее — просмотр**.
+
+   ![просмотр политики пользователя в AWS](./media/aws-review-user.png "просмотр политики пользователя в AWS")
+
+10. Если все сведения указаны правильно, нажмите кнопку **Создать пользователя**.
+
+    ![разрешения пользователя в AWS](./media/aws-user-permissions.png "просмотр разрешений пользователя в AWS")
+
+11. При получении сообщения об успехе щелкните **Скачать CSV-файл**, чтобы сохранить копию новых учетных данных пользователя, которые потребуются позднее.  
+
+    ![Скачать CSV-файл в AWS](./media/aws-download-csv.png "Скачать CSV-файл в AWS")
   
-10. Вернитесь на главную страницу консоли AWS и в правом верхнем углу выберите свой основной регион из раскрывающегося списка, а затем выберите **CloudTrail** в главном меню.  
+10. В консоли AWS щелкните **Службы** и затем в разделе **Средства управления** щелкните **CloudTrail**.  
   
-     ![cloudtrail aws](./media/aws-cloudtrail.png "aws cloudtrail")  
+     ![aws cloudtrail](./media/aws-cloudtrail.png "aws cloudtrail")  
   
-    1.  Если ранее вы не использовали CloudTrail для этого региона, нажмите кнопку **Приступая к работе** и настройте этот компонент, выбрав соответствующий сегмент S3.  
+    Если ранее вы не использовали CloudTrail, нажмите кнопку **Приступая к работе** и настройте этот компонент, указав имя и выбрав соответствующий сегмент S3. Затем щелкните **Turn On** (Включить). Чтобы обеспечить полное покрытие, задайте для параметра **Apply to all regions** (Применить ко всем регионам) значение **Да**.
   
-         Откройте вкладку **Конфигурация** в верхней левой части экрана. В разделе **Дополнительная конфигурация** щелкните значок правки.  
+       ![включение CloudTrail в AWS](./media/aws-turnon-cloudtrail.png "включение CloudTrail в AWS")
   
-         ![конфигурация cloudtrail в aws](./media/aws-cloudtrail-config.png "aws cloudtrail config")  
-  
-    2.  Щелкните **Да** при отображении вопроса о **включении глобальных служб** и нажмите кнопку **Сохранить**. Это касается только выбранного региона.  
-  
-         ![включение глобальных служб в aws](./media/aws-include-global-svc.png "aws include global svc")  
-  
-    3.  Повторите шаг 11 для всех регионов, не включая глобальные службы ни для одного из остальных регионов.  
+    Вы увидите новое имя в CloudTrail в списке **Trails** (Журналы).
+    
+      ![список CloudTrail в AWS](./media/aws-cloudtrail-list.png "список CloudTrail в AWS")
   
 11. На портале Cloud App Security выберите пункты **Исследовать** и **Подключенные приложения**.  
   
-12. На странице **App connectors** (Соединители с приложениями) щелкните знак "плюс", а затем — **AWS**.  
+12. На странице **App connectors** (Соединители с приложениями) щелкните знак "плюс", а затем — **AWS**.  
   
-     ![подключение AWS](./media/connect-aws.png "connect AWS")  
+     ![подключение AWS](./media/connect-aws.png "подключение AWS")  
   
-13. Во всплывающем окне вставьте **Ключ доступа** и **Секретный ключ** из CSV-файла в поля на странице API и нажмите кнопку **Обновить ключ доступа**.  
+13. Во всплывающем окне вставьте значения параметров **Ключ доступа** и **Секретный ключ** из CSV-файла в соответствующие поля и нажмите кнопку **Подключить**.  
+   ![подключение приложения в AWS](./media/aws-connect-app.png "AWS connect app") 
   
 14. Убедитесь, что подключение установлено, щелкнув элемент **Тестирование API**.  
   
      Проверка может занять несколько минут. После завершения выдается уведомление об успехе или неудаче. После получения уведомления об успешном выполнении нажмите кнопку **Готово**.  
   
-После подключения AWS вы получите события за 7 дней, предшествовавших подключению.
+После подключения AWS вы получите события за 7 дней, предшествовавших подключению, если вы пока не включили CloudTrail. В противном случае вы будете получать события с момента включения CloudTrail.
   
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
@@ -116,8 +115,3 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
