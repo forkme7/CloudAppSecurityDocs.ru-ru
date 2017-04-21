@@ -1,11 +1,11 @@
 ---
-title: "Подключение Box | Microsoft Docs"
+title: "Подключение Box к Cloud App Security для видимости и контроля использования | Документы Майкрософт"
 description: "В этом разделе приводятся сведения о подключении приложения Box к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
-
-
+ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Подключение Box к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Box с помощью интерфейсов API соединителя приложений.  
   
@@ -32,15 +29,15 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
     -   В консоли администрирования Box щелкните значок параметров, за которым идет надпись **Business settings** (Бизнес-параметры).  
   
-         ![бизнес-параметры box](./media/box-business-settings.png "box business settings")  
+         ![бизнес-параметры box](./media/box-business-settings.png "бизнес-параметры box")  
   
     -   Откройте вкладку **Приложения**.  
   
-         ![приложения box](./media/box-apps.png "box apps")  
+         ![приложения box](./media/box-apps.png "приложения box")  
   
     -   Если выбран пункт **Unpublished Applications** (Неопубликованные приложения), в текстовом поле **Except for** (Кроме) добавьте серийный номер приложения Cloud App Security (`nduj1o3yavu30dii7e03c3n7p49cj2qh`), а затем нажмите кнопку **Save** (Сохранить).  
   
-         ![параметр "кроме" в box](./media/box-settings-except-for.png "box settings except for")  
+         ![параметр "кроме" в box](./media/box-settings-except-for.png "параметр "кроме" в box")  
   
     > [!NOTE]  
     >  Если вы являетесь действующим клиентом Adallom и URL-адрес консоли предназначен для Adallom, а не Cloud App Security, используйте следующий серийный номер приложения: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
@@ -49,7 +46,7 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
 3.  На странице **App connectors** (Соединители приложений) щелкните знак "плюс" и выберите **Box**.  
   
-     ![подключение box](./media/connect-box.png "connect box")  
+     ![подключение box](./media/connect-box.png "подключение box")  
   
 4.  Во всплывающем окне **Параметры Box** выберите пункт **Перейдите по этой ссылке**.  
   
@@ -65,7 +62,7 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
 Box теперь подключен к Cloud App Security.  
  
-После подключения Box вы получите события за 60 дней, предшествовавших подключению.
+После подключения Box вы получите события за 60 дней, предшествовавших подключению.
   
 После подключения Box служба Cloud App Security выполняет полное сканирование. В зависимости от количества файлов и пользователей полное сканирование может занять некоторое время. Чтобы обеспечить сканирование почти в реальном времени, файлы, действия с которыми обнаружены, перемещаются в начало очереди сканирования. Например, файл, который изменяется, обновляется или предоставляется, сканируется немедленно, так что вам не приходится ждать, когда он будет обработан стандартным процессом сканирования. Это не относится к файлам, содержимое которых не изменяется, например к файлам, которые просматриваются, печатаются или экспортируются.
   
@@ -75,8 +72,3 @@ Box теперь подключен к Cloud App Security.
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
