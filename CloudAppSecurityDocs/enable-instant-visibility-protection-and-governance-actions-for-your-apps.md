@@ -1,11 +1,11 @@
 ---
-title: "Подключение приложений | Microsoft Docs"
+title: "Подключение приложений для расширения возможностей видимости и контроля с помощью Cloud App Security | Документы Майкрософт"
 description: "В этой статье описывается процесс подключения приложений, используя соединители API, к приложениям в облачной среде организации."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
-ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
-
-
+ms.openlocfilehash: 0c6fbb24a0b5d7f1c5ada4b805eb8b7ae5ecada2
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="connect-apps"></a>Подключение приложений 
 Соединители приложений используют API поставщиков приложений, чтобы расширить возможности видимости и контроля в Cloud App Security для приложений, к которым вы подключаетесь.  
   
@@ -67,7 +64,7 @@ Cloud App Security развертывается с правами системн
   
 В следующей таблице перечислены возможности, которые поддерживаются с помощью соединителей приложений для отдельных облачных приложений:  
 
-||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**Список учетных записей**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Группа**|✔|✔|✔|✔|✔|✔|✔|✔|  
@@ -89,9 +86,26 @@ Cloud App Security развертывается с правами системн
   
 -   Для журналов:  
   
-     104.209.35.177  
+    104.209.35.177  
   
-     13.91.98.185  
+    13.91.98.185
+ 
+    40.118.211.172
+
+    13.93.216.68
+
+    13.91.61.249
+
+    13.93.233.42
+
+    13.64.196.27
+
+    13.64.198.97
+
+    13.64.199.41
+
+    13.64.198.19
+  
   
 -   Для консоли:  
   
@@ -107,7 +121,7 @@ Cloud App Security развертывается с правами системн
 |Приложение|Тип лицензии|User|  
 |---------|------------------|----------|  
 |Поле|Enterprise|Настоятельно рекомендуется подключаться к Box с правами администратора. Подключение с правами соадминистратора приведет к тому, что будет видна лишь часть данных. При подключении с правами соадминистратора необходимо выбрать все разрешения.|  
-|Google Apps|Рекомендуется Google Apps Unlimited<br /><br /> Google Apps Enterprise (минимум)|Суперадминистратор|  
+|G Suite|Рекомендуется G Suite Unlimited<br /><br /> G Suite Enterprise (минимум)|Суперадминистратор|  
 |Office 365||Глобальный администратор|  
 |AWS||Только что созданный пользователь|  
 |Dropbox|Business или Enterprise|Администратор|  
@@ -127,9 +141,5 @@ Cloud App Security развертывается с правами системн
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
+
    
-
-
-<!--HONumber=Jan17_HO2-->
-
-

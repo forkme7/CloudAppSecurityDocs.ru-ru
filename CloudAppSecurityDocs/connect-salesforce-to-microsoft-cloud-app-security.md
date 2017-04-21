@@ -1,11 +1,11 @@
 ---
-title: "Подключение Salesforce | Microsoft Docs"
+title: "Подключение Salesforce к Cloud App Security для видимости и контроля использования | Документы Майкрософт"
 description: "В этой статье приводятся сведения о подключении приложения Salesforce к Cloud App Security с помощью соединителя API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
-ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
-
-
+ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
-
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Подключение Salesforce к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Salesforce с помощью API соединителя приложений.  
   
@@ -95,16 +91,23 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
      Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Готово**.  
   
   
-После подключения Salesforce вы будете получать события следующим образом: триггеры — с момента подключения; события входа и журнал аудита настройки — за 60 дней, предшествовавших подключению; EventMonitoring — за 30 или один предшествующий день в зависимости от лицензии Salesforce EventMonitoring.
+После подключения Salesforce вы будете получать события следующим образом: триггеры — с момента подключения; события входа и журнал аудита настройки — за 60 дней, предшествовавших подключению; EventMonitoring — за 30 или один предшествующий день в зависимости от лицензии Salesforce EventMonitoring. API Cloud App Security взаимодействует напрямую с API-интерфейсами, доступными из Salesforce. Так как Salesforce ограничивает число вызовов API, которые он может получить, Cloud App Security принимает этот момент во внимание и соблюдает ограничение. API-интерфейсы Salesforce отправляют каждый ответ, содержащий поле для счетчиков API, включая общее доступное и оставшееся количество. Cloud App Security вычисляет эти значения в процентах и гарантирует, что всегда будет оставаться 10 % от оставшихся доступных вызовов API. 
+
+> [!NOTE]
+> Регулирование в Cloud App Security вычисляется исключительно относительно собственных вызовов API в Salesforce и не связано с другими приложениями, осуществляющими вызовы API в Salesforce.
+> Ограничение вызовов API может замедлить скорость получения данных в Cloud App Security, но она обычно восстанавливается за ночь.
+
+
+Cloud App Security обрабатывает события Salesforce следующим образом: 
   
+- Регистрация событий каждые 15 минут
+- Настройка журнала аудита каждые 15 минут
+- Salesforce экспортирует данные мониторинга журнала событий каждые 24 часа (12:00 по Гринвичу) 
+
+
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

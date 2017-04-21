@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Docs
+title: "Развертывание Cloud App Security для облачных приложений для обеспечения видимости и контроля использования | Документы Майкрософт"
 description: "В этом разделе описывается процесс настройки и запуска Cloud App Security."
 keywords: 
 author: rkarlin
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
-ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
-
-
+ms.openlocfilehash: 2c1b1506f4693304cc10f64b1db372dc710e026a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="deploy-cloud-app-security"></a>Развертывание Cloud App Security
 Cloud App Security позволяет вам использовать ценные возможности, которые дают облачные приложения, сохраняя при этом контроль над ресурсами организации. Эта служба повышает прозрачность действий в облаке и помогает повысить безопасность корпоративных данных. В этом разделе представлено пошаговое руководство для настройки Cloud App Security и работы с ней.  
 
@@ -133,7 +130,7 @@ Cloud App Security позволяет вам использовать ценны
 
 **Создание тегов IP-адресов**
 
-1. Выберите **Параметры ** > **Теги IP-адреса**.
+1. Выберите **Параметры** > **Теги IP-адреса**.
 2. Выберите пункт (+) **Добавить диапазон IP-адресов**.
 3. Введите **сведения**, **расположение**, **теги** и **категорию** для диапазона IP-адресов.
 4. Выберите команду **Создать**.
@@ -164,9 +161,3 @@ Cloud App Security позволяет вам использовать ценны
 Вы можете задать политики для [управления облачными приложениями при помощи политик](control-cloud-apps-with-policies.md).    
 Для получения технической поддержки перейдите на страницу [Служба технической поддержки Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
 Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на [портале Premier](https://premier.microsoft.com/).   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-
