@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Управление облачными приложениями с помощью политик
@@ -139,7 +139,20 @@ Cloud App Security помогает снизить разнообразные р
 >  [Политики защиты данных](data-protection-policies.md)  
 >   
 >  [Политики Cloud Discovery](cloud-discovery-policies.md)  
+
   
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Добавление автоматических действий для ответа на риски и их устранения
+
+Список доступных действий управления для каждого приложения см. в разделе [Управление подключенными приложениями](governance-actions.md).
+
+Вы можете также задать политику, по которой получите оповещение по почте или в текстовом сообщении при обнаружении соответствий. 
+
+Чтобы задать параметры уведомлений, перейдите в раздел [Настройка портала](general-setup.md). 
+  
+> [!NOTE] 
+> Максимальное количество оповещений, отправляемых в виде текстовых сообщений, составляет 10 оповещений на каждый номер телефона в день. Обратите внимание на то, что день вычисляется в соответствии с часовым поясом UTC. 
+
+
 ## <a name="enable-and-disable-policies"></a>Включение и отключение политик
 
 После создания политики ее можно включить или отключить. Это позволяет не удалять политику, если ее нужно остановить. Если вы хотите остановить политику, просто отключите ее (позже ее можно будет включить повторно).
