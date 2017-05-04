@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
+ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
 translationtype: HT
 ---
 # <a name="set-up-cloud-discovery"></a>Настройка Cloud Discovery
@@ -64,7 +64,7 @@ Cloud Discovery анализирует журналы трафика на осн
  
 Служба Cloud Discovery не может выводить или анализировать атрибуты, которые не включены в ваши журналы.
 Например, журнал стандартного формата **брандмауэра Cisco ASA** не содержит атрибуты **Количество отправленных байт на транзакцию** и **Имя пользователя**, а также атрибут **Целевой URL-адрес** (имеется только целевой IP-адрес).
-Поэтому эти атрибуты не будут отображаться в данных Cloud Discovery по этим журналам, и контроль над облачными приложениями будет ограничен. Для брандмауэров Cisco ASA необходимо задать уровень информации 6. 
+Поэтому эти атрибуты не будут отображаться в данных Cloud Discovery для этих журналов и видимость облачных приложений будет ограниченна. Для брандмауэров Cisco ASA необходимо задать уровень информации 6. 
  
 
 Для успешного создания отчета Cloud Discovery журналы трафика должны соответствовать указанным ниже условиям.
@@ -79,7 +79,7 @@ Cloud Discovery анализирует журналы трафика на осн
 - Брандмауэр Cisco ASA Firewall (для брандмауэров Cisco ASA необходимо задать уровень информации 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai — журнал URL-адресов
+- Cisco Meraki — журнал URL-адресов
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
