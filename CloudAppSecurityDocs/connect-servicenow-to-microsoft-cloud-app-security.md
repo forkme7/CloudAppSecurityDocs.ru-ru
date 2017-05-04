@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f4fd428f762bcbe1fb2a26bf44268cf985fbd4f
-ms.sourcegitcommit: c79c405a1277c5fcebbc245fa12ff8feb53248d5
+ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
+ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
 translationtype: HT
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Подключение ServiceNow к Microsoft Cloud App Security
-Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи ServiceNow с помощью API соединителя приложений.  
-  
-## <a name="how-to-connect-servicenow-to-cloud-app-security"></a>Порядок подключения ServiceNow к Cloud App Security  
-  
-> [!NOTE]  
+
+Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи ServiceNow с помощью API соединителя приложений. 
+
+ >  [!NOTE]
+>  Рекомендуем развернуть ServiceNow с помощью токенов приложения OAuth, которые доступны для Fuji и последующих выпусков (дополнительные сведения см. в соответствующей [документации по ServiceNow](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)). Для более ранних выпусков доступен [устаревший режим подключения](#legacy-servicenow-connection) с использованием имени пользователя и пароля.
+
+ > [!NOTE]  
 >  Cloud App Security поддерживает версии ServiceNow Eureka, Fiji, Geneva, Helsinki и Istanbul. Для подключения к ServiceNow с помощью Cloud App Security требуется роль **администратора**, а экземпляр ServiceNow должен поддерживать доступ к API.  Дополнительные сведений см. в [документации по ServiceNow](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+  
+## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Как подключить ServiceNow к Cloud App Security с помощью OAuth
+  
   
 1.  Войти в учетную запись ServiceNow с помощью с учетной записи администратора.  
   
@@ -69,6 +74,36 @@ translationtype: HT
   
 После подключения ServiceNow вы получите события за 60 дней, предшествовавших подключению.
   
+## <a name="legacy-servicenow-connection"></a>Подключение к ServiceNow в устаревшем режиме
+
+Для подключения к ServiceNow с помощью Cloud App Security требуются разрешения уровня администратора, а экземпляр ServiceNow должен поддерживать доступ к API.   
+
+1.  Войти в учетную запись ServiceNow с помощью с учетной записи администратора.   
+
+2.  Создайте учетную запись службы для Cloud App Security и подключите к ней роль администратора.   
+
+3.  Убедитесь в том, что подключаемый модуль REST API включен.   
+
+    ![Учетная запись ServiceNow](./media/servicenow-account.png "Учетная запись ServiceNow")   
+
+4.  На портале Cloud App Security щелкните **Сведения** и затем **Санкционированные приложения**.   
+
+5.  Перейдя в строку ServiceNow, щелкните элемент **Подключение** в столбце **Состояние соединителя приложений** или нажмите кнопку **Подключить приложение**, а затем щелкните элемент **ServiceNow**.   
+
+    ![подключение servicenow](./media/connect-servicenow.png "подключение servicenow")   
+
+6.  На вкладке "API" страницы параметров ServiceNow добавьте имя пользователя, пароль и URL-адрес экземпляра ServiceNow в соответствующих полях.   
+
+7.  Нажмите кнопку **Подключить**.   
+
+   ![Изменение пароля ServiceNow](./media/servicenow-update-password.png "Изменение пароля ServiceNow")   
+
+8.  Убедитесь, что подключение установлено, щелкнув элемент **Тестирование API**.   
+  
+   Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Закрыть**.   
+ После подключения ServiceNow вы получите события за 60 дней, предшествовавших подключению. 
+
+
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
