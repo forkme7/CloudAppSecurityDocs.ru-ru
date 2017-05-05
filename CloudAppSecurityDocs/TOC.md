@@ -9,6 +9,7 @@
 ## [Развертывание Cloud Discovery](set-up-cloud-discovery.md)
 ### [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](configure-automatic-log-upload-for-continuous-reports.md)
+### [Использование настраиваемого средства синтаксического анализа журналов](custom-log-parser.md)
 ### [Анонимизация данных Cloud Discovery](cloud-discovery-anonymizer.md)
 ## [Подключение приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Подключение Box](connect-box-to-microsoft-cloud-app-security.md)
