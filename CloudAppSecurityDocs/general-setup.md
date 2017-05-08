@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f05a39b834178406a6b4b010cd7a1c6096f8c37f
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
 ---
 # <a name="customize-the-portal"></a>Настройка портала
 В следующей процедуре представлены инструкции по настройке портала Cloud App Security.
@@ -89,7 +90,7 @@ translationtype: HT
 
 Дополнительные сведения см. в разделе [Группы пользователей](user-groups.md).
 
-##  <a name="Adallom_mailsettings"></a> Персонализация работы  
+##  <a name="mailsettings"></a> Персонализация работы  
 В строке меню щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Параметры почты**, чтобы задать параметры для уведомлений электронной почты, отправляемых из Cloud App Security администраторам, запрашивающим предупреждения, и уведомлений, отправляемых конечным пользователям по поводу нарушений, к которым они имеют отношение.  
   
 ![меню "параметры почты"](./media/mail-setting-menu.png "меню "параметры почты"")  

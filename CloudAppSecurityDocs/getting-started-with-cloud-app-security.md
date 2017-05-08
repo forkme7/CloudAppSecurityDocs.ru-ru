@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b429866b6a50becacf918aed8de24c741010621
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
 ---
 # <a name="deploy-cloud-app-security"></a>Развертывание Cloud App Security
 Cloud App Security позволяет вам использовать ценные возможности, которые дают облачные приложения, сохраняя при этом контроль над ресурсами организации. Эта служба повышает прозрачность действий в облаке и помогает повысить безопасность корпоративных данных. В этом разделе представлено пошаговое руководство для настройки Cloud App Security и работы с ней.  
@@ -98,7 +99,7 @@ Cloud App Security позволяет вам использовать ценны
 Вы можете использовать политики для отслеживания тенденций, просмотра угроз безопасности и создания собственных отчетов и оповещений. С помощью политик можно создать действия системы управления, а также задать средства для защиты от потери данных и общего доступа к файлам.
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdadallommailsettings"></a>Шаг 4. [Персонализация взаимодействия](general-setup.md#Adallom_mailsettings).
+### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>Шаг 4. [Персонализация взаимодействия](general-setup.md#mailsettings).
 Рекомендуемая задача: добавление данных об организации
 
 **Указание настроек электронной почты**
