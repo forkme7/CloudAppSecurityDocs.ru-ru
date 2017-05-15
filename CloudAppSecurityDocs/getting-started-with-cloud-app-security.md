@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Развертывание Cloud App Security
 Cloud App Security позволяет вам использовать ценные возможности, которые дают облачные приложения, сохраняя при этом контроль над ресурсами организации. Эта служба повышает прозрачность действий в облаке и помогает повысить безопасность корпоративных данных. В этом разделе представлено пошаговое руководство для настройки Cloud App Security и работы с ней.  
@@ -99,7 +100,7 @@ Cloud App Security позволяет вам использовать ценны
 Вы можете использовать политики для отслеживания тенденций, просмотра угроз безопасности и создания собственных отчетов и оповещений. С помощью политик можно создать действия системы управления, а также задать средства для защиты от потери данных и общего доступа к файлам.
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>Шаг 4. [Персонализация взаимодействия](general-setup.md#mailsettings).
+### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Шаг 4. [Персонализация взаимодействия](mail-settings.md).
 Рекомендуемая задача: добавление данных об организации
 
 **Указание настроек электронной почты**
@@ -126,7 +127,7 @@ Cloud App Security позволяет вам использовать ценны
 Некоторые функции работают оптимально, когда они настроены в соответствии с вашими потребностями. Улучшите взаимодействие с пользователями за счет собственных шаблонов сообщений электронной почты, выберите получаемые уведомления и настройте метрику оценки риска в соответствии требованиями вашей организации.
 
 
-### <a name="step-5-organize-the-data-according-to-your-needsgeneral-setupmdiptagsandranges"></a>Шаг 5. [Организация данных в соответствии с потребностями](general-setup.md#IPtagsandRanges).
+### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Шаг 5. [Организация данных в соответствии с потребностями](ip-tags.md).
 Рекомендуемая задача: настройка важных параметров
 
 **Создание тегов IP-адресов**
