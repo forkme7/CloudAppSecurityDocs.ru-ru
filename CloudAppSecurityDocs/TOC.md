@@ -3,7 +3,10 @@
 ## [Заметки о выпуске](release-notes.md)
 # Развертывание
 ## [Начало работы](getting-started-with-cloud-app-security.md)
-## [Настройка портала](general-setup.md)
+## [Основная настройка](general-setup.md)
+### [Управление администраторами](manage-admins.md)
+#### [Параметры администратора](admin-settings.md)
+### [Параметры почты](mail-settings.md)
 ### [Группы пользователей](user-groups.md)
 ### [Теги и диапазоны IP-адресов](ip-tags.md)
 ## [Развертывание Cloud Discovery](set-up-cloud-discovery.md)
@@ -51,3 +54,4 @@
 ## [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
 ## [Устранение проблем с проверкой содержимого](troubleshooting-content-inspection.md)
+## [Устранение неполадок интеграции SIEM](troubleshooting-siem.md)
