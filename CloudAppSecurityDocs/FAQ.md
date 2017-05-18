@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 92ad2a378b0ab0f127ef22c9746f2957f43576a8
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 3e0c14d142f9154b5e986105899c9445667518c6
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="frequently-asked-questions"></a>Вопросы и ответы
 
@@ -27,7 +29,7 @@ translationtype: HT
         $cred = Get-Credential
         Connect-MsolService -credential $cred
         Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
- или Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
+ или Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress XX@XX.XX
 
 ## <a name="see-also"></a>См. также:  
 Сведения об использовании и настройке политик для управления применением облачных приложений см. в разделе [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md).   

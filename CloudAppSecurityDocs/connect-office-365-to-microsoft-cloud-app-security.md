@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,21 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5dfdcb0d420434a66b73098d546e4de4a36f60e
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 3be2a96cb9fe792917ce388ca52df9c03428f9fa
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Подключение Office 365 к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Microsoft Office 365 с помощью API соединителя приложений.  
   
-  
+Cloud App Security поддерживает устаревшую специализированную платформу Office 365, а также последние предложения служб Office 365 (которые называют семейством выпуска vNext Office 365).  Cloud App Security не поддерживает устаревший набор Microsoft Business Productivity Online Standard Suite. 
+
+> [!NOTE]
+> В некоторых случаях выпуск службы vNext имеет незначительные отличия от стандартного предложения Office 365 на уровнях администрирования и управления.
+
+ 
 
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>Порядок подключения Office 365 к Cloud App Security  
   
