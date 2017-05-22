@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -25,12 +25,38 @@ ms.lasthandoff: 05/09/2017
 
 При первой интеграции SIEM с Cloud App Security в SIEM будут перенаправлены действия и оповещения за последние два дня, а также все последующие действия и оповещения в зависимости от выбранного вами фильтра. Кроме того, если вы отключите эту функцию на длительное время, то при повторном включении будут перенаправлены действия и оповещения за последние два дня и все последующие.
 
+## <a name="siem-integration-architecture"></a>Архитектура интеграции SIEM
+
+Агент SIEM развертывается в сети организации. При развертывании и настройке он запрашивает типы данных (предупреждения и действия), которые были настроены с помощью интерфейсов API RESTful Cloud App Security.
+После этого трафик отправляется через зашифрованный HTTPS-канал на порту 443.
+
+После получения данных из Cloud App Security агент SIEM отправляет сообщения системного журнала в локальную среду SIEM с помощью сетевой конфигурации, указанной во время установки (TCP или UDP с настраиваемым портом). 
+
+![Архитектура интеграции SIEM](./media/siem-architecture.png)
+
+## <a name="sample-siem-logs"></a>Примеры журналов SIEM
+
+Журналы, которые предоставляются для SIEM из Cloud App Security, — это журналы в формате CEF, передаваемые через системный журнал. В следующих примерах журналов можно увидеть тип события, которое обычно отправляется из Cloud App Security на сервер SIEM. В них указаны следующие сведения: было ли активировано оповещение, **тип события**, **политика**, которая была нарушена, **пользователь**, который активировал событие, **приложение**, посредством которого пользователь нарушил политику, и **URL-адрес**, с которого поступает оповещение.
+
+Пример журнала действий 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
+
+
+
+Пример журнала оповещений 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## <a name="how-to-integrate"></a>Интеграция
+
 Интеграция SIEM выполняется в три этапа:
 1. Настройка SIEM на портале Cloud App Security. 
 2. Скачивание JAR-файла и его запуск на сервере.
 3. Проверка работы агента SIEM.
 
-## <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные условия
 
 - Стандартный сервер с Windows или Linux (можно использовать виртуальную машину).
 - На сервере должна быть запущена Java 8; более ранние версии не поддерживаются.
