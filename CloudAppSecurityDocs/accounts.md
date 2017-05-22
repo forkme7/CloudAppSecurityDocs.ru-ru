@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc25a661cf7bd18be19e9e6fd82a4d39cf132c66
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 5033a66c976775c512c0f5f0d3ebd3d9aee89b5a
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="accounts"></a>Учетные записи
 Cloud App Security информирует вас об учетных записях в подключенных приложениях. После подключения Cloud App Security к приложению с помощью соединителя приложений Cloud App Security считывает сведения об учетной записи, связанные с подключенными приложениями. На странице "Учетные записи" вы можете изучить эти учетные записи, разрешения, группы, в которые они входят, их псевдонимы и используемые приложения. Кроме того, когда Cloud App Security обнаруживает новую учетную запись, которая ранее не использовалась в подключенных приложениях, например в действиях или для организации общего доступа к файлам, эта учетная запись добавляется в список учетных записей этого приложения. Так вы сможете увидеть, какие действия внешние пользователи выполняют с вашими облачными приложениями.
