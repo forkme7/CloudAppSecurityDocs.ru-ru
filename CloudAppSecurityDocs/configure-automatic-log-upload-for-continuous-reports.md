@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
-ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
-translationtype: HT
+ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Настройка автоматической отправки журналов для непрерывных отчетов
 Сборщики журналируемых данных позволяют легко автоматизировать отправку журналов из сети. Сборщик журналируемых данных выполняется в сети и получает журналы через Syslog или FTP. Каждый журнал автоматически обрабатывается, сжимается и передается на портал. Журналы FTP отправляются в Cloud App Security после завершения передачи файла по FTP в сборщик журналируемых данных. Для системных журналов сборщик журналируемых данных записывает полученные журналы на диск каждые 20 минут, а затем отправляет файл в Cloud App Security.
@@ -32,8 +34,8 @@ translationtype: HT
 - ЦП: 2
 - ОЗУ: 4 ГБ 
 - Параметры брандмауэра: 
-- Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog
-- Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, contoso.cloudappsecurity.com) через порт 443
+    - Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog
+    - Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, contoso.cloudappsecurity.com) через порт 443
 
   
 ## <a name="log-collector-performance"></a>Производительность сборщика журналируемых данных
