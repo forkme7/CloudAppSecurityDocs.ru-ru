@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7987786ed6db8593f8ec7baa60d1c6523ac00272
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Создание отчетов о снимках Cloud Discovery
 Перед тем как пытаться использовать автоматический сборщик журналируемых данных, важно отправить журнал вручную и позволить службе Cloud App Security произвести его анализ.
@@ -34,7 +36,7 @@ translationtype: HT
   
      ![Новый отчет о снимке](./media/new-snapshot-report.png) 
 
-4.  Выберите **Источник данных**, откуда необходимо отправить файлы журнала.  
+4.  Выберите **Источник данных**, откуда необходимо отправить 13 файлы журнала.  
   
 5. Проверьте формат журнала: он должен соответствовать примеру, доступному для скачивания. Выберите команду **Просмотреть и проверить**, а затем нажмите кнопку **Скачать пример журнала**. Затем сравните журнал с предоставленным примером, чтобы убедиться, что они совместимы. 
 
