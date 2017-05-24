@@ -1,0 +1,120 @@
+---
+title: "Настройка уведомлений электронной почты | Документация Майкрософт"
+description: "В этой статье содержатся сведения о том, как настроить уведомления электронной почты, отправленные из Cloud App Security."
+keywords: 
+author: rkarlin
+ms.author: rkarlin
+manager: mbaldwin
+ms.date: 5/10/2017
+ms.topic: get-started-article
+ms.prod: 
+ms.service: cloud-app-security
+ms.technology: 
+ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
+ms.reviewer: reutam
+ms.suite: ems
+ms.openlocfilehash: 49c2c444b0ae378584f3ddbccccf7c8b34bb50d3
+ms.sourcegitcommit: 26ae7b0e1ee0ec3b2c7464a6424d4ebd1cd436ac
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/10/2017
+---
+##  <a name="mailsettings"></a> Настройка уведомлений электронной почты  
+В строке меню щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Параметры почты**, чтобы задать параметры для уведомлений электронной почты, отправляемых из Cloud App Security администраторам, запрашивающим предупреждения, и уведомлений, отправляемых конечным пользователям по поводу нарушений, к которым они имеют отношение.  
+  
+![меню "параметры почты"](./media/mail-setting-menu.png "меню "параметры почты"")  
+  
+Необходимо установить:  
+  
+1.  **Адрес электронной почты отправителя**: учетная запись электронной почты, которую требуется использовать для отправки уведомления.  
+  
+     **Отображаемое имя отправителя**: имя, отображаемое в поле **От** сообщения электронной почты.  
+  
+     **Адрес электронной почты для ответа**: учетная запись электронной почты, используемая для ответов на сообщения.  
+  
+     ![изменение параметров почты](./media/mail-settings-config.png "изменение параметров почты")  
+  
+2.  **Дизайн письма** можно менять, настраивая и изменяя структуру сообщений электронной почты, отправляемых из системы, с помощью HTML-файла. HTML-файл, используемый для шаблона, должен содержать следующее:  
+  
+    -   Все CSS должны быть встроены в шаблон.  
+  
+    -   Шаблон должен иметь три неизменяемых заполнителя:  
+  
+         %%logo%% — URL-адрес логотипа организации, который был отправлен на странице "Общие параметры".  
+  
+         %%title%% — заполнитель для заголовка сообщения электронной почты; задается политикой.  
+
+         %%content%% — заполнитель для содержимого, которое будет включено для конечных пользователей; задается политикой.  
+     
+3.  Щелкните **Отправить шаблон...** и выберите созданный файл. 
+
+4. Щелкните **Отправить тестовое письмо**, чтобы отправить себе тестовое сообщение в качестве примера созданного шаблона. Сообщение направляется в учетную запись, которую вы использовали для входа на портал. В тестовом сообщении можно просмотреть поля метаданных, шаблон, тему сообщения, заголовок в тексте сообщения и содержимое.  Ниже приведен пример шаблона сообщения электронной почты: 
+
+
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>  
+       <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+          </head>  
+          <body class="end-user">  
+          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
+            <tr>  
+              <td align="center">  
+                <!--[if (gte mso 9)|(IE)]>  
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
+                  <tr>  
+                    <td>  
+                <![endif]-->  
+                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
+                  <tr>  
+                    <td align="right" id="header-table-cell">  
+                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding-top: 58px;" align="center" valign="top">  
+                      <table width="100%" cellpadding="12">  
+                        <tr>  
+                          <td align="center" class="round-title">  
+                            %%title%%  
+                          </td>  
+                        </tr>  
+                      </table>  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
+                        %%content%%  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td class="last-row"></td>  
+                  </tr>  
+                </table>  
+                <!--[if (gte mso 9)|(IE)]>  
+                </td>  
+                </tr>  
+                </table>  
+                  <![endif]-->  
+              </td>  
+              </tr>  
+          </table>  
+            </body>  
+          </html>  
+   ```
+  
+
+  
+  
+
+  
+    
+## <a name="see-also"></a>См. также  
+[Настройка Cloud Discovery](set-up-cloud-discovery.md)   
+[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
+  
+  
