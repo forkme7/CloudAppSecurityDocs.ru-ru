@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 5/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Подключение ServiceNow к Microsoft Cloud App Security
 
@@ -64,7 +64,9 @@ ms.lasthandoff: 05/15/2017
   
      ![подключение servicenow](./media/connect-servicenow.png "подключение servicenow")  
   
-8.  Во всплывающем окне добавьте идентификатор пользователя, пароль, URL-адрес экземпляра ServiceNow, а также идентификатор клиента и секрет клиента.  
+8.  Во всплывающем окне добавьте идентификатор пользователя, пароль, URL-адрес экземпляра ServiceNow, а также идентификатор клиента и секрет клиента. Чтобы найти свой идентификатор пользователя ServiceNow, на портале ServiceNow перейдите на вкладку **Users** (Пользователи) и найдите в таблице свое имя пользователя — оно отображается рядом с вашим идентификатором пользователя.
+
+![Идентификатор пользователя ServiceNow](./media/servicenow-userid.png)
   
 9.  Нажмите кнопку **Подключить**.  
   

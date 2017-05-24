@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -73,7 +73,7 @@ ms.lasthandoff: 05/15/2017
 
    ![Общие параметры SIEM](./media/siem1.png)
 
-5. Введите IP-адрес **узла с удаленным системным журналом** и **номер порта для системного журнала**. Выберите TCP или UDP в качестве протокола для удаленного системного журнала.
+5. Введите IP-адрес или имя **узла с удаленным системным журналом** и **номер порта для системного журнала**. Выберите TCP или UDP в качестве протокола для удаленного системного журнала.
 Если у вас нет этих данных, их можно получить у вашего администратора по безопасности.
 Нажмите кнопку **Далее**.
   ![Параметры удаленного системного журнала](./media/siem2.png)
