@@ -14,8 +14,10 @@ ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: ddc5f406aaa9d18e605c796cc8dba6c3927c6d2b
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Политика обнаружения аномалий Cloud Discovery
 В этой статье описываются справочные сведения о политиках, содержащие пояснения по каждому типу политик и полям, которые можно настроить для каждой политики.  
