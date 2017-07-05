@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: a70e561150ef8d00a3815eb4332868f4c1fbeece
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Подключение ServiceNow к Microsoft Cloud App Security
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 05/16/2017
   
 8.  Во всплывающем окне добавьте идентификатор пользователя, пароль, URL-адрес экземпляра ServiceNow, а также идентификатор клиента и секрет клиента. Чтобы найти свой идентификатор пользователя ServiceNow, на портале ServiceNow перейдите на вкладку **Users** (Пользователи) и найдите в таблице свое имя пользователя — оно отображается рядом с вашим идентификатором пользователя.
 
-![Идентификатор пользователя ServiceNow](./media/servicenow-userid.png)
+    ![Идентификатор пользователя ServiceNow](./media/servicenow-userid.png)
   
 9.  Нажмите кнопку **Подключить**.  
   

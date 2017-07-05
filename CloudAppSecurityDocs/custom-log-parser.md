@@ -14,9 +14,10 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="use-a-custom-log-parser"></a>Использование настраиваемого средства синтаксического анализа журналов
 Компонент Cloud App Security позволяет настраивать пользовательское средство синтаксического анализа для сопоставления и обработки формата журналов, чтобы их можно было использовать для Cloud Discovery, даже если журналы принадлежат брандмауэру или устройству, которые компонент Cloud App Security явно не поддерживает. 
@@ -26,7 +27,7 @@ ms.contentlocale: ru-RU
 
  
 Настройка пользовательского средства синтаксического анализа CSV.
-1.    На портале Cloud App Security щелкните **Обнаружение**, а затем — **Создать отчет о снимке**.  
+1.  На портале Cloud App Security щелкните **Обнаружение**, а затем — **Создать отчет о снимке**.  
   
     ![Создание отчета о снимке](./media/create-new-snapshot-report.png)
      

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 5/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 33f549807b37414aad8ac1eb71b3bba354a19e9e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
-translationtype: HT
+ms.openlocfilehash: c4134370302fe8d35e6a3e2232d6ff8a65ad96f6
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="manage-your-alerts"></a>Управление оповещениями  
 Оповещения являются ключом к более глубокому пониманию облачной среды. На основе полученных результатов можно создавать новые политики. Например, вы можете заметить, что один из администраторов выполнил вход из Гренландии, но раньше никто в вашей организации не выполнял вход из этого региона. Вы можете создать политику, которая автоматически приостанавливает действие учетной записи администратора, если она используется для входа из этого местоположения.  
