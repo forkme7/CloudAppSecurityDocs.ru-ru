@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 5/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 49c2c444b0ae378584f3ddbccccf7c8b34bb50d3
-ms.sourcegitcommit: 26ae7b0e1ee0ec3b2c7464a6424d4ebd1cd436ac
+ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 ##  <a name="mailsettings"></a> Настройка уведомлений электронной почты  
 В строке меню щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Параметры почты**, чтобы задать параметры для уведомлений электронной почты, отправляемых из Cloud App Security администраторам, запрашивающим предупреждения, и уведомлений, отправляемых конечным пользователям по поводу нарушений, к которым они имеют отношение.  
@@ -33,6 +33,9 @@ ms.lasthandoff: 05/10/2017
      **Адрес электронной почты для ответа**: учетная запись электронной почты, используемая для ответов на сообщения.  
   
      ![изменение параметров почты](./media/mail-settings-config.png "изменение параметров почты")  
+
+  >[!NOTE]
+  >Чтобы использовать в поле **Адрес электронной почты отправителя** собственный домен, ознакомьтесь с приведенными [здесь](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-) инструкциями.
   
 2.  **Дизайн письма** можно менять, настраивая и изменяя структуру сообщений электронной почты, отправляемых из системы, с помощью HTML-файла. HTML-файл, используемый для шаблона, должен содержать следующее:  
   
