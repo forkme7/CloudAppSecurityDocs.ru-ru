@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 6/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Подключение Salesforce к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Salesforce с помощью API соединителя приложений.  
@@ -44,10 +46,14 @@ translationtype: HT
   
          ![изменение профиля salesforce](./media/salesforce-edit-profile.png "изменение профиля salesforce")  
   
-    -   Убедитесь, что флажок **API Enabled** (API включен) установлен. Если это не так, вам может потребоваться обратиться в Salesforce, чтобы добавить его в учетную запись.  
-  
-         ![api salesforce включен](./media/salesforce-api-enabled.png "api salesforce включен")  
-  
+    -   Убедитесь, что установлены следующие флажки:   
+        - **API Enabled** (API включен);
+        - **Просмотр всех данных**; 
+        - **Manage Salesforce CRM Content** (Управление содержимым Salesforce CRM);
+        - **Управление пользователями**.
+        
+        Если это не так, вам может потребоваться обратиться в Salesforce, чтобы добавить их в учетную запись.  
+             
 3.  Если в вашей организации включен параметр **Salesforce CRM Content** (Содержимое Salesforce CRM), убедитесь, что он включен и в используемой учетной записи администратора.  
   
     1.  Перейдите на страницу установки Salesforce.  

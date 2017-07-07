@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 6/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 77f9d0175a35b95ed45632fce7644809912acb09
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -27,26 +27,13 @@ ms.lasthandoff: 05/16/2017
 
 ## <a name="siem-integration-architecture"></a>Архитектура интеграции SIEM
 
-Агент SIEM развертывается в сети организации. При развертывании и настройке он запрашивает типы данных (предупреждения и действия), которые были настроены с помощью интерфейсов API RESTful Cloud App Security.
+Агент SIEM развертывается в сети организации. При развертывании и настройке он запрашивает типы данных (оповещения и действия), настроенные с помощью интерфейсов RESTful API Cloud App Security.
 После этого трафик отправляется через зашифрованный HTTPS-канал на порту 443.
 
 После получения данных из Cloud App Security агент SIEM отправляет сообщения системного журнала в локальную среду SIEM с помощью сетевой конфигурации, указанной во время установки (TCP или UDP с настраиваемым портом). 
 
 ![Архитектура интеграции SIEM](./media/siem-architecture.png)
 
-## <a name="sample-siem-logs"></a>Примеры журналов SIEM
-
-Журналы, которые предоставляются для SIEM из Cloud App Security, — это журналы в формате CEF, передаваемые через системный журнал. В следующих примерах журналов можно увидеть тип события, которое обычно отправляется из Cloud App Security на сервер SIEM. В них указаны следующие сведения: было ли активировано оповещение, **тип события**, **политика**, которая была нарушена, **пользователь**, который активировал событие, **приложение**, посредством которого пользователь нарушил политику, и **URL-адрес**, с которого поступает оповещение.
-
-Пример журнала действий 
-  
-2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
-
-
-
-Пример журнала оповещений 
-
-2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
 
 
 ## <a name="how-to-integrate"></a>Интеграция
@@ -65,10 +52,10 @@ ms.lasthandoff: 05/16/2017
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Шаг 1: настройка SIEM на портале Cloud App Security
 
-1. На портале Cloud App Security под шестеренкой "Параметры" щелкните **SIEM agents** (Агенты SIEM).
+1. На портале Cloud App Security под шестеренкой "Параметры" щелкните **Расширения безопасности** и откройте вкладку **Агенты SIEM**.
 
-2. Щелкните Add SIEM agent (Добавить агент SIEM), чтобы запустить мастер.
-3. В окне мастера щелкните **Add SIEM agent** (Добавить агент SIEM).    
+2. Щелкните значок "плюс", чтобы запустить мастер **Добавить агент SIEM**.
+3. В окне мастера щелкните **Add SIEM agent** (Добавить агент SIEM). 
 4. В окне мастера введите название и **выберите формат SIEM**, а также укажите любые **дополнительные параметры** для этого формата. Нажмите кнопку **Далее**.
 
    ![Общие параметры SIEM](./media/siem1.png)

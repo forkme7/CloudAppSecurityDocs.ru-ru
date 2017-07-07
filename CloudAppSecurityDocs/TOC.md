@@ -13,6 +13,7 @@
 ### [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Использование настраиваемого средства синтаксического анализа журналов](custom-log-parser.md)
+### [Обогащение Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Анонимизация данных Cloud Discovery](cloud-discovery-anonymizer.md)
 ## [Подключение приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Подключение Box](connect-box-to-microsoft-cloud-app-security.md)
@@ -25,7 +26,10 @@
 ### [Подключение Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Используйте
 ## [Работа с панелью мониторинга](daily-activities-to-protect-your-cloud-environment.md)
-## [Обнаружение](working-with-cloud-discovery-data.md)
+## Сценарии
+### [Защита организации от программ-шантажистов](use-case-ransomware.md)
+## Обнаружить
+### [Работа с обнаруженными приложениями](discovered-apps.md)
 ### [Работа с оценкой рисков](risk-score.md)
 ## [Анализ](investigate.md)
 ### [Действия](activity-filters.md)
@@ -47,9 +51,11 @@
 #### [Ссылка на шаблон политики](policy-template-reference.md)
 ### [Управление подключенными приложениями](governance-actions.md)
 ### [Управление обнаруженными приложениями](governance-discovery.md)
-## Интеграция
+## Интеграция с помощью расширений безопасности
 ### [Интеграция Azure Information Protection](azip-integration.md)
 ### [Интеграция SIEM](siem.md)
+### [Интеграция с внешней системой защиты от потери данных](icap-stunnel.md)
+### [Токены API](api-tokens.md)
 # Устранение неполадок
 ## [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
