@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
+ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
@@ -31,7 +33,7 @@ translationtype: HT
      ![google1](./media/google1.png "google1")  
   
 3.  На экране **Новый проект** назовите проект следующим образом:</br>
-    **Cloud App Security for Google** и нажмите кнопку **Create** (Создать).  
+    **Microsoft Cloud App Security**, а затем нажмите кнопку **Создать**.  
            ![google2](./media/google2.png "google2")  
   
 4.  После создания проекта на панели инструментов, рядом с элементом Google Cloud Platform, выберите проект и затем в разделе **API** щелкните **Go to APIs overview** (Перейти к обзору API-интерфейсов).  
@@ -63,7 +65,7 @@ translationtype: HT
   
 8.  Щелкните **Credentials** (Учетные данные) и затем — **OAuth consent** (Получение согласия OAuth).  
   
-    -   В поле **Product name shown to users** (Имя продукта, отображаемое пользователям) введите **Cloud App Security for Google**.  
+    -   В поле **Product name shown to users** (Имя продукта, отображаемое пользователям) введите **Microsoft Cloud App Security**.  
   
     -   Заполнять остальные поля необязательно.  
   
@@ -79,11 +81,11 @@ translationtype: HT
 
      ![ключ учетной записи службы google](./media/google8.png "google8")  
   
-11. В разделе **Create service account key** (Создание ключа учетной записи службы) выберите **New service account** (Новая учетная запись службы) и введите любое имя, например **Service account 1**. В разделе **Role** (Роль) выберите **Project** (Проект), а затем — **Editor** (Редактор), после этого в разделе **Key type** (Тип ключа) выберите **P12** и нажмите кнопку **Create** (Создать).  
+11. В разделе **Create service account key** (Создание ключа учетной записи службы) выберите **New service account** (Новая учетная запись службы) и введите любое имя, например **Service account 1**. В разделе **Role** (Роль) выберите **Project** (Проект), а затем — **Editor** (Редактор), после этого в разделе **Key type** (Тип ключа) выберите **P12** и нажмите кнопку **Create** (Создать). Установите флажок **Enable G Suite Domain-wide Delegation** (Включить делегирование в рамках домена G Suite) и нажмите кнопку **Save** (Сохранить).  
   
      ![создание ключа учетной записи службы google](./media/google9.png "google9")  
   
-12.  Файл сертификата P12 будут сохранен на компьютере. Во всплывающем окне будет указан **пароль для закрытого ключа**. Сохраните его для последующего использования.  
+12.  Файл сертификата P12 будут сохранен на компьютере.  
         
 12. В правой части экрана **Credentials** (Учетные данные) щелкните **Manage service accounts** (Управление учетными записями служб).  
        ![Учетная запись с учетными данными G Suite](./media/google10.png "G Suite credentials service account")  
@@ -91,10 +93,6 @@ translationtype: HT
 13. Щелкните три точки справа от созданной учетной записи службы и выберите **Изменить**.  
   
      ![редактирование в google](./media/google11.png "редактирование в google")  
-  
-14. Установите флажок **Enable G Suite Domain-wide Delegation** (Включить делегирование в рамках домена G Suite) и нажмите кнопку **Save** (Сохранить).  
-  
-     ![во всем домене google](./media/google12.png "во всем домене google")  
   
 15. Скопируйте присвоенное службе значение **Service account ID** (Идентификатор учетной записи службы) — оно понадобится позже.  
   
@@ -107,7 +105,7 @@ translationtype: HT
 
 18. Заполните следующие поля:
 
-    -   **Application Name** (Имя приложения): Cloud App Security for Google.  
+    -   **Application Name** (Имя приложения): Microsoft Cloud App Security.  
   
     -   **Short Description & Long Description** (Короткое и длинное описание) (необязательно): Microsoft Cloud App Security обеспечивает видимость облачных приложений, помогая контролировать, анализировать и регулировать использование облачных приложений, защищать корпоративные данные, а также обнаруживать подозрительные действия для любого облачного приложения.  
   
@@ -116,18 +114,16 @@ translationtype: HT
     -   В разделе **Drive Integration** (Интеграция диска) введите следующие данные в поле **Открыть URL-адрес:**  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   Щелкните **Save Changes** (Сохранить изменения).  
-  
+     
          ![конфигурация диска google](./media/google15.png "googledriveconfig")  
   
 19. В списке **Enabled APIs** (Включенные API) щелкните значок параметров с шестеренкой рядом с **Google Apps Marketplace SDK**. 
          ![конфигурация google marketplace SDK](./media/google16.png "googledriveconfig")  
-20. Откройте вкладку **Configuration** (Конфигурация).  
+20. Откройте вкладку **Configuration** (Конфигурация). 
   
     -   Скопируйте отображаемое сверху значение **Project number (App ID)** (Номер проекта — идентификатор приложения) для использования в дальнейшем.  
   
-    -   В поле **Application Name** (Имя приложения) должно быть указано **Cloud App Security for Google**.
+    -   В поле **Application Name** (Имя приложения) должно быть значение **Microsoft Cloud App Security**.
   
          Укажите в поле **Application description** (Описание приложения) следующее: "Microsoft Cloud App Security обеспечивает видимость облачных приложений, помогая контролировать, анализировать и регулировать использование облачных приложений, защищать корпоративные данные, а также обнаруживать подозрительные действия для любого облачного приложения".  
   
