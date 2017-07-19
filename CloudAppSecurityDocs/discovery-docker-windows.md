@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0421cd58de58c44257d20d9fe1e23ac84cdc9f0a
-ms.sourcegitcommit: 7ca888f37e4fe05eda72d8e588be15fbcf4ca9e5
+ms.openlocfilehash: 1ef3958d72150a1a67e92877c58270cbe17fe038
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Настройка и конфигурация автоматического сборщика журналируемых данных с помощью Docker в Windows Server 2016
 
@@ -139,7 +139,7 @@ ms.lasthandoff: 07/11/2017
 
 Настройте сетевые брандмауэры и прокси-серверы для периодического экспорта журналов на выделенный порт Syslog FTP-каталога согласно указаниям в диалоговом окне, например:
 
-        \`BlueCoat_HQ - Destination path: \<\<machine_name\>\>\BlueCoat_HQ\`
+        BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ## <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Шаг 5. Проверка успешного развертывания на портале Cloud App Security
 
