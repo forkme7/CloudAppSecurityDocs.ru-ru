@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b9931f11e50285c1bc6a0053fe0c8ad820851a08
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: ccc2197943c81b1a871375d4134c5aaf01876345
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="external-dlp-integration"></a>Интеграция с внешней системой защиты от потери данных
 
 > [!NOTE] 
-> Эта функция доступна в виде предварительной версии.
+> Эта функция доступна в виде предварительной версии. Отправьте письмо по адресу <mcaspreview@microsoft.com>, чтобы попробовать эту функцию в своем клиенте.
 
 Cloud App Security можно интегрировать с существующими решениями для защиты от потери данных (DLP), чтобы перенести их возможности на облачную среду, применяя в то же время единообразную и согласованную политику как в локальной среде, так и в облаке. Платформа позволяет экспортировать простые в использовании интерфейсы, включая REST API и ICAP, что обеспечивает интеграцию с системами классификации содержимого, такими как Symantec Data Loss Prevention (прежнее название — Vontu Data Loss Prevention) и Forcepoint DLP. 
 
@@ -104,7 +104,7 @@ Cloud App Security сканирует облачную среду и в соот
 
    ![Изменение конфигурации Windows Server](./media/stunnel-windows.png)
  
-13. Откройте файл и вставьте приведенные ниже строки, где **DLP Server IP** — это IP-адрес сервера ICAP, **stunnel-key** — это ключ, созданный в предыдущем шаге, а **CAfile** — это открытый сертификат клиента stunnel Cloud App Security. Кроме того, удалите весь текст, приведенный для образца (в примере это текст Gmail), а затем скопируйте в файл следующие строки:
+13. Откройте файл и вставьте приведенные ниже строки, где **DLP Server IP** — это IP-адрес сервера ICAP, **stunnel-key** — это ключ, созданный в предыдущем шаге, а **CAfile** — это открытый сертификат клиента stunnel Cloud App Security. Кроме того, удалите весь текст, приведенный для примера (в примере это текст Gmail), а затем скопируйте в файл следующие строки:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344

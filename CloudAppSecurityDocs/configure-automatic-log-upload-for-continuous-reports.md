@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports"></a>Настройка автоматической отправки журналов для непрерывных отчетов
-Сборщики журналируемых данных позволяют легко автоматизировать отправку журналов из сети. Сборщик журналируемых данных выполняется в сети и получает журналы через Syslog или FTP. Каждый журнал автоматически обрабатывается, сжимается и передается на портал. Журналы FTP отправляются в Cloud App Security после завершения передачи файла по FTP в сборщик журналируемых данных. Для системных журналов сборщик журналируемых данных записывает полученные журналы на диск, а когда размер файла превышает 40 КБ, отправляет его в Cloud App Security.
-
-После отправки журнала в Cloud App Security он перемещается в каталог резервного копирования, где всегда хранится по меньшей мере 20 последних журналов. При поступлении новых журналов старые удаляются. Когда у сборщика журналируемых данных заканчивается свободное место, он удаляет новые журналы до высвобождения места на диске.
-
-Перед настройкой автоматического сбора файлов журнала проверьте, соответствует ли журнал требуемому типу. В противном случае службе Cloud App Security не удастся проанализировать файл. 
-
->[!NOTE]
->Cloud App Security предоставляет поддержку для перенаправления журналов с сервера SIEM в сборщик журналируемых данных, предполагая, чтобы журналы перенаправляются в исходном формате. Но рекомендуется интегрировать сборщик журналируемых данных напрямую в брандмауэр или прокси-сервер.
-
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Настройка автоматической отправки журналов для непрерывного создания отчетов в виртуальном модуле
 
 ## <a name="technical-requirements"></a>Технические требования
 - Низкоуровневая оболочка: HyperV или VMware
@@ -104,7 +95,7 @@ ms.lasthandoff: 07/03/2017
   
 8.  Щелкните **Использовать имеющийся виртуальный жесткий диск** и выберите файл **VHD**, входящий в скачанный архив.  
   
-9.  Нажмите кнопку **Далее** , а затем — кнопку **Готово**.  
+9.  Нажмите кнопку **Далее**, а затем — кнопку **Готово**.  
     Компьютер будет добавлен в среду Hyper-V.  
   
 9. Щелкните машину в таблице **Виртуальные машины** и нажмите кнопку **Запустить**.   
@@ -144,7 +135,7 @@ sudo network_config
   
      `London Zscaler - Destination path: 614`  
   
-     `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
+     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\  
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Шаг 5. Проверка успешного развертывания на портале Cloud App Security
 

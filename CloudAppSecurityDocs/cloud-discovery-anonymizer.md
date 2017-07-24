@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Анонимизация данных Cloud Discovery
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/28/2017
 
 1.  Существует три способа применения анонимизации данных. 
     
-    - Вы можете настроить анонимизацию данных для определенного файла журнала, [создав новый отчет с моментальным снимком](create-snapshot-cloud-discovery-reports.md) и выбрав **Anonymize private information** (Анонимизировать закрытую информацию).
+    - Чтобы настроить анонимизацию данных для определенного файла журнала, [создайте новый отчет с моментальным снимком](create-snapshot-cloud-discovery-reports.md) и установите флажок **Анонимизация конфиденциальной информации**.
  ![Анонимизация данных снимка](./media/anonymize-log.png)
 
     - Вы можете настроить анонимизацию данных из [автоматической отправки источника данных](configure-automatic-log-upload-for-continuous-reports.md). Для этого выберите **Anonymize private information** (Анонимизировать закрытую информацию) при добавлении нового источника данных.  
