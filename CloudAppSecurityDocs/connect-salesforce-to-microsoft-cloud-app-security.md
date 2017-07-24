@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/23/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Подключение Salesforce к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Salesforce с помощью API соединителя приложений.  
@@ -108,7 +108,7 @@ Cloud App Security обрабатывает события Salesforce следу
   
 - Регистрация событий каждые 15 минут
 - Настройка журнала аудита каждые 15 минут
-- Salesforce экспортирует данные мониторинга журнала событий каждые 24 часа (12:00 по Гринвичу) 
+- Журналы Salesforce отслеживают действия по использованию за 24 часа: с 00:00 до 23:59. Время указано в формате UTC. События в Salesforce создают данные журнала в режиме реального времени. Но файлы журнала Salesforce создаются через день после события, в периоды наименьшей нагрузки. Поэтому данные файла журнала недоступны в течение как минимум одного дня после события. Дополнительные сведения о событиях Salesforce см. в статье об [использовании функции отслеживания событий](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
 ## <a name="see-also"></a>См. также  
