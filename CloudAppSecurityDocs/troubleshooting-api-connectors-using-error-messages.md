@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c046cefa687b67796e2039db079e51f510ea2ff0
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1c796c3933be0678183eae6e52ffd92097880ed8
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Устранение проблем с соединителями с приложениями при помощи сообщений об ошибках
 
 Ошибки в соединителе с приложением можно увидеть в диалоговом окне соединителя с приложением после попытки подключиться к облачному приложению при помощи соединителя с приложением API.
 
 
+> [!div class="mx-tableFixed"]
 |Сообщение об ошибке|Соответствующее приложение|Описание|Разрешение|
 |----|----|----|------------|
 |HttpRequestFailure: Сервер вернул сообщение: 400 — неверный запрос: {"error":{"code":"AF20012","message":"Указанный идентификатор клиента (Tenant_ID) неправильно настроен в системе."|Office 365 |Не найдены назначенные лицензии Office 365. |Назначьте клиенту по крайней мере одну лицензию Office 365.| 
