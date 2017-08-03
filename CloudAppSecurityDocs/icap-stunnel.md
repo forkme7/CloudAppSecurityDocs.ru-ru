@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ccc2197943c81b1a871375d4134c5aaf01876345
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: b3c9181bf1d56fe515d3e1356d38d631fee2cac5
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="external-dlp-integration"></a>Интеграция с внешней системой защиты от потери данных
 
 > [!NOTE] 
-> Эта функция доступна в виде предварительной версии. Отправьте письмо по адресу <mcaspreview@microsoft.com>, чтобы попробовать эту функцию в своем клиенте.
+> Эта функция доступна в виде предварительной версии. Отправьте письмо по адресу <Cloud App Securitypreview@microsoft.com>, чтобы попробовать эту функцию в своем клиенте.
 
 Cloud App Security можно интегрировать с существующими решениями для защиты от потери данных (DLP), чтобы перенести их возможности на облачную среду, применяя в то же время единообразную и согласованную политику как в локальной среде, так и в облаке. Платформа позволяет экспортировать простые в использовании интерфейсы, включая REST API и ICAP, что обеспечивает интеграцию с системами классификации содержимого, такими как Symantec Data Loss Prevention (прежнее название — Vontu Data Loss Prevention) и Forcepoint DLP. 
 
@@ -88,7 +88,7 @@ Cloud App Security сканирует облачную среду и в соот
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. Объедините cert.pem и key.pem и сохраните их в следующем файле: `cat cert.pem key.pem >> stunnel-key.pem`.
+8. Объедините cert.pem и key.pem и сохраните их в следующем файле: `type cert.pem key.pem >> stunnel-key.pem`.
 
 9. [Скачайте открытый ключ](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) и сохраните его в следующем расположении: **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
 
@@ -96,7 +96,7 @@ Cloud App Security сканирует облачную среду и в соот
 
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
+        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
 11. Запустите файл `c:\Program Files (x86)\stunnel\bin\stunnel.exe`, чтобы открыть приложение stunnel. 
 
@@ -112,7 +112,7 @@ Cloud App Security сканирует облачную среду и в соот
         cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
         CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
         TIMEOUTclose = 0
-
+        client = no
 12. Сохраните файл и выберите команду **Reload configuration** (Перезагрузить конфигурацию).
 
 13. Чтобы проверить, все ли работает правильно, в командной строке выполните следующую команду: `netstat -nao  | findstr 11344`.
@@ -159,12 +159,12 @@ Cloud App Security сканирует облачную среду и в соот
 3.  Откройте файл и вставьте приведенные ниже строки, где **DLP Server IP** — это IP-адрес сервера ICAP, **stunnel-key** — это ключ, созданный в предыдущем шаге, а **CAfile** — это открытый сертификат клиента stunnel Cloud App Security.
 
         [microsoft-Cloud App Security]
-         accept = 0.0.0.0:11344
-         connect = **ICAP Server IP**:1344
-          cert = /etc/ssl/private/**stunnel-key**.pem
-          CAfile = /etc/ssl/certs/**CAfile**.pem
-          TIMEOUTclose = 1
-
+        accept = 0.0.0.0:11344
+        connect = **ICAP Server IP**:1344
+        cert = /etc/ssl/private/**stunnel-key**.pem
+        CAfile = /etc/ssl/certs/**CAfile**.pem
+        TIMEOUTclose = 1
+        client = no
 > [!NOTE] 
 > По умолчанию порт stunnel имеет номер 11344. При необходимости его можно изменить, но при этом необходимо записать новый номер порта, так как его потребуется ввести в следующем шаге.
 
@@ -250,6 +250,54 @@ Cloud App Security сканирует облачную среду и в соот
     ![Блокировка ICAP](./media/icap-blocking.png)
  
 
+## <a name="appendix-b-symantec-deployment-guide"></a>Приложение B. Руководство по развертыванию Symantec
+
+Поддерживаемые версии Symantec DLP: 11–14.6. Как указано выше, сервер обнаружения следует развернуть в том же центре обработки данных Azure, что и клиент Cloud App Security. Сервер обнаружения синхронизируется с сервером применения через выделенный туннель IPSec. 
+ 
+### <a name="detection-server-installation"></a>Установка сервера обнаружения 
+Сервер обнаружения, используемый приложением Cloud App Security, является стандартным сервером Network Prevent для веб-сервера. Необходимо изменить несколько параметров конфигурации:
+1.  Отключите **режим пробной версии**:
+    1. Последовательно выбрав **System** (Система)  >  **Servers and Detectors** (Серверы и детекторы), щелкните целевой сервер ICAP. 
+    
+      ![Целевой сервер ICAP](./media/icap-target.png)
+    
+    2. Щелкните **Настроить**. 
+    
+      ![Настройка целевого сервера ICAP](./media/configure-icap-target.png)
+    
+    3. Отключите **режим пробной версии**.
+    
+      ![отключение режима пробной версии](./media/icap-disable-trial-mode.png)
+    
+2. Последовательно выбрав **ICAP** (Сервер ICAP)  >  **Response Filtering** (Фильтрация ответов), измените значение параметра **Ignore Responses Smaller Than** (Игнорировать ответы со значением менее) на 1.
+
+3. Затем добавьте "application/*" в список **Inspect Content Type** (Проверка типа содержимого).
+     ![проверка типа содержимого](./media/icap-inspect-content-type.png)
+4. Нажмите кнопку **Сохранить**.
+
+
+### <a name="policy-configuration"></a>Настройка политики
+Cloud App Security обеспечивает полную поддержку всех типов правил обнаружения, входящих в состав DLP. Поэтому изменять существующие правила нет необходимости. Но чтобы включить полную интеграцию, необходимо изменить конфигурацию всех существующих и новых политик, добавив для них определенное правило ответа. Измените конфигурацию Vontu:
+1.  Последовательно выберите **Управление** > **Политики** > **Response Rules** (Правила ответа) и щелкните **Add Response Rule** (Добавление правила ответа).
+    
+    ![добавление правила ответа](./media/icap-add-response-rule.png)
+
+2.  Убедитесь, что выбран параметр **Automated Response** (Автоматический ответ) и нажмите кнопку **Далее**.
+
+    ![автоматический ответ](./media/icap-automated-response.png)
+
+3. Введите имя правила, например **Блокировка HTTP/HTTPS**. В разделе **Действия** выберите **Блокировка HTTP/HTTPS** и нажмите кнопку **Сохранить**.
+
+    ![блокировка HTTP](./media/icap-block-http.png)
+
+Добавьте созданное правило для всех существующих политик:
+1. В каждой политике перейдите на вкладку **Ответ**.
+2. В раскрывающемся списке **Response rule** (Правило ответа) выберите созданное ранее правило блокировки.
+3. Сохраните политику.
+   
+    ![отключение режима пробной версии](./media/icap-add-policy.png)
+
+Это правило необходимо добавить для всех существующих политик.
 
 
 
