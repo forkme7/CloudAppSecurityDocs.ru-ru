@@ -1,7 +1,7 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Правила поведения при использовании открытого кода Майкрософт
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source. Правила поведения
 
-В этом проекте применяются [правила поведения при использовании открытого кода Майкрософт](https://opensource.microsoft.com/codeofconduct/).
-См. дополнительные сведения на странице с [вопросами и ответами по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/) или отправьте свои дополнительные вопросы и комментарии по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).
+В этом проекте применяются [правила поведения для Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/).
+Дополнительные сведения см. в разделе [часто задаваемых вопросов о правилах поведения](https://opensource.microsoft.com/codeofconduct/faq/) или обратитесь к [opencode@microsoft.com](mailto:opencode@microsoft.com) с любыми дополнительными вопросами или комментариями.
 
 # <a name="docsmicrosoftcom-github-repository"></a>docs.microsoft.com в репозитории Github
 
