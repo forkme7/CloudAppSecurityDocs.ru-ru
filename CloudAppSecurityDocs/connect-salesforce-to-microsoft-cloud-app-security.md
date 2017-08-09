@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: ef16afaa0990b86703f76fe817f86bcdd6ba38e6
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Подключение Salesforce к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Salesforce с помощью API соединителя приложений.  
@@ -38,11 +38,12 @@ ms.lasthandoff: 07/16/2017
   
     -   Войдите в учетную запись Salesforce и перейдите на страницу **Установка**.  
   
-    -   В разделе **Управление пользователями** перейдите на страницу **Профили**.  
+    -   В разделе **Управление пользователями** перейдите на страницу **Профили пользователей**.  
   
          ![профили управления пользователями salesforce](./media/salesforce-manageusers-profiles.png "профили управления пользователями salesforce")  
   
-    -   Выберите профиль, используемый для развертывания Cloud App Security, и нажмите кнопку **Изменить**. Это профиль для использования учетной записи службы Cloud App Security при настройке соединителя приложения.  
+    -   Создайте профиль, щелкнув **Создать**. 
+    - Выберите профиль, созданный для развертывания Cloud App Security, и нажмите кнопку **Изменить**. Это профиль для использования учетной записи службы Cloud App Security при настройке соединителя приложения.  
   
          ![изменение профиля salesforce](./media/salesforce-edit-profile.png "изменение профиля salesforce")  
   
@@ -108,7 +109,7 @@ Cloud App Security обрабатывает события Salesforce следу
   
 - Регистрация событий каждые 15 минут
 - Настройка журнала аудита каждые 15 минут
-- Журналы Salesforce отслеживают действия по использованию за 24 часа: с 00:00 до 23:59. Время указано в формате UTC. События в Salesforce создают данные журнала в режиме реального времени. Но файлы журнала Salesforce создаются через день после события, в периоды наименьшей нагрузки. Поэтому данные файла журнала недоступны в течение как минимум одного дня после события. Дополнительные сведения о событиях Salesforce см. в статье об [использовании функции отслеживания событий](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
+- Журналы Salesforce помогают отслеживать действия по использованию в рамках 24-часового периода — с 00:00 до 23:59 (время в формате UTC). События в Salesforce генерируют данные журнала в режиме реального времени. При этом файлы журнала создаются Salesforce через день после возникновения события в часы наименьшей нагрузки. Следовательно, данные журнала остаются недоступными как минимум в течение одного день после возникновения события. Дополнительные сведения о событиях Salesforce см. в руководстве по [мониторингу событий](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
 ## <a name="see-also"></a>См. также  

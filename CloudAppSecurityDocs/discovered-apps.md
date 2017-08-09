@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
-ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
+ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-discovered-apps"></a>Работа с обнаруженными приложениями
 
@@ -51,6 +51,9 @@ ms.lasthandoff: 07/05/2017
 ![Фильтры обнаруженных приложений](./media/discovered-app-filters.png)
 
 После получения результатов фильтрации можно [отменить санкционирование приложений и заблокировать их](governance-discovery.md) все сразу с помощью флажка группового действия. После отмены санкционирования приложений можно запретить их использование в среде с помощью скрипта блокировки.
+
+Кроме того, можно изучить обнаруженные приложения до уровня поддомена, чтобы определить конкретные экземпляры, которые используются. 
+
 
 ## <a name="discovered-app-filters"></a>Фильтры обнаруженных приложений
 
