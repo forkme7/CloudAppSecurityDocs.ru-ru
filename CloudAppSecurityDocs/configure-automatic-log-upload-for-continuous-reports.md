@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Настройка автоматической отправки журналов для непрерывного создания отчетов в виртуальном модуле
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Настройка автоматической отправки журналов для непрерывных отчетов в виртуальном устройстве
 
 ## <a name="technical-requirements"></a>Технические требования
 - Низкоуровневая оболочка: HyperV или VMware
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/16/2017
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Шаг 1. Конфигурация веб-портала: определение источников данных и связывание их со сборщиком журналируемых данных  
   
 1.  Перейдите на страницу настройки автоматической отправки:  
-    На портале Cloud App Security щелкните значок "настройки" ![значок "настройки"](./media/settings-icon.png "settings icon"), после чего выберите **Log collectors** (Сборщики журналов).  
+    На портале Cloud App Security щелкните значок настроек ![значок настроек](./media/settings-icon.png "settings icon"), а затем выберите **Сборщики журналов**.  
   
 3.  Для каждого брандмауэра или прокси-сервера, с которого вы хотите отправить журналы, создайте соответствующий источник данных:  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 07/16/2017
   
     b.  Присвойте **Имя** прокси-серверу или брандмауэру.  
   
-    c.  Выберите устройство в списке **Источник**.  
+    c.  Выберите устройство в списке **Источник**. Если вы выбрали **пользовательский формат журнала** для работы с сетевым устройством, которое не указано в списке, см. инструкции по настройке из статьи [Использование настраиваемого средства синтаксического анализа журналов](custom-log-parser.md).
   
     d.  Сравните журнал с примером ожидаемого формата журнала. Если формат вашего файла журнала не соответствует этому примеру, необходимо добавить источник данных с параметром **Другой**.  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 07/16/2017
 1.  Откройте диспетчер Hyper-V.  
   
 2.  Выберите **Создать**, **Виртуальная машина** и нажмите кнопку **Далее**.  
- ![обнаружение виртуальной машины Hyper-V](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![виртуальная машина hyper-v обнаружения](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
 3.  Укажите **Имя** новой виртуальной машины, например CloudAppSecurityLogCollector01.then, и нажмите кнопку **Далее**.  
   
@@ -95,7 +95,7 @@ ms.lasthandoff: 07/16/2017
   
 8.  Щелкните **Использовать имеющийся виртуальный жесткий диск** и выберите файл **VHD**, входящий в скачанный архив.  
   
-9.  Нажмите кнопку **Далее**, а затем — кнопку **Готово**.  
+9.  Нажмите кнопку **Далее**, а затем — кнопку **Готово**.  
     Компьютер будет добавлен в среду Hyper-V.  
   
 9. Щелкните машину в таблице **Виртуальные машины** и нажмите кнопку **Запустить**.   

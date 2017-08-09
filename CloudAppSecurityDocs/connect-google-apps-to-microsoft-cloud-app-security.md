@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/28/2017
+ms.date: 8/4/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: af60110859b027a9e9d58443f202752d6044d1a2
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
@@ -88,7 +88,7 @@ ms.lasthandoff: 07/04/2017
 12.  Файл сертификата P12 будут сохранен на компьютере.  
         
 12. В правой части экрана **Credentials** (Учетные данные) щелкните **Manage service accounts** (Управление учетными записями служб).  
-       ![Учетная запись с учетными данными G Suite](./media/google10.png "G Suite credentials service account")  
+       ![Данные учетной записи службы G Suite](./media/google10.png "G Suite credentials service account")  
   
 13. Щелкните три точки справа от созданной учетной записи службы и выберите **Изменить**.  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 07/04/2017
 16. Откройте меню Google, щелкнув три горизонтальные линии рядом с Google Cloud Platform, и выберите **API manager** (Диспетчер API), за которым следует **Dashboard** (Панель мониторинга).  
     
 17. Прокрутите список включенных API-интерфейсов и щелкните значок шестеренки рядом с **API Google Drive**.   
-       ![Выбранный Google Drive](./media/google14.png "google14")  
+       ![выбранный Google Drive](./media/google14.png "google14")  
 
 18. Заполните следующие поля:
 
@@ -119,6 +119,9 @@ ms.lasthandoff: 07/04/2017
   
 19. В списке **Enabled APIs** (Включенные API) щелкните значок параметров с шестеренкой рядом с **Google Apps Marketplace SDK**. 
          ![конфигурация google marketplace SDK](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > Если значок с шестеренкой недоступен, можно щелкнуть **Google Apps Marketplace SDK** вместо него. 
 20. Откройте вкладку **Configuration** (Конфигурация). 
   
     -   Скопируйте отображаемое сверху значение **Project number (App ID)** (Номер проекта — идентификатор приложения) для использования в дальнейшем.  
