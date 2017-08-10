@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/8/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75b5a6fb3707872f0455da1a1856b55adb17c597
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
+ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Подключение Azure к Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/07/2017
 
 Cloud App Security подключается к Azure через концентраторы событий. Этот раздел содержит указания по потоковой передаче всех ваших журналов действий в общий концентратор событий в вашей подписке. 
 
-### <a name="step-1-stream-your-azure-activity"></a>Шаг 1: потоковая передача ваших действий в Azure
+### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>Шаг 1: потоковая передача журналов ваших действий Azure в концентраторы событий
 
 1.  Настройте потоковую передачу журнала действий вашей подписки Azure в концентратор событий. Следуйте официальному руководству в документации Azure: https://docs.microsoft.com/ru-ru/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
@@ -35,10 +35,13 @@ Cloud App Security подключается к Azure через концент
  > При наличии нескольких подписок Azure это нужно будет сделать для каждой из них, используя общий концентратор событий.
 
  После выполнения указаний будет создан новый концентратор событий в выбранном вами пространстве имен.
+ 
+ > [!NOTE]
+ > Если при попытке экспортировать журналы действий возникает ошибка, перейдите в Azure к колонке **Поставщики ресурсов** и убедитесь, что компонент microsoft.insights зарегистрирован.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Шаг 2: получение строки подключения к концентратору событий
 
-1.  Перейдите к колонке концентраторов событий.
+1.  Перейдите к колонке **Концентраторы событий**.
   
    ![Колонка концентраторов событий](media/azure-event-hubs.png "Концентраторы событий Azure")
 
@@ -53,6 +56,9 @@ Cloud App Security подключается к Azure через концент
 4.  Выберите новый концентратор событий, созданный Azure Monitor. Он называется **insights-operational-logs**.
   
     ![Операционные журналы аналитики](media/azure-insight-operational-logs.png "Операционные журналы аналитики Azure")
+  
+  > [!NOTE]
+  > Создание концентратора событий может занять несколько минут.
 
 5. Создайте политику доступа, которая предоставит Cloud App Security разрешение на чтение из концентратора событий. Для этого щелкните **Политики общего доступа**, а затем — **Добавить**.
   
@@ -78,7 +84,10 @@ Cloud App Security подключается к Azure через концент
   
 4.  В поле **Строка подключения** вставьте строку, скопированную вами на предыдущем шаге.  
   
-5.  В поле **Группа потребителей** введите "$Default", если вы не создали для использования другую группу.
+5.  В поле **Группа потребителей** введите `$Default`
+    
+   >[!NOTE] 
+   > Если вы создали для использования другую группу, вставьте в поле **Группа потребителей** ее имя.
   
 6.  Нажмите кнопку **Подключить**.
 8.  Убедитесь, что подключение установлено, щелкнув элемент **Тестирование API**.  

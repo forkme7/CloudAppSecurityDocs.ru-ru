@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-discovered-apps"></a>Работа с обнаруженными приложениями
 
@@ -52,8 +52,13 @@ ms.lasthandoff: 08/03/2017
 
 После получения результатов фильтрации можно [отменить санкционирование приложений и заблокировать их](governance-discovery.md) все сразу с помощью флажка группового действия. После отмены санкционирования приложений можно запретить их использование в среде с помощью скрипта блокировки.
 
-Кроме того, можно изучить обнаруженные приложения до уровня поддомена, чтобы определить конкретные экземпляры, которые используются. 
+Анализ облака позволяет вам еще лучше контролировать использование облака в организации, выявляя конкретные используемые экземпляры в обнаруженных поддоменах.
 
+Например, вы можете анализировать разные сайты SharePoint.
+
+Это поддерживается только в брандмауэрах и прокси-серверах, содержащих данные целевых URL-адресов. Список поддерживаемых модулей: [поддерживаемые брандмауэры и прокси-серверы](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+![Сведения о поддоменах](./media/discovery-domains.png)  
 
 ## <a name="discovered-app-filters"></a>Фильтры обнаруженных приложений
 
