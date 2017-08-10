@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1fab1835ec1ed1a4a245b87bd5324e15a28a646
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2290c594595e7754ef0e6e29d70734ff99a42b23
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="external-dlp-integration"></a>Интеграция с внешней системой защиты от потери данных
 
@@ -52,7 +52,7 @@ Cloud App Security сканирует облачную среду и в соот
 
 Настройте сервер ICAP, записав номер порта и задав для параметра **Режим** значение **Блокировка**. В режиме блокировки сервер ICAP ретранслирует решение о классификации обратно в Cloud App Security.
 
-Инструкции по выполнению этого действия см. в документации к вашему внешнему решению для защиты от потери данных. Пример см. в разделе [Приложение А. Настройка сервера ICAP Forcepoint](#forcepoint).
+Инструкции по выполнению этого действия см. в документации к вашему внешнему решению для защиты от потери данных. В качестве примера см. [установки server приложение A: Forcepoint ICAP](#forcepoint) и [руководство по развертыванию приложение б: Symantec](#symantec).
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>Шаг 2. Настройка сервера stunnel 
 
@@ -252,9 +252,9 @@ Cloud App Security сканирует облачную среду и в соот
     ![Блокировка ICAP](./media/icap-blocking.png)
  
 
-## <a name="appendix-b-symantec-deployment-guide"></a>Приложение Б. Руководство по развертыванию Symantec
+## Приложение Б., "Руководство по развертыванию Symantec" <a name="symantec"></a>
 
-Поддерживается решение Symantec для защиты от потери данных (DLP) версий 11–14.6. Как указано выше, сервер обнаружения нужно развернуть в том же центре обработки данных Azure, что и клиент Cloud App Security. Сервер обнаружения синхронизируется с сервером принудительной защиты через выделенный туннель IPSec. 
+Поддерживается решение Symantec DLP версии 11 и новее. Как указано выше, сервер обнаружения нужно развернуть в том же центре обработки данных Azure, что и клиент Cloud App Security. Сервер обнаружения синхронизируется с сервером принудительной защиты через выделенный туннель IPSec. 
  
 ### <a name="detection-server-installation"></a>Установка сервера обнаружения 
 Сервер обнаружения, используемый Cloud App Security, представляет собой стандартный сервер с поддержкой модуля Network Prevent for Web. Вам потребуется изменить несколько параметров настройки.

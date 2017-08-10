@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e198a945682771eee27b97985607ee997ccd3e4
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 7fe91dbeba5b899ca7e19a2b8bf3458fa36f52fe
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Установка и настройка в Ubuntu
+
+> [!NOTE]
+> Этот компонент выпускается для клиентов постепенно. Если вы хотите получить доступ к предварительной версии, обратитесь в службу поддержки.
 
 ## <a name="technical-requirements"></a>Технические требования
 
@@ -45,7 +48,9 @@ ms.lasthandoff: 08/03/2017
 
 -   Производительность ввода-вывода виртуальной машины, назначенная ИТ-специалистом, — определяет скорость записи журналов на диск сборщика. Сборщик журналируемых данных снабжен встроенным защитным механизмом, который контролирует скорость поступления журналов и сравнивает ее со скоростью передачи. В случае перегрузки сборщик начинает удалять файлы журнала. Если нагрузка обычно превышает 50 ГБ в час, рекомендуется разделить трафик между несколькими сборщиками журналируемых данных.
 
-## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Шаг 1. Конфигурация веб-портала: определение источников данных и связывание их со сборщиком журналируемых данных
+## <a name="set-up-and-configuration"></a>Настройка и конфигурация  
+
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Шаг 1. Конфигурация веб-портала: определение источников данных и связывание их со сборщиком журналируемых данных
 
 1.  Перейдите на страницу настройки автоматической отправки:  <br></br>На портале Cloud App Security щелкните значок настроек ![значок настроек](./media/settings-icon.png), а затем выберите пункт **Сборщики данных журнала**.
 
@@ -93,7 +98,7 @@ ms.lasthandoff: 08/03/2017
 
   ![ubuntu4](./media/ubuntu4.png)
 
-## <a name="step-2--on-premises-deployment-of-your-machine"></a>Шаг 2. Локальное развертывание виртуальной машины
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>Шаг 2. Локальное развертывание виртуальной машины
 
 > [!Note]
 > Ниже описывается развертывание в Ubuntu. Действия по развертыванию на других платформах немного отличаются.
@@ -130,13 +135,13 @@ ms.lasthandoff: 08/03/2017
 
   ![ubuntu8](./media/ubuntu8.png)
 
-## <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Шаг 3. Локальная конфигурация сетевых устройств
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Шаг 3. Локальная конфигурация сетевых устройств
 
 Настройте сетевые брандмауэры и прокси-серверы для периодического экспорта журналов на выделенный порт Syslog FTP-каталога согласно указаниям в диалоговом окне, например:
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Шаг 4. Проверка успешного развертывания на портале Cloud App Security
+### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Шаг 4. Проверка успешного развертывания на портале Cloud App Security
 
 Проверьте состояние сборщика в таблице **Сборщик журналов** и убедитесь, что оно имеет значение **Подключен**. Если установлено значение **Создан**, возможно, что подключение и анализ сборщика не завершены.
 
@@ -146,7 +151,7 @@ ms.lasthandoff: 08/03/2017
 
 Если возникли проблемы во время развертывания, см. статью [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-## <a name="optional---create-custom-continuous-reports"></a>Дополнительно — создание настраиваемых непрерывных отчетов
+### <a name="optional---create-custom-continuous-reports"></a>Дополнительно — создание настраиваемых непрерывных отчетов
 
 Убедившись, что журналы отправляются в Cloud App Security и создаются отчеты, вы можете создать настраиваемые отчеты. Вы можете создавать настраиваемые отчеты об обнаружении на основе групп пользователей Azure Active Directory. Например, если нужно просмотреть сведения об использовании облачных приложений отделом маркетинга, можно импортировать соответствующую группу с помощью функции импорта группы пользователей, а затем создать для нее пользовательский отчет. Можно также настроить отчет на основе тега IP-адреса или диапазонов IP-адресов.
 
