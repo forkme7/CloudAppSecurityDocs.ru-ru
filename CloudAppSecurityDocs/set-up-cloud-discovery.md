@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Настройка Cloud Discovery
 Cloud Discovery анализирует журналы трафика на основе каталога облачных приложений Cloud App Security, включающего более 15 000 приложений, которые оцениваются по более чем 60 факторов риска. Это обеспечивает непрерывный контроль использования облачной среды, теневых ИТ-ресурсов и риска, который эти ресурсы представляют для организации.
@@ -123,7 +123,7 @@ Cloud Discovery анализирует журналы трафика на осн
 |Squid (Native)|**Да**|Нет|**Да**|**Да**|Нет|**Да**|
 |Websense — анализ подробного отчета (CSV)|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
 |Websense — журнал действий в Интернете (CEF)|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
-|Zscaler|**Да**|Нет|**Да**|Нет|**Да**|**Да**|
+|Zscaler|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
 
 
 
