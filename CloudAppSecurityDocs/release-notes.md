@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Новые возможности в Cloud App Security
+
+
+## <a name="cloud-app-security-release-103"></a>Cloud App Security, выпуск 103 
+Выпущен 13 августа 2017 г.
+
+- В Cloud App Security добавлена поддержка собственной защиты Azure Information Protection для следующих файлов Office: .docm, .docx, .dotm, .dotx, .xlam, .xlsb, .xlsm, .xlsx, .xltx, .xps, .potm, .potx, .ppsx, .ppsm, .pptm, .pptx, .thmx, .vsdx, .vsdm, .vssx, .vssm, .vstx, .vstm (вместо универсальной защиты).
+
+- Любому администратору соответствия требованиям Azure Active Directory будет автоматически предоставлены аналогичные разрешения в Cloud App Security, включая возможность только чтения и управления оповещениями, создания и изменения политик файлов, разрешения действий системы управления файлами и просмотра всех встроенных отчетов в разделе "Управление данными". 
+
+- Мы расширили контекст нарушения защиты от потери данных с 40 до 100 символов, чтобы помочь вам лучше понять контекст нарушения.
+
+- Подробные сообщения об ошибках в средстве отправки пользовательских журналов Cloud Discovery позволяют без труда находить и устранять ошибки при отправке журналов.
+
+- Блок скрипта Cloud Discovery был расширен для поддержки формата Zscaler.
+
+- Новый фактор риска в каталоге облачных приложений: хранение данных после удаления учетной записи. Он позволяет убедиться в том, что данные полностью удаляются после удаления учетной записи из облачного приложения.
+
 
 ## <a name="cloud-app-security-release-102"></a>Cloud App Security, выпуск 102 
 Выпущен 30 июля 2017 г.
