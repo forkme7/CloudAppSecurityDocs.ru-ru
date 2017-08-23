@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3ac136b06c0debfc42a1b4d5ece6cd6ce53f57af
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Что такое Cloud App Security?
 
@@ -80,6 +80,9 @@ Cloud App Security использует API, предоставленные об
 ### <a name="policy-control"></a>Управление политиками  
 
 Вы можете использовать политики для определения поведения пользователей в облаке. Используйте политики, чтобы обнаруживать опасное поведение, нарушения или подозрительные точки данных и действия в облачной среде. При необходимости вы можете использовать политики, чтобы внедрить процессы исправления для полного устранения рисков. Несколько типов политик связаны с различными типами сведений, которые нужно собрать об облачной среде, и несколькими типами корректирующих действий, которые могут потребоваться.  
+
+## <a name="related-videos"></a>Видео по теме
+- [Join the Security Community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Участие в сообществе безопасности)
 
 ## <a name="see-also"></a>См. также  
 
