@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/10/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 350f90af7114d8b34aaaa6062bb3c14379fd3dfa
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: 003c56d1d05c35adac55c568d72beab18243519f
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="azure-information-protection-integration"></a>Интеграция Azure Information Protection
 
@@ -140,6 +140,9 @@ Cloud App Security позволяет исследовать файлы и за�
 Дополнительные сведения о работе Cloud App Security с Azure Information Protection см. в разделе [Защита данных от ошибок пользователей](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
 
  
+## <a name="related-videos"></a>Видео по теме  
+[MCAS + AIP Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations) (Интеграция Microsoft Cloud App Security и Azure Information Protection)  
+
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
 [Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
