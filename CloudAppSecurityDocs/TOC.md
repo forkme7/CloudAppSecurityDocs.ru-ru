@@ -1,6 +1,7 @@
 # Общие сведения и знакомство с возможностями
 ## [Что такое CAS?](what-is-cloud-app-security.md)
 ## [Новые возможности](release-notes.md)
+## [CAS ыпуски](editions-cloud-app-security.md)
 # Развертывание
 ## [Начало работы](getting-started-with-cloud-app-security.md)
 ## [Основная настройка](general-setup.md)
