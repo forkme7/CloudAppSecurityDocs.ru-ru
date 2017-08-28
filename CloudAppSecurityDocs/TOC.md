@@ -5,6 +5,7 @@
 # Развертывание
 ## [Начало работы](getting-started-with-cloud-app-security.md)
 ## [Основная настройка](general-setup.md)
+### [Сетевые требования](network-requirements.md)
 ### [Управление администраторами](manage-admins.md)
 #### [Параметры администратора](admin-settings.md)
 ### [Параметры почты](mail-settings.md)
