@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a102951d6600f960ee9c045f6ce6fdb3adbe1f42
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 37f288aa66213fde4ad3a0146064b2c44ea79e4a
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Настройка автоматической отправки журналов для непрерывных отчетов
 
@@ -29,7 +29,8 @@ ms.lasthandoff: 08/07/2017
 Перед настройкой автоматического сбора файлов журнала проверьте, соответствует ли журнал требуемому типу. В противном случае службе Cloud App Security не удастся проанализировать файл.
 
 > [!NOTE]
-> Cloud App Security предоставляет поддержку для перенаправления журналов с сервера SIEM в сборщик журналируемых данных, предполагая, чтобы журналы перенаправляются в исходном формате. Но настоятельно рекомендуется непосредственно интегрировать сборщик журналируемых данных с вашим брандмауэром и прокси-сервером.
+>-  Cloud App Security предоставляет поддержку для перенаправления журналов с сервера SIEM в сборщик журналируемых данных, предполагая, чтобы журналы перенаправляются в исходном формате. Но настоятельно рекомендуется непосредственно интегрировать сборщик журналируемых данных с вашим брандмауэром и прокси-сервером.
+>- Сборщик журналируемых данных сжимает данные перед отправкой. Исходящий трафик сборщика журналируемых данных составляет 10 % от размера журналов трафика, которые он получает. 
 
 ## <a name="deployment-modes"></a>Режимы развертывания
 

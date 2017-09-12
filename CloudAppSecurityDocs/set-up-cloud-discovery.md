@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 9/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Настройка Cloud Discovery
 Cloud Discovery анализирует журналы трафика на основе каталога облачных приложений Cloud App Security, включающего более 15 000 приложений, которые оцениваются по более чем 60 факторов риска. Это обеспечивает непрерывный контроль использования облачной среды, теневых ИТ-ресурсов и риска, который эти ресурсы представляют для организации.
@@ -42,9 +42,10 @@ Cloud Discovery анализирует журналы трафика на осн
  
  
 >[!NOTE]
->Данные непрерывных отчетов анализируются два раза в день.
+>- Данные непрерывных отчетов анализируются два раза в день.
+>- Сборщик журналируемых данных сжимает данные перед отправкой. Исходящий трафик сборщика журналируемых данных составляет 10 % от размера журналов трафика, которые он получает. 
  
-## <a name="using-traffic-logs-for--cloud-discovery"></a>Использование журналов трафика для Cloud Discovery
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Использование журналов трафика для Cloud Discovery
 Служба Cloud Discovery использует данные из ваших журналов трафика. Чем подробнее журнал, тем выше уровень контроля. Службе Cloud Discovery требуются данные веб-трафика со следующими атрибутами:
 - Дата транзакции
 - Исходный IP-адрес
