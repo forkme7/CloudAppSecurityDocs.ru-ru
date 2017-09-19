@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1a51be2be508459866f284261643001d12ebe0c0
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Подключение Box к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Box с помощью интерфейсов API соединителя приложений.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 06/28/2017
   
          ![приложения box](./media/box-apps.png "приложения box")  
   
-    -   Если выбран пункт **Unpublished Applications** (Неопубликованные приложения), в текстовом поле **Except for** (Кроме) добавьте серийный номер приложения Cloud App Security (`nduj1o3yavu30dii7e03c3n7p49cj2qh`), а затем нажмите кнопку **Save** (Сохранить).  
+    -   Если выбран пункт **Unpublished Applications** (Неопубликованные приложения), в текстовом поле **Except for** (Кроме) добавьте серийный номер приложения Cloud App Security.<br></br>Центр обработки данных US1: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>Центр обработки данных EU1: `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Затем нажмите кнопку **Сохранить**. Сведения о том, к какому центру обработки данных вы подключились, см. в статье о [токенах API](api-tokens.md). 
   
          ![параметр "кроме" в box](./media/box-settings-except-for.png "параметр "кроме" в box")  
   

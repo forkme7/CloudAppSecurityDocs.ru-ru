@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 9/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
+ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="connect-apps"></a>Подключение приложений 
 Соединители приложений используют API поставщиков приложений, чтобы расширить возможности видимости и контроля в Cloud App Security для приложений, к которым вы подключаетесь.  
@@ -85,34 +85,8 @@ Cloud App Security развертывается с правами системн
   
   
 ## <a name="prerequisites"></a>Предварительные условия  
-Для некоторых приложений может потребоваться добавить следующие IP-адреса в список разрешений, чтобы разрешить Cloud App Security сбор журналов и предоставить доступ для консоли Cloud App Security:  
-  
--   Для журналов:  
-  
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
 
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
-  
-  
--   Для консоли:  
-  
-     104.42.231.28  
+- Для некоторых приложений может потребоваться добавить перечисленные ниже IP-адреса в список разрешений, чтобы разрешить Cloud App Security сбор журналов и предоставить доступ для консоли Cloud App Security. Подробнее см. в разделе [Сетевые требования](network-requirements.md).
 
 - Для каждого приложения, которое необходимо подключить при помощи интеграции API Cloud App Security, рекомендуется создать в Cloud App Security выделенную учетную запись службы с правами администратора.  
   
