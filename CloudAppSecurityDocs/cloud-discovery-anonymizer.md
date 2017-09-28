@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
+ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 09/19/2017
 ---
-## <a name="cloud-discovery-data-anonymization"></a>Анонимизация данных Cloud Discovery
+# <a name="cloud-discovery-data-anonymization"></a>Анонимизация данных Cloud Discovery
 
 Анонимизация данных Cloud Discovery позволяет защищать конфиденциальность пользователей. После отправки журнала данных на портал Cloud App Security из журнала удаляются имена пользователей и заменяются зашифрованными именами пользователей. Таким образом, все действия в облаке остаются анонимными. При необходимости администраторы смогут раскрыть имя пользователя для служебного расследования (например, при нарушении целостности системы безопасности или при подозрительных действиях со стороны пользователя). Если администратор имеет основания подозревать конкретного пользователя, он также может использовать в своем расследовании зашифрованное имя пользователя. Преобразование каждого имени пользователя фиксируется в **журнале управления** на портале.
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/16/2017
 
 1.  Существует три способа применения анонимизации данных. 
     
-    - Чтобы настроить анонимизацию данных для определенного файла журнала, [создайте новый отчет с моментальным снимком](create-snapshot-cloud-discovery-reports.md) и установите флажок **Анонимизация конфиденциальной информации**.
+    - Вы можете настроить анонимизацию данных для определенного файла журнала, [создав новый отчет с моментальным снимком](create-snapshot-cloud-discovery-reports.md) и выбрав **Anonymize private information** (Анонимизировать закрытую информацию).
  ![Анонимизация данных снимка](./media/anonymize-log.png)
 
     - Вы можете настроить анонимизацию данных из [автоматической отправки источника данных](configure-automatic-log-upload-for-continuous-reports.md). Для этого выберите **Anonymize private information** (Анонимизировать закрытую информацию) при добавлении нового источника данных.  
