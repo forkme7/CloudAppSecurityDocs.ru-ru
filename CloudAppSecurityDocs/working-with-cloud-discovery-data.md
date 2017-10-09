@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 9/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b76c732e35258212b4ab97d5e21811a5f2f2828
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 63631cef50738096e98414a1a9dfe7a1218fc475
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="discover"></a>Обнаружить
 
@@ -77,6 +77,10 @@ ms.lasthandoff: 06/28/2017
 6.  Выберите требуемые фильтры данных: **Подразделения**, **Теги IP-адреса** или **Диапазоны IP-адресов**. Дополнительные сведения о работе с диапазонами и тегами IP-адресов см. в статье [Организация данных в соответствии с потребностями](ip-tags.md).  
   
     ![создание настраиваемого непрерывного отчета](./media/create-custom-continuous-report.png) 
+
+
+> [!NOTE]
+> Все пользовательские отчеты могут содержать не больше 1 ГБ несжатых данных. Если объем данных превышает 1 ГБ, в отчет экспортируется первый 1 ГБ данных.
 
 ## <a name="deleting-cloud-discovery-data"></a>Удаление данных Deleting Cloud  
 Существует ряд причин, по которым может потребоваться удалить данные Cloud Discovery. Удалять их рекомендуется в следующих случаях:  

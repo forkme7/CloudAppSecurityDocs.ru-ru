@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/6/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87bff98075e9ec170442f5611828c79bf7bd43b6
-ms.sourcegitcommit: ccee5664f5c49d5bae3748021d5b20dcf637d317
+ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Установка и настройка средства Docker для автоматического сборщика журналируемых данных в Windows Server 2016
 
@@ -39,6 +39,9 @@ ms.lasthandoff: 09/08/2017
     -   Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog.
 
     -   Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, contoso.cloudappsecurity.com) через порт 443.
+
+> [!NOTE]
+> Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в [диапазон IP-адресов центра обработки данных Microsoft Azure через порт 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Производительность сборщика журналируемых данных
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b48266e4cddbb61c13df5f361d50bc4931e77258
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 ##  <a name="mailsettings"></a> Настройка уведомлений электронной почты  
 В строке меню щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Параметры почты**, чтобы задать параметры для уведомлений электронной почты, отправляемых из Cloud App Security администраторам, запрашивающим предупреждения, и уведомлений, отправляемых конечным пользователям по поводу нарушений, к которым они имеют отношение.  
+
+Сведения об IP-адресе сервера электронной почты для Cloud App Security, который нужно включить в список разрешенных в службе блокирования нежелательной почты, см. в перечне [требований к сети](network-requirements.md). 
   
 ![меню "параметры почты"](./media/mail-setting-menu.png "меню "параметры почты"")  
   
