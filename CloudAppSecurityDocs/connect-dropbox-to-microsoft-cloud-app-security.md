@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02cf326722410041b112caf67dc7d33cf72fe375
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 56195253a603671d2f273616b652f5d821e80a51
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Подключение Dropbox к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Dropbox с помощью интерфейсов API соединителя.  
@@ -29,7 +29,7 @@ ms.lasthandoff: 06/28/2017
   
 1.  В консоли Cloud App Security щелкните **Исследовать**, а затем — **Подключенные приложения**.  
   
-2.  На странице **App connectors** (Соединители приложений) щелкните знак "плюс", а затем — **Dropbox**.  
+2.  На странице **Соединители приложений** щелкните знак "плюс", а затем — **Dropbox**.  
   
      ![подключение dropbox](./media/connect-dropbox.png "подключение dropbox")  
   
@@ -39,9 +39,9 @@ ms.lasthandoff: 06/28/2017
   
 5.  Щелкните **Перейти по ссылке**.  
   
-     Открывается страница входа в Dropbox. Введите свои учетные данные, чтобы разрешить Cloud App Security доступ к экземпляру Dropbox вашей группы.  
+     Откроется страница входа в Dropbox. Введите свои учетные данные, чтобы разрешить Cloud App Security доступ к экземпляру Dropbox вашей группы.  
   
-6.  Dropbox запрашивает, следует ли Cloud App Security разрешить доступ к журналу действий и сведениям группы, а также выполнение любых действий от лица любого члена группы. Для продолжения нажмите кнопку **Разрешить**.  
+6.  Dropbox запросит, следует ли Cloud App Security разрешить доступ к журналу действий и сведениям группы, а также выполнять действия от имени любого члена группы. Для продолжения нажмите кнопку **Разрешить**.  
   
 7.  После возвращения в консоль Cloud App Security должно появиться сообщение об успешном подключении Dropbox.  
   
@@ -52,11 +52,11 @@ ms.lasthandoff: 06/28/2017
 После подключения Dropbox вы получите события за 60 дней, предшествовавших подключению.
 
 > [!NOTE] 
-> События добавления файлов в Dropbox будут отображаться в Cloud App Security как события отправки файлов для обеспечения соответствия с другими приложениями, подключенными к Cloud App Security. 
+> События добавления файлов в Dropbox отображаются в Cloud App Security как события отправки файлов для обеспечения соответствия с другими приложениями, подключенными к Cloud App Security. 
  
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Получить техническую поддержку можно на странице службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   

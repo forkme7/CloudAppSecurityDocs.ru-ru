@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/4/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af60110859b027a9e9d58443f202752d6044d1a2
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 1b33f8bcb27cc303463ac83b46098bf82d66d25c
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
@@ -26,13 +26,13 @@ ms.lasthandoff: 08/07/2017
   
 ## <a name="configure-g-suite"></a>Настройка G Suite  
   
-1.  Являясь суперадминистратором G Suite, войдите на сайт [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
+1.  Войдите на сайт [https://cloud.google.com/console/project](https://cloud.google.com/console/project) как суперадминистратор G Suite.  
   
 2.  Щелкните **Create project** (Создать проект) для запуска нового проекта.  
   
      ![google1](./media/google1.png "google1")  
   
-3.  На экране **Новый проект** назовите проект следующим образом:</br>
+3.  На экране **New project** (Новый проект) присвойте имя проекту:</br>
     **Microsoft Cloud App Security**, а затем нажмите кнопку **Создать**.  
            ![google2](./media/google2.png "google2")  
   
@@ -71,39 +71,39 @@ ms.lasthandoff: 08/07/2017
   
     -   Нажмите кнопку **Сохранить**.  
   
-     ![имя продукта google](./media/google6.png "google6")  
+     ![Имя продукта Google](./media/google6.png "google6")  
   
 9. На экране **API Credentials** (Учетные данные API) щелкните стрелку рядом с полем **Create credentials** (Создать учетные данные).  
   
-     ![учетные данные google](./media/google7.png "google7")  
+     ![Учетные данные Google](./media/google7.png "google7")  
 
 10. Выберите пункт **Service account key** (Ключ учетной записи службы).
 
-     ![ключ учетной записи службы google](./media/google8.png "google8")  
+     ![Ключ учетной записи службы Google](./media/google8.png "google8")  
   
-11. В разделе **Create service account key** (Создание ключа учетной записи службы) выберите **New service account** (Новая учетная запись службы) и введите любое имя, например **Service account 1**. В разделе **Role** (Роль) выберите **Project** (Проект), а затем — **Editor** (Редактор), после этого в разделе **Key type** (Тип ключа) выберите **P12** и нажмите кнопку **Create** (Создать). Установите флажок **Enable G Suite Domain-wide Delegation** (Включить делегирование в рамках домена G Suite) и нажмите кнопку **Save** (Сохранить).  
+11. В поле **Service account** (Учетная запись службы) выберите **New service account** (Новая учетная запись службы) и введите любое имя, например **Service account 1**. В разделе **Role** (Роль) выберите **Project** (Проект) и **Editor** (Редактор). В разделе **Key type** (Тип ключа) выберите **P12** и нажмите кнопку **Create** (Создать). Установите флажок **Enable G Suite Domain-wide Delegation** (Включить делегирование в рамках домена G Suite) и нажмите кнопку **Save** (Сохранить).  
   
-     ![создание ключа учетной записи службы google](./media/google9.png "google9")  
+     ![Создание ключа учетной записи службы в Google](./media/google9.png "google9")  
   
-12.  Файл сертификата P12 будут сохранен на компьютере.  
+12.  Файл сертификата P12 будет сохранен на компьютере.  
         
 12. В правой части экрана **Credentials** (Учетные данные) щелкните **Manage service accounts** (Управление учетными записями служб).  
        ![Данные учетной записи службы G Suite](./media/google10.png "G Suite credentials service account")  
   
-13. Щелкните три точки справа от созданной учетной записи службы и выберите **Изменить**.  
+13. Щелкните три точки справа от созданной учетной записи службы и выберите **Edit** (Изменить).  
   
      ![редактирование в google](./media/google11.png "редактирование в google")  
   
-15. Скопируйте присвоенное службе значение **Service account ID** (Идентификатор учетной записи службы) — оно понадобится позже.  
+15. Скопируйте присвоенное службе значение **Service account ID** (Идентификатор учетной записи службы) — оно понадобится позже.  
   
      ![идентификатор учетной записи службы google](./media/google13.png "google13")  
   
-16. Откройте меню Google, щелкнув три горизонтальные линии рядом с Google Cloud Platform, и выберите **API manager** (Диспетчер API), за которым следует **Dashboard** (Панель мониторинга).  
+16. Откройте меню Google, щелкнув три горизонтальные линии рядом с Google Cloud Platform. Выберите **API manager** (Диспетчер API) и **Dashboard** (Панель мониторинга).  
     
 17. Прокрутите список включенных API-интерфейсов и щелкните значок шестеренки рядом с **API Google Drive**.   
-       ![выбранный Google Drive](./media/google14.png "google14")  
+       ![Выбор Google Drive](./media/google14.png "google14")  
 
-18. Заполните следующие поля:
+18. Укажите следующие сведения:
 
     -   **Application Name** (Имя приложения): Microsoft Cloud App Security.  
   
@@ -111,14 +111,14 @@ ms.lasthandoff: 08/07/2017
   
     -   Google требует отправить по крайней мере один значок приложения. Перейдите по адресу [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) и скачайте ZIP-файл, содержащий значки Cloud App Security. Затем в разделе **Application icon** (Значок приложения) перетащите изображения размером 128x128 и 32x32.  
   
-    -   В разделе **Drive Integration** (Интеграция диска) введите следующие данные в поле **Открыть URL-адрес:**  
+    -   В разделе **Drive Integration** (Интеграция диска) введите следующие данные в поле **Open URL** (Открыть URL-адрес):  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
      
-         ![конфигурация диска google](./media/google15.png "googledriveconfig")  
+         ![Конфигурация Google Drive](./media/google15.png "Google Drive config")  
   
 19. В списке **Enabled APIs** (Включенные API) щелкните значок параметров с шестеренкой рядом с **Google Apps Marketplace SDK**. 
-         ![конфигурация google marketplace SDK](./media/google16.png "googledriveconfig")  
+         ![Конфигурация пакета SDK для Google Marketplace](./media/google16.png "Google Drive config")  
 
        >[!NOTE]
        > Если значок с шестеренкой недоступен, можно щелкнуть **Google Apps Marketplace SDK** вместо него. 
@@ -128,7 +128,7 @@ ms.lasthandoff: 08/07/2017
   
     -   В поле **Application Name** (Имя приложения) должно быть значение **Microsoft Cloud App Security**.
   
-         Укажите в поле **Application description** (Описание приложения) следующее: "Microsoft Cloud App Security обеспечивает видимость облачных приложений, помогая контролировать, анализировать и регулировать использование облачных приложений, защищать корпоративные данные, а также обнаруживать подозрительные действия для любого облачного приложения".  
+         Введите в поле **Application description** (Описание приложения) следующее: "Microsoft Cloud App Security обеспечивает видимость облачных приложений, помогая контролировать, анализировать и регулировать использование облачных приложений, защищать корпоративные данные, а также обнаруживать подозрительные действия для любого облачного приложения".  
   
     -   Снимите флажок **Enable individual install** (Включить отдельную установку).  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 08/07/2017
   
         -   **URL-адрес политики конфиденциальности**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   В разделе **OAuth 2.0 scopes** (Области OAuth 2.0) скопируйте и вставьте следующие адреса. Их нужно копировать по одному, нажимая после каждого клавишу ВВОД.  
+    -   В разделе **OAuth 2.0 scopes** (Области OAuth 2.0) скопируйте и вставьте следующие URL-адреса (копируйте их по одному, нажимая клавишу ВВОД после каждого адреса):  
   
            https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -216,11 +216,11 @@ ms.lasthandoff: 08/07/2017
   
     4.  Введите один **адрес электронной почты учетной записи администратора** вашего администратора G Suite.  
   
-    5.  При наличии учетной записи G Suite Unlimited установите этот флажок. Сведения о том, какие функции доступны в Cloud App Security для G Suite Unlimited, см. в статье [Включение мгновенной видимости, защиты и действий управления для приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  При наличии учетной записи G Suite Unlimited установите этот флажок. Сведения о том, какие функции доступны в Cloud App Security для G Suite Unlimited, см. в руководстве по [включению мгновенной видимости, защиты и действий управления для приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Щелкните **Сохранить настройки**.  
   
-    7.  **Перейдите по ссылке** для подключения к G Suite. При этом открывается G Suite и предлагается авторизовать доступ для Cloud App Security.  
+    7.  **Перейдите по ссылке** для подключения к G Suite. Откроется G Suite и будет предложено авторизовать доступ для Cloud App Security.  
          
     8.  Убедитесь, что подключение установлено, щелкнув **Test now** (Проверить).  
   
@@ -231,12 +231,12 @@ ms.lasthandoff: 08/07/2017
   
 После подключения G Suite вы получите события за 60 дней, предшествовавших подключению.
   
-После подключения G Suite служба Cloud App Security выполняет полное сканирование. В зависимости от количества файлов и пользователей полное сканирование может занять некоторое время. Чтобы обеспечить сканирование почти в реальном времени, файлы, действия с которыми обнаружены, перемещаются в начало очереди сканирования. Например, файл, который изменяется, обновляется или предоставляется, сканируется немедленно, так что вам не приходится ждать, когда он будет обработан стандартным процессом сканирования. Это не относится к файлам, содержимое которых не изменяется, например к файлам, которые просматриваются, печатаются или экспортируются.
+После подключения G Suite служба Cloud App Security выполняет полное сканирование. В зависимости от количества файлов и пользователей полное сканирование может занять некоторое время. Для включения сканирования практически в реальном времени, файлы, в которых обнаружены действия, перемещаются в начало очереди сканирования. Например, файл, который редактируется, обновляется или совместно используется, сканируется первым. Это не касается файлов, которые недоступны для изменений. Например, файлы, которые просматриваются, предварительно просматриваются, печатаются или экспортируются, сканируются по запланированному расписанию.
   
   
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Получить техническую поддержку можно на странице службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   

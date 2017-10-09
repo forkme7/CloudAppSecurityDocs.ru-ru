@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
-ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
+ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Анонимизация данных Cloud Discovery
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/19/2017
 
 1.  Существует три способа применения анонимизации данных. 
     
-    - Вы можете настроить анонимизацию данных для определенного файла журнала, [создав новый отчет с моментальным снимком](create-snapshot-cloud-discovery-reports.md) и выбрав **Anonymize private information** (Анонимизировать закрытую информацию).
+    - Вы можете настроить анонимизацию данных для определенного файла журнала, [создав отчет с моментальным снимком](create-snapshot-cloud-discovery-reports.md) и выбрав **Анонимизировать закрытую информацию**.
  ![Анонимизация данных снимка](./media/anonymize-log.png)
 
     - Вы можете настроить анонимизацию данных из [автоматической отправки источника данных](configure-automatic-log-upload-for-continuous-reports.md). Для этого выберите **Anonymize private information** (Анонимизировать закрытую информацию) при добавлении нового источника данных.  
@@ -73,7 +73,7 @@ ms.lasthandoff: 09/19/2017
       
 ## <a name="see-also"></a>См. также  
 [Управление облачными приложениями с помощью политик](control-cloud-apps-with-policies.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Получить техническую поддержку можно на странице службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
     
       
