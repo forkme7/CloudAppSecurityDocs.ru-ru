@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b16231a0456cce028e69add3d6a643a9698ea0f1
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Развертывание Cloud App Security
 Cloud App Security позволяет вам использовать ценные возможности, которые дают облачные приложения, сохраняя при этом контроль над ресурсами организации. Эта служба повышает прозрачность действий в облаке и помогает повысить безопасность корпоративных данных. В этом разделе представлено пошаговое руководство для настройки Cloud App Security и работы с ней.  
 
-Для использования Cloud App Security ваша организация должна иметь лицензию. Дополнительные сведения см. в статье [Приобретение Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
+Для использования Cloud App Security ваша организация должна иметь лицензию. Дополнительные сведения см. в разделе [Приобретение Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) на домашней странице Cloud App Security.  
 
 >[!NOTE]
 >Для использования Cloud App Security не требуется лицензия Office 365.  
 
 ## <a name="prerequisites"></a>Предварительные условия  
   
--   Для использования продукта ваша организация должна иметь лицензию на Cloud App Security. Дополнительные сведения см. в статье [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Приобретение Cloud App Security), а также ознакомьтесь со статьей [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Ресурсы по лицензированию).  
+-   Для использования продукта ваша организация должна иметь лицензию на Cloud App Security. Дополнительные сведения см. в разделе [Приобретение Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) на домашней странице Cloud App Security.  
   
      Сведения о поддержке активации клиента см. в статье [Обращение в службу поддержки Office 365 для бизнеса: справка для администраторов](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
