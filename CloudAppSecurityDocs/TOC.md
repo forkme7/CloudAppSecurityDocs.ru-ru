@@ -1,7 +1,9 @@
 # Общие сведения и знакомство с возможностями
-## [Что такое CAS?](what-is-cloud-app-security.md)
+## [Что такое Cloud App Security?](what-is-cloud-app-security.md)
 ## [Новые возможности](release-notes.md)
-## [CAS ыпуски](editions-cloud-app-security.md)
+## Сравнить
+### [Office 365](editions-cloud-app-security-o365.md)
+### [Azure AD](editions-cloud-app-security-aad.md)
 # Развертывание
 ## [Начало работы](getting-started-with-cloud-app-security.md)
 ## [Основная настройка](general-setup.md)
