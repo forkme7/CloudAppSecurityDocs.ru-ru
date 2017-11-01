@@ -31,10 +31,13 @@
 ### [Подключение Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Подключение ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Подключение Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
+## [Защита приложений с помощью прокси-сервера](proxy-intro-aad.md)
+### [Развертывание прокси-сервера для приложений Azure AD](proxy-deployment-aad.md)
 # Используйте
 ## [Работа с панелью мониторинга](daily-activities-to-protect-your-cloud-environment.md)
 ## Сценарии
 ### [Защита организации от программ-шантажистов](use-case-ransomware.md)
+### [Блокировка скачивания конфиденциальной информации](use-case-proxy-block-session-aad.md)
 ### [Защита файлов с помощью карантина администратора](use-case-admin-quarantine.md)
 ## Обнаружить
 ### [Работа с обнаруженными приложениями](discovered-apps.md)
@@ -56,6 +59,7 @@
 #### [Политики файлов](data-protection-policies.md)
 ##### [Проверка содержимого](content-inspection.md)
 ##### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
+#### [Политики сеансов](session-policy-aad.md)
 #### [Ссылка на шаблон политики](policy-template-reference.md)
 ### [Управление подключенными приложениями](governance-actions.md)
 ### [Управление обнаруженными приложениями](governance-discovery.md)
