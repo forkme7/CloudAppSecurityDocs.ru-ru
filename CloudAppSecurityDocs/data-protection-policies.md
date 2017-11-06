@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/1/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: a68112f2425b993d8f2eb05200aa800ee09869d5
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="file-policies"></a>Политики файлов  
 Политики файлов позволяют применять разнообразные автоматизированные процессы, используя API поставщика облачных служб. Политики можно задать для обеспечения непрерывных проверок соответствия, обнаружения электронных данных в юридических целях, защиты от потери данных для конфиденциального содержимого, находящегося в общем доступе, а также во многих других случаях.  
