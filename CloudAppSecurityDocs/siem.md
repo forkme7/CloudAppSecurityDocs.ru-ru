@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -83,7 +83,9 @@ ms.lasthandoff: 10/03/2017
 > [!NOTE]
 > - Имя файла зависит от версии агента SIEM.
 > - Параметры в квадратных скобках [] необязательные; их следует использовать только при необходимости.
-> - При работе в Windows рекомендуется настроить запланированную задачу для выполнения команды. Это гарантирует, что служба всегда будет работать.
+> - Рекомендуется выполнять JAR во время запуска сервера.
+>   - Windows. Реализуйте выполнение в рамках запланированной задачи и убедитесь, что для задачи задан параметр **Выполнять вне зависимости от регистрации пользователя** и снят флажок **Останавливать задачу, выполняемую дольше**.
+>   - Linux. Добавьте команду выполнения с **&** в файл rc.local. Пример: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Где используются следующие переменные:
 - DIRNAME — это путь к каталогу, который вы хотите использовать для журналов отладки локального агента.
@@ -142,10 +144,6 @@ ms.lasthandoff: 10/03/2017
 ## <a name="high-availability-options"></a>Способы обеспечения высокой доступности
 
 Агент SIEM — это единая конечная точка, которая поддерживает восстановление при простое до двух дней. Высокий уровень доступности можно также обеспечить, используя в качестве конечной точки клиента подсистему балансировки нагрузки.
-
-
-## <a name="related-videos"></a>Видео по теме  
-[Install the SIEM Connector for Cloud App Security](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security) (Установка соединителя SIEM для Cloud App Security)  
 
 ## <a name="see-also"></a>См. также  
 [Устранение неполадок интеграции SIEM](troubleshooting-siem.md)   

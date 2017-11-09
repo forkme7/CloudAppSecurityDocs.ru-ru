@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/3/2017
+ms.date: 10/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9c97187c93391c3cfd754e9bad0daab3d6ce496f
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
+ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/22/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
@@ -36,7 +36,9 @@ ms.lasthandoff: 10/03/2017
     **Microsoft Cloud App Security**, а затем нажмите кнопку **Создать**.  
            ![google2](./media/google2.png "google2")  
   
-4.  После создания проекта на панели инструментов щелкните Google Cloud Platform.
+4.  После создания проекта выберите **Google Cloud Platform** в панели инструментов и убедитесь, что в раскрывающемся списке вверху выбран нужный проект.
+       
+       ![Проект google](./media/googleverify-project.png "Проект googleverify")  
 
 5. В разделе **APIs** (API-интерфейсы) щелкните **Go to APIs overview** (Перейти к обзору API-интерфейсов).  
   
@@ -112,7 +114,7 @@ ms.lasthandoff: 10/03/2017
   
     -   **Short Description & Long Description** (Короткое и длинное описание) (необязательно): Microsoft Cloud App Security обеспечивает видимость облачных приложений, помогая контролировать, анализировать и регулировать использование облачных приложений, защищать корпоративные данные, а также обнаруживать подозрительные действия для любого облачного приложения.  
   
-    -   Google требует отправить по крайней мере один значок приложения. Перейдите по адресу [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) и скачайте ZIP-файл, содержащий значки Cloud App Security. Затем в разделе **Application icon** (Значок приложения) перетащите изображения размером 128x128 и 32x32.  
+    -   Google требует отправить по крайней мере один значок приложения. Перейдите по адресу [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) и скачайте ZIP-файл, содержащий значки Cloud App Security. Затем в разделе **Application icon** (Значок приложения) перетащите изображения размером 128x128 и 32x32.  
   
     -   Прокрутите страницу вниз до раздела **Drive Integration** (Интеграция диска) и введите следующие данные в поле **Open URL** (Открыть URL-адрес):  
   

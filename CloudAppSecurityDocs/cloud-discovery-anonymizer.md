@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f3d710cabf1477ea248182a994dee8c00e2c4536
+ms.sourcegitcommit: f9c6bd3c629cc48ce771fec47dd6e40bc4c7a197
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Анонимизация данных Cloud Discovery
 
@@ -34,10 +34,12 @@ ms.lasthandoff: 09/28/2017
 1.  Существует три способа применения анонимизации данных. 
     
     - Вы можете настроить анонимизацию данных для определенного файла журнала, [создав отчет с моментальным снимком](create-snapshot-cloud-discovery-reports.md) и выбрав **Анонимизировать закрытую информацию**.
- ![Анонимизация данных снимка](./media/anonymize-log.png)
+
+      ![Анонимизация данных снимка](./media/anonymize-log.png)
 
     - Вы можете настроить анонимизацию данных из [автоматической отправки источника данных](configure-automatic-log-upload-for-continuous-reports.md). Для этого выберите **Anonymize private information** (Анонимизировать закрытую информацию) при добавлении нового источника данных.  
- ![Анонимизация данных журнала](./media/anonymize-autolog.png)
+  
+      ![Анонимизация данных журнала](./media/anonymize-autolog.png)
 
     - Чтобы настроить в Cloud App Security анонимизацию по умолчанию для всех данных как из отчетов со снимками данных из отправленных файлов журналов, так и из непрерывных отчетов от сборщиков данных журналов, сделайте следующее:
      
@@ -47,24 +49,27 @@ ms.lasthandoff: 09/28/2017
 
         3. В разделе "Ключ шифрования" выберите **выделенный ключ, созданный для портала**, или **настраиваемый ключ**. Если вы решили **использовать настраиваемый ключ**, введите 16-байтовый ключ шифрования UTF8.
         4. Нажмите кнопку **Сохранить**.
-  ![Анонимизация](./media/anonymizer1.png)
+ 
+       ![Анонимизация](./media/anonymizer1.png)
   
 
 2.  При включении анонимизации Cloud App Security анализирует журнал трафика и извлекает определенные атрибуты данных.
 3.  Cloud App Security заменяет имя пользователя на зашифрованное.
 4.  Затем Cloud App Security анализирует данные об использовании облака и создает отчеты на основе анонимизированных данных.
- ![Анонимизация панели мониторинга Cloud Discovery](./media/anonymize-dashboard.png)
  
-
+    ![Анонимизация панели мониторинга Cloud Discovery](./media/anonymize-dashboard.png)
+ 
 5.  Для конкретного расследования, например для расследования оповещения об аномальном использовании, можно раскрыть имя определенного пользователя на портале, предоставив деловое обоснование. На этой странице также можно найти зашифрованное имя пользователя, если известно реальное. 
 
     1. В меню шестеренки "Параметры" выберите **Cloud Discovery settings** (Параметры Cloud Discovery).
     2. На вкладке **Anonymization** (Анонимизация) в поле **Anonymize and resolve usernames** (Анонимизация и раскрытие имен пользователей) укажите обоснование раскрытия.
     3. В поле **Enter username to resolve** (Введите имя пользователя для раскрытия) выберите **From anonymized** (Из анонимизированного) и введите анонимизированное имя или выберите **To anonymized** (В аномизированное) и введите исходное имя пользователя. Нажмите кнопку **Resolve** (Раскрыть). 
-![Анонимизация](./media/anonymizer.png)
+
+   ![Анонимизация](./media/anonymizer.png)
 
 6.  Это действие фиксируется в **журнале управления** на портале. 
-![Анонимизация](./media/anonymize-gov-log.png)
+
+     ![Анонимизация](./media/anonymize-gov-log.png)
 
 
 
