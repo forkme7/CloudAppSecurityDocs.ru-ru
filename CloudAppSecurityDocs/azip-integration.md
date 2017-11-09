@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b22d1ad368b05b5cee7d7459f199ce1ff2769cc4
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="azure-information-protection-integration"></a>Интеграция Azure Information Protection
 
@@ -30,6 +30,8 @@ Cloud App Security позволяет исследовать файлы и за�
 
 > [!NOTE] 
 > Для включения этой функции вам потребуется лицензия Cloud App Security и лицензия Azure Information Protection Premium P1 или P2. Если у вас есть обе лицензии, Cloud App Security будет синхронизировать метки организации из службы Azure Information Protection.
+> Cloud App Security не поддерживает политики области Azure Information Protection.
+
 
 ## <a name="how-it-works"></a>Принцип работы
 Возможно, вы знакомы с метками классификации файлов [Azure Information Protection](https://docs.microsoft.com/information-protection/). Теги классификации Azure Information Protection видны в Cloud App Security. После интеграции службы Cloud App Security с Azure Information Protection эта служба сканирует файлы следующим образом:

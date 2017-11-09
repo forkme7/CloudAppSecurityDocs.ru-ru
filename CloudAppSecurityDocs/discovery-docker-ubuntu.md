@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 42e562f484ee5e0a980ab3678c34508cbff113f3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 2e762f9f4a90a9777ef1782c1c12305ea7d065ef
+ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Установка и настройка в Ubuntu
 
@@ -39,6 +39,8 @@ ms.lasthandoff: 09/28/2017
     -   Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog.
 
     -   Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, contoso.cloudappsecurity.com) через порт 443.
+
+    - Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в хранилище больших двоичных объектов Azure (https://adaprodconsole.blob.core.windows.net/) через порты 80 и 443.
 
 > [!NOTE]
 > Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в [диапазон IP-адресов центра обработки данных Microsoft Azure через порт 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
@@ -91,15 +93,11 @@ ms.lasthandoff: 09/28/2017
     > - Отдельный сборщик журналируемых данных может обрабатывать несколько источников данных.
     >- Скопируйте содержимое экрана, так как эта информация потребуется при настройке взаимодействия сборщика журналируемых данных с Cloud App Security. Если вы выбрали системный журнал, эта информация будет включать сведения о порте, на котором будет работать прослушиватель системного журнала.
 
-4.  Отобразятся дополнительные сведения о развертывании.
-
- ![ubuntu3](./media/ubuntu3.png)
-
-5.  **Скопируйте** команду выполнения из диалогового окна. Вы можете использовать значок копирования в буфер обмена ![значок копирования в буфер обмена](./media/copy-icon.png).
+4.  Отобразятся дополнительные сведения о развертывании. **Скопируйте** команду выполнения из диалогового окна. Вы можете использовать значок копирования в буфер обмена ![значок копирования в буфер обмена](./media/copy-icon.png).
 
 6.  **Экспортируйте** ожидаемую конфигурацию источника данных. В этой конфигурации описано, как необходимо настроить экспорт журналов на устройствах.
 
-  ![ubuntu4](./media/ubuntu4.png)
+   ![Создание сборщика журналируемых данных](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Шаг 2. Локальное развертывание виртуальной машины
 
@@ -120,17 +118,10 @@ ms.lasthandoff: 09/28/2017
 
 4.  Разверните образ сборщика с помощью команды выполнения, созданной на портале.
 
-    ![ubuntu6](./media/ubuntu6.png)
+   ![Создание сборщика журналируемых данных](./media/windows7.png)
 
-    >[!NOTE]
-    >Если необходимо настроить прокси-сервер, добавьте его IP-адрес и порт, как показано ниже. Например, если данные прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так:<br></br>
-     `sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
-    "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
-    "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
-
-    ![ubuntu7](./media/ubuntu7.png)
+   Если необходимо настроить прокси-сервер, добавьте его IP-адрес и порт. Например, если данные прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так:<br></br>
+     `sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
 5.  Убедитесь, что сборщик работает без ошибок, выполнив следующую команду: `docker logs \<collector_name\>`
 
