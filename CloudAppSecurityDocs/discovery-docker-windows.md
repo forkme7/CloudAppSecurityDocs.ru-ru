@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cd118d67089fbda869c223129b7edc574af1cb28
-ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
+ms.openlocfilehash: 0bda9f2ccc5c2e74e11edddf32789216f32958f7
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Установка и настройка средства Docker для автоматического сборщика журналируемых данных в Windows Server 2016
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/06/2017
 
     -   Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog.
 
-    -   Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, contoso.cloudappsecurity.com) через порт 443.
+    -   Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, portal.contoso.cloudappsecurity.com) через порт 443
 
     - Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в хранилище больших двоичных объектов Azure (https://adaprodconsole.blob.core.windows.net/) через порты 80 и 443.
 
