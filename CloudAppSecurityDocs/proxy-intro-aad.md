@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 764428c87317d5b4ab706b5a9d4b3c83147628b3
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Защита приложений с использованием прокси-сервера Microsoft Cloud App Security
 
 > [!NOTE]
-> Начато развертывание компонента прокси-сервера Microsoft Cloud App Security.
+> Эта функция находится на этапе предварительной версии.
+
 
 Для современных организаций часто недостаточно узнавать о событиях в облачной среде постфактум. Организациям необходимо предотвращать бреши и утечки в реальном времени, прежде чем сотрудники осознанно или невольно подвергнут риску данные и все предприятие. Важно, чтобы у корпоративных пользователей была возможность максимально эффективно задействовать большинство служб и средств в облачных приложениях, а также использовать на работе личные устройства. В то же время организациям нужны средства, которые в реальном времени обеспечивают защиту от утечки информации и кражи данных. Добиться этого позволяет целостное и интегрированное взаимодействие между Azure Active Directory и прокси-сервером Cloud App Security.
 
@@ -79,6 +80,7 @@ ms.lasthandoff: 10/31/2017
 
 > [!NOTE]
 > Приложения Office 365 не используют конфигурацию SAML и на данный момент не поддерживаются.
+
 
 ## <a name="see-also"></a>См. также  
 [Развертывание прокси-сервера Cloud App Security](proxy-deployment-aad.md)   
