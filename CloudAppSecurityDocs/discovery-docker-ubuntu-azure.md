@@ -1,6 +1,6 @@
 ---
 title: "Настройка автоматической отправки журналов для непрерывных отчетов | Документы Майкрософт"
-description: "Из этой статьи вы узнаете, как настроить автоматическую отправку журналов для непрерывных отчетов в Cloud App Security, используя Docker в среде Ubuntu, развернутой на локальном сервере."
+description: "Из этой статьи вы узнаете, как настроить автоматическую отправку журналов для непрерывных отчетов в Cloud App Security, используя Docker в среде Ubuntu, развернутой в Azure."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -10,10 +10,10 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
+ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
 ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
@@ -97,42 +97,56 @@ ms.lasthandoff: 11/14/2017
 
    ![Создание сборщика журналируемых данных](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Шаг 2. Локальное развертывание виртуальной машины
+### <a name="step-2--deployment-of-your-machine-in-azure"></a>Шаг 2. Развертывание виртуальной машины в Azure
 
-> [!Note]
+> [!NOTE]
 > Ниже описывается развертывание в Ubuntu. Действия по развертыванию на других платформах немного отличаются.
 
-1.  Откройте окно терминала на компьютере c Ubuntu.
 
-2.  Переключитесь на права привилегированного пользователя с помощью команды `sudo -i`.
-
-3. Чтобы обойти прокси-сервер в сети, выполните две следующие команды:
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
-
-3.  Если вы принимаете [условия лицензии](https://go.microsoft.com/fwlink/?linkid=862492), удалите старые версии и установите Docker CE, выполнив следующую команду:
-
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
-
-     > [!NOTE] 
-     > Если команде не удается проверить ваш сертификат прокси-сервера, выполните ее еще раз, добавив в начале `curl -k`.
+1.  Создайте новую виртуальную машину под управлением Ubuntu в среде Azure. 
+2.  Настроив виртуальную машину, откройте на ней порты.
+    1.  В представлении виртуальной машины щелкните **Сеть** и выберите соответствующий интерфейс, дважды щелкнув его.
+    2.  Щелкните **Группа безопасности сети** и выберите соответствующую группу безопасности.
+    3.  Откройте меню **Правила безопасности для входящего трафика** и нажмите кнопку **Добавить**.
+      
+      ![Ubuntu в Azure](./media/ubuntu-azure.png)
     
-    ![ubuntu5](./media/ubuntu5.png)
+    4. Добавьте следующие правила (в режиме **Расширенный**):
 
-4.  Разверните образ сборщика на хост-компьютере, импортировав конфигурацию сборщика. Для этого скопируйте созданную на портале команду выполнения. Если необходимо настроить прокси-сервер, добавьте его IP-адрес и порт. Например, если данные прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так:
+    |Название|Диапазоны конечных портов|Протокол|Источник|Destination|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|Любые|Любые|
+    |caslogcollector_ftp_passive|20 000–20 099|TCP|Любые|Любые|
+    |caslogcollector_syslogs_tcp|601–700|TCP|Любые|Любые|
+    |caslogcollector_syslogs_tcp|514–600|UDP|Любые|Любые|
+      
+      ![Правила Ubuntu в Azure](./media/ubuntu-azure-rules.png)
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+3.  На виртуальной машине щелкните **Connect** (Подключиться), чтобы открыть терминал.
 
-   ![Создание сборщика журналируемых данных](./media/windows7.png)
+4.  Переключитесь на привилегированного пользователя с помощью команды `sudo -i`.
 
-5.  Убедитесь, что сборщик работает без ошибок, выполнив следующую команду: `docker logs \<collector_name\>`
+5.  Если вы принимаете [условия лицензии](https://go.microsoft.com/fwlink/?linkid=862492), удалите старые версии и установите Docker CE, выполнив следующую команду:
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
-Должно отобразиться сообщение **Завершено успешно**.
+6. На портале Cloud App Security в окне **Create new log collector** (Создать новый сборщик журналируемых данных) скопируйте команду, которая импортирует конфигурацию сборщика на хост-компьютер.
 
-  ![ubuntu8](./media/ubuntu8.png)
+      ![Ubuntu в Azure](./media/ubuntu-azure.png)
+
+7. Выполните команду, чтобы развернуть сборщик журналируемых данных.
+
+      ![Команда Ubuntu в Azure](./media/ubuntu-azure-command.png)
+
+>[!NOTE]
+>Чтобы настроить прокси-сервер, добавьте его IP-адрес и порт. Например, если адрес прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так: 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+
+8. Убедитесь, что сборщик работает без ошибок, выполнив команду `Docker logs <collector_name>`. Вы должны увидеть сообщение **Finished successfully!** (Завершено успешно).
+
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Шаг 3. Локальная конфигурация сетевых устройств
 

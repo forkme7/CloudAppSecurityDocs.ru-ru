@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -34,7 +34,9 @@ ms.lasthandoff: 11/05/2017
 
 ![Архитектура интеграции SIEM](./media/siem-architecture.png)
 
+## <a name="supported-siems"></a>Поддерживаемые системы SIEM
 
+Сейчас Cloud App Security поддерживает платформу HP ArcSight и общий формат CEF.
 
 ## <a name="how-to-integrate"></a>Интеграция
 
@@ -63,6 +65,7 @@ ms.lasthandoff: 11/05/2017
 5. Введите IP-адрес или имя **узла с удаленным системным журналом** и **номер порта для системного журнала**. Выберите TCP или UDP в качестве протокола для удаленного системного журнала.
 Если у вас нет этих данных, их можно получить у вашего администратора по безопасности.
 Нажмите кнопку **Далее**.
+
   ![Параметры удаленного системного журнала](./media/siem2.png)
 
 6. Выберите типы данных, **оповещения** и **действия**, которые нужно экспортировать на сервер SIEM. Включите или отключите их при помощи ползунка. По умолчанию выбраны все типы. Для отправки только определенных типов оповещений и действий на сервер SIEM можно воспользоваться фильтрами из раскрывающегося списка **Apply to** (Применить к).
@@ -74,12 +77,13 @@ ms.lasthandoff: 11/05/2017
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Шаг 2: скачивание JAR-файла и его запуск на сервере
 
-1. [Скачайте ZIP-файл из Центра загрузки Microsoft](https://go.microsoft.com/fwlink/?linkid=838596) и распакуйте его.
+1. В [Центре загрузки Майкрософт](https://go.microsoft.com/fwlink/?linkid=838596) примите [условия лицензии](https://go.microsoft.com/fwlink/?linkid=862491), скачайте ZIP-файл и распакуйте его.
 
 2. Извлеките JAR-файл из ZIP-файла и запустите его на сервере.
  После запуска файла выполните следующую команду:
     
-      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+
 > [!NOTE]
 > - Имя файла зависит от версии агента SIEM.
 > - Параметры в квадратных скобках [] необязательные; их следует использовать только при необходимости.
