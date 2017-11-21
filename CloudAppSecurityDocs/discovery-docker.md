@@ -1,11 +1,11 @@
 ---
 title: "Настройка автоматической отправки журналов для непрерывных отчетов | Документы Майкрософт"
-description: "Этот раздел описывает настройку автоматической отправки журналов для непрерывных отчетов в Cloud App Security."
+description: "Из этой статьи вы узнаете, как настроить автоматическую отправку журналов для непрерывных отчетов в Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f0f6f0de46e8833b4f4ffb6bd31c7c46eeacac9a
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: f05fd8f548067c7e9ceb32c93e739072d682d15c
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Настройка автоматической отправки журналов для непрерывных отчетов
 
@@ -36,9 +36,7 @@ ms.lasthandoff: 09/24/2017
 
 Сборщик журналируемых данных поддерживает два режима развертывания:
 
--   **Контейнер** (*предварительная версия*): работает в качестве образа Docker в [Windows](discovery-docker-windows.md) и [Ubuntu](discovery-docker-ubuntu.md) на локальном компьютере или в Azure. 
-
-
+-   **Контейнер**: работает в виде образа Docker в [локальной среде Ubuntu](discovery-docker-ubuntu.md) или [в среде Ubuntu в облаке Azure](discovery-docker-ubuntu-azure.md). 
 
 -   **Виртуальное устройство**: [работает в виде образа через гипервизор Hyper-V или VMware.](configure-automatic-log-upload-for-continuous-reports.md)
 

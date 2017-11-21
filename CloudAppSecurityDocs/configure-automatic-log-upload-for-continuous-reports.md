@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Настройка автоматической отправки журналов для непрерывных отчетов в виртуальном устройстве
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/28/2017
   > [!NOTE] 
   > - Отдельный сборщик журналируемых данных может обрабатывать несколько источников данных.
   > - Скопируйте содержимое экрана, так как эта информация будет использоваться при настройке взаимодействия сборщика журналируемых данных с Cloud App Security. Если вы выбрали системный журнал, эта информация будет включать сведения о порте, на котором будет ожидать передачи данных прослушиватель системного журнала.
-4.  **Скачайте** новую виртуальную машину сборщика журналируемых данных, щелкнув Hyper-V или VMWare. Затем распакуйте архив с помощью пароля, полученного на портале.  
+4.  Если вы принимаете [условия лицензии](https://go.microsoft.com/fwlink/?linkid=862492), **скачайте** новую виртуальную машину сборщика журналируемых данных, щелкнув Hyper-V или VMWare. После этого распакуйте файл с помощью пароля, который вы получили на портале.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Шаг 2. Локальное развертывание виртуальной машины и конфигурации сети   
 

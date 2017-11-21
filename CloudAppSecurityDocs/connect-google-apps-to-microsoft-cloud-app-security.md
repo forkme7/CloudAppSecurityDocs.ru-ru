@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
@@ -114,7 +114,7 @@ ms.lasthandoff: 10/22/2017
   
     -   **Short Description & Long Description** (Короткое и длинное описание) (необязательно): Microsoft Cloud App Security обеспечивает видимость облачных приложений, помогая контролировать, анализировать и регулировать использование облачных приложений, защищать корпоративные данные, а также обнаруживать подозрительные действия для любого облачного приложения.  
   
-    -   Google требует отправить по крайней мере один значок приложения. Перейдите по адресу [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) и скачайте ZIP-файл, содержащий значки Cloud App Security. Затем в разделе **Application icon** (Значок приложения) перетащите изображения размером 128x128 и 32x32.  
+    -   Google требует отправить по крайней мере один значок приложения. Чтобы скачать ZIP-файл со значками Cloud App Security, перейдите по ссылке [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826). Затем в разделе **Application icon** (Значок приложения) перетащите изображения размером 128x128 и 32x32.  
   
     -   Прокрутите страницу вниз до раздела **Drive Integration** (Интеграция диска) и введите следующие данные в поле **Open URL** (Открыть URL-адрес):  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 10/22/2017
   
     -   Настройте четыре требуемых изображения в разделе **Application icons** (Значки приложения).  
   
-         Эти изображения можно найти по адресу: [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
+         Изображения можно найти по ссылке [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644).  
   
     -   Задайте приведенные ниже значения **Support URLs** (URL-адреса поддержки):  
   
