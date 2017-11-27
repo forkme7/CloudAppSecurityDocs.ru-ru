@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-apps"></a>Подключение приложений 
 Соединители приложений используют API поставщиков приложений, чтобы расширить возможности видимости и контроля в Cloud App Security для приложений, к которым вы подключаетесь.  
@@ -76,7 +76,7 @@ Cloud App Security развертывается с правами системн
 |**Действия входа**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Действия пользователей**|✔*|✔|✔|✔ — требует Google Unlimited|Частично|Поддерживается с Salesforce Shield|✔|Не применяются|  
 |**Действия администратора**|✔|✔|✔|✔|Частично|✔|✔|✔|  
-|**Периодическое сканирование файлов**|✔|✔|Не применяются|✔|✔|✔|✔|Ожидается в ближайшее время|  
+|**Периодическое сканирование файлов**|✔|✔|Не применяются|✔|✔|✔|✔|Не применяются|  
 |**Сканирование файлов почти в реальном времени**|✔|✔|Не применяются|✔ — требует Google Unlimited|||Ожидается в ближайшее время||  
 |**Совместное управление**|✔|✔|Не применяются|✔|Не применяются||✔||  
 |**Карантин**|✔|✔|Не применяются|Ожидается в ближайшее время|||Ожидается в ближайшее время||  
