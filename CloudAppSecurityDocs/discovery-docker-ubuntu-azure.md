@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Установка и настройка в Ubuntu
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   ОЗУ: 4 ГБ
 
--   Параметры брандмауэра:
-
-    -   Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog.
-
-    -   Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, portal.contoso.cloudappsecurity.com) через порт 443
-
-    - Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в хранилище больших двоичных объектов Azure (https://adaprodconsole.blob.core.windows.net/) через порты 80 и 443.
-
-> [!NOTE]
-> Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в [диапазон IP-адресов центра обработки данных Microsoft Azure через порт 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+-   Настройте брандмауэр, как описано в перечне [требований к сети](network-requirements#log-collector)
 
 ## <a name="log-collector-performance"></a>Производительность сборщика журналируемых данных
 
@@ -118,7 +109,7 @@ ms.lasthandoff: 11/14/2017
     |caslogcollector_ftp|21|TCP|Любые|Любые|
     |caslogcollector_ftp_passive|20 000–20 099|TCP|Любые|Любые|
     |caslogcollector_syslogs_tcp|601–700|TCP|Любые|Любые|
-    |caslogcollector_syslogs_tcp|514–600|UDP|Любые|Любые|
+    |caslogcollector_syslogs_udp|514–600|UDP|Любые|Любые|
       
       ![Правила Ubuntu в Azure](./media/ubuntu-azure-rules.png)
 
@@ -128,7 +119,7 @@ ms.lasthandoff: 11/14/2017
 
 5.  Если вы принимаете [условия лицензии](https://go.microsoft.com/fwlink/?linkid=862492), удалите старые версии и установите Docker CE, выполнив следующую команду:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. На портале Cloud App Security в окне **Create new log collector** (Создать новый сборщик журналируемых данных) скопируйте команду, которая импортирует конфигурацию сборщика на хост-компьютер.
 
@@ -138,12 +129,12 @@ ms.lasthandoff: 11/14/2017
 
       ![Команда Ubuntu в Azure](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->Чтобы настроить прокси-сервер, добавьте его IP-адрес и порт. Например, если адрес прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так: 
+     >[!NOTE]
+     >Чтобы настроить прокси-сервер, добавьте его IP-адрес и порт. Например, если адрес прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так: 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Прокси-сервер Ubuntu](./media/ubuntu-proxy.png)
 
 8. Убедитесь, что сборщик работает без ошибок, выполнив команду `Docker logs <collector_name>`. Вы должны увидеть сообщение **Finished successfully!** (Завершено успешно).
 
