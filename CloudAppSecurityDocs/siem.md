@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
-ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
+ms.openlocfilehash: 298358657f775ec3a53a52112ee05af5db13ca16
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -116,6 +116,61 @@ ms.lasthandoff: 11/14/2017
   2017-07-16T09:17:46.290Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy4|3|externalId=596b30200c204203a33a4765 start=1500196666290 end=1500196666290 msg=Activity policy ''test-activity-policy4'' was triggered by ''admin@contoso.com'' suser=admin@contoso.com destinationServiceName=Microsoft Exchange Online cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b30200c204203a33a4765 cs2Label=uniqueServiceAppIds cs2=APPID_OUTLOOK cs3Label=relatedAudits cs3=1500196587034_a8673602-7e95-46d6-a1fe-c156c4709c5d
   2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3
 ```
+#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Пример оповещения Cloud App Security в формате CEF
+
+
+##### <a name="activity-logs"></a>Журналы действий
+
+-   EVENT_CATEGORY_* — категория действий высокого уровня.
+
+-   <ACTION> — тип действия, который отображается на портале.
+
+-   externalId — идентификатор события.
+
+-   start — метка времени оповещения.
+
+-   end – метка времени оповещения.
+
+-   rt — метка времени оповещения.
+
+-   msg — описание события, которое отображается на портале.
+
+-   suser — пользователь действия.
+
+-   destinationServiceName — приложение происхождения действия, например, Office 365, Sharepoint, Box.
+
+-   dvc — IP-адрес клиентского устройства.
+
+-   requestClientApplication — агент пользователя клиентского устройства.
+
+-   cs<X>Label — у каждой метки есть свое значение, и сама метка объясняет его, например targetObjects.
+
+-   cs<X> — сведения, относящиеся к метке (целевой пользователь действия или оповещение для примера метки).
+
+##### <a name="alerts"></a>Оповещения
+
+-   <alert type> — например, “ALERT_CABINET_EVENT_MATCH_AUDIT”.
+
+-   <name>— имя соответствующей политики.
+
+-   externalId — идентификатор оповещения.
+
+-   start — метка времени оповещения.
+
+-   end – метка времени оповещения.
+
+-   rt — метка времени оповещения.
+
+-   msg — описание оповещения, которое отображается на портале.
+
+-   suser — пользователь темы оповещения.
+
+-   destinationServiceName — приложение происхождения оповещения, например, Office 365, Sharepoint, Box.
+
+-   cs<X>Label — у каждой метки есть свое значение, и сама метка объясняет его, например targetObjects.
+
+-   cs<X> — сведения, относящиеся к метке (целевой пользователь действия или оповещение для примера метки).
+
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Шаг 3: проверка работы агента SIEM
 

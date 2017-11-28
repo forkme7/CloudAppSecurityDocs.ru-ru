@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c5c8f7a8a6203f23be30ea160d8867163d8f360b
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Настройка автоматической отправки журналов для непрерывных отчетов в виртуальном устройстве
 
@@ -29,12 +29,8 @@ ms.lasthandoff: 11/13/2017
 - Место на диске: 250 ГБ
 - ЦП: 2
 - ОЗУ: 4 ГБ 
-- Параметры брандмауэра: 
-    - Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog
-    - Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, contoso.cloudappsecurity.com) через порт 443
+- Настройте брандмауэр, как описано в перечне [требований к сети](network-requirements#log-collector)
 
-> [!NOTE]
-> Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в [диапазон IP-адресов центра обработки данных Microsoft Azure через порт 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Производительность сборщика журналируемых данных
 Сборщик журналируемых данных может успешно обрабатывать до 50 ГБ журналов в час.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Установка и настройка в Ubuntu
 
@@ -32,16 +32,8 @@ ms.lasthandoff: 11/14/2017
 
 -   ОЗУ: 4 ГБ
 
--   Параметры брандмауэра:
+-   Настройте брандмауэр, как описано в перечне [требований к сети](network-requirements#log-collector)
 
-    -   Разрешите сборщику журналируемых данных получать входящий трафик FTP и Syslog.
-
-    -   Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал (например, portal.contoso.cloudappsecurity.com) через порт 443
-
-    - Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в хранилище больших двоичных объектов Azure (https://adaprodconsole.blob.core.windows.net/) через порты 80 и 443.
-
-> [!NOTE]
-> Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в [диапазон IP-адресов центра обработки данных Microsoft Azure через порт 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Производительность сборщика журналируемых данных
 
@@ -115,7 +107,7 @@ ms.lasthandoff: 11/14/2017
 
     `curl -o /tmp/MCASInstallDocker.sh
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
+    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
      > [!NOTE] 
      > Если команде не удается проверить ваш сертификат прокси-сервера, выполните ее еще раз, добавив в начале `curl -k`.
@@ -124,7 +116,7 @@ ms.lasthandoff: 11/14/2017
 
 4.  Разверните образ сборщика на хост-компьютере, импортировав конфигурацию сборщика. Для этого скопируйте созданную на портале команду выполнения. Если необходимо настроить прокси-сервер, добавьте его IP-адрес и порт. Например, если данные прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так:
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Создание сборщика журналируемых данных](./media/windows7.png)
 
