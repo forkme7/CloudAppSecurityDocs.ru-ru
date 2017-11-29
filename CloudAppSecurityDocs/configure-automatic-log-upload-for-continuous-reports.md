@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c5c8f7a8a6203f23be30ea160d8867163d8f360b
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: 0258c3e505bf9e1d1b0511084919a0b52f237b4c
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/27/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Настройка автоматической отправки журналов для непрерывных отчетов в виртуальном устройстве
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Настройка автоматической отправки журналов для непрерывных отчетов в виртуальном устройстве - Устарело
 
 > [!WARNING] 
 > Для более гибкого развертывания настоятельно рекомендуется настроить отправку журналов с использованием [Docker](discovery-docker.md).
