@@ -18,6 +18,9 @@
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](discovery-docker.md)
 #### [Docker в Ubuntu в локальном режиме](discovery-docker-ubuntu.md)
 #### [Docker в Ubuntu в Azure](discovery-docker-ubuntu-azure.md)
+##### Изменение конфигурации Docker
+###### [Настройка файлов сертификатов](discovery-docker-custom-cert.md)
+###### [Изменение пароля FTP](discovery-docker-change-ftp.md)
 #### [Использование виртуального модуля](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Использование настраиваемого средства синтаксического анализа журналов](custom-log-parser.md)
 ### [Обогащение Cloud Discovery](cloud-discovery-aad-enrichment.md)
