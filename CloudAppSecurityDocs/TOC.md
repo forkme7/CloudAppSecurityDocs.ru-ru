@@ -18,10 +18,7 @@
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](discovery-docker.md)
 #### [Docker в Ubuntu в локальном режиме](discovery-docker-ubuntu.md)
 #### [Docker в Ubuntu в Azure](discovery-docker-ubuntu-azure.md)
-##### Изменение конфигурации Docker
-###### [Настройка файлов сертификатов](discovery-docker-custom-cert.md)
-###### [Изменение пароля FTP](discovery-docker-change-ftp.md)
-#### [Использование виртуального модуля](configure-automatic-log-upload-for-continuous-reports.md)
+#### [Использование виртуального модуля — устарело](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Использование настраиваемого средства синтаксического анализа журналов](custom-log-parser.md)
 ### [Обогащение Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Анонимизация данных Cloud Discovery](cloud-discovery-anonymizer.md)
@@ -76,3 +73,5 @@
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
 ## [Устранение проблем с проверкой содержимого](troubleshooting-content-inspection.md)
 ## [Устранение неполадок интеграции SIEM](troubleshooting-siem.md)
+## [Устранение неполадок при развертывании Docker для Cloud Discovery](troubleshoot-docker.md)
+## [Устранение неполадок в политиках](troubleshoot-policies.md)
