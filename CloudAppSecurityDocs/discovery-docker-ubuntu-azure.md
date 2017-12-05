@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Установка и настройка в Ubuntu
 
 
 ## <a name="technical-requirements"></a>Технические требования
 
--   ОС: Ubuntu 14.04 или более поздней версии
+-   ОС: Ubuntu 14.04 или более поздние версии (стабильная версия Docker с поддержкой Ubuntu 17.10 недоступна)
 
 -   Место на диске: 250 ГБ
 
@@ -111,7 +111,7 @@ ms.lasthandoff: 11/22/2017
     |caslogcollector_syslogs_tcp|601–700|TCP|Любые|Любые|
     |caslogcollector_syslogs_udp|514–600|UDP|Любые|Любые|
       
-      ![Правила Ubuntu в Azure](./media/ubuntu-azure-rules.png)
+      ![Правила Ubuntu в Azure](./media/inbound-rule.png)
 
 3.  На виртуальной машине щелкните **Connect** (Подключиться), чтобы открыть терминал.
 
@@ -121,23 +121,21 @@ ms.lasthandoff: 11/22/2017
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. На портале Cloud App Security в окне **Create new log collector** (Создать новый сборщик журналируемых данных) скопируйте команду, которая импортирует конфигурацию сборщика на хост-компьютер.
-
-      ![Ubuntu в Azure](./media/ubuntu-azure.png)
-
-7. Выполните команду, чтобы развернуть сборщик журналируемых данных.
-
       ![Команда Ubuntu в Azure](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >Чтобы настроить прокси-сервер, добавьте его IP-адрес и порт. Например, если адрес прокси-сервера — 192.168.10.1:8080, измененная команда выполнения будет выглядеть так: 
+6. На портале Cloud App Security в окне **Create new log collector** (Создать новый сборщик журналируемых данных) скопируйте команду, которая импортирует конфигурацию сборщика на хост-компьютер.
 
+      ![Ubuntu в Azure](./media/windows7.png)
+
+7. Выполните команду, чтобы развернуть сборщик журналируемых данных.
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Прокси-сервер Ubuntu](./media/ubuntu-proxy.png)
 
 8. Убедитесь, что сборщик работает без ошибок, выполнив команду `Docker logs <collector_name>`. Вы должны увидеть сообщение **Finished successfully!** (Завершено успешно).
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Шаг 3. Локальная конфигурация сетевых устройств
 
@@ -166,7 +164,7 @@ ms.lasthandoff: 11/22/2017
 ![Настраиваемый непрерывный отчет](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>См. также
-[Работа с данными Cloud Discovery](working-with-cloud-discovery-data.md)  
-[Чтобы получить техническую поддержку, перейдите на страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+[Устранение неполадок с развертыванием Docker для Cloud Discovery](troubleshoot-docker.md)
+[Вы можете получить техническую поддержку на странице технической поддержки Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)
 
