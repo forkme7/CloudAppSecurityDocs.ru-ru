@@ -41,9 +41,11 @@
 ### [Защита файлов с помощью карантина администратора](use-case-admin-quarantine.md)
 ## Обнаружить
 ### [Работа с обнаруженными приложениями](discovered-apps.md)
+#### [Фильтры и запросы обнаруженных приложений](discovered-app-queries.md)
 ### [Работа с оценкой рисков](risk-score.md)
 ## [Анализ](investigate.md)
 ### [Действия](activity-filters.md)
+#### [Фильтры и запросы действий](activity-filters-queries.md)
 ### [Файлы](file-filters.md)
 ### [Учетные записи](accounts.md)
 ### [Справочник по встроенным отчетам](built-in-report-reference.md)
@@ -69,6 +71,7 @@
 ### [Интеграция с внешней системой защиты от потери данных](icap-stunnel.md)
 ### [Токены API](api-tokens.md)
 # Устранение неполадок
+## [Устранение неполадок состояния службы](troubleshooting-status.md)
 ## [Устранение неполадок с Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Устранение неполадок соединителей API с помощью сообщений об ошибках](troubleshooting-api-connectors-using-error-messages.md)
 ## [Устранение проблем с проверкой содержимого](troubleshooting-content-inspection.md)
