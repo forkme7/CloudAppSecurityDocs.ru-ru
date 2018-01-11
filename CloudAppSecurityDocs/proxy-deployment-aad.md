@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Развертывание прокси-сервера для приложений Azure AD
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 11/13/2017
 
         ![Идентификация устройств](./media/device-identification.png)
  
-       После загрузки сертификата вы можете создавать политики сеансов на основе параметра **Тег устройства**, который может быть равен или не равен значению **Допустимый сертификат клиента**.
+       После загрузки сертификата вы можете создавать политики доступа и сеансов на основе параметра **Тег устройства**, который может быть равен или не равен значению **Допустимый сертификат клиента**.
  
       > [!NOTE]
       >Сертификат пользователя будет запрашиваться только в том случае, если сеанс соответствует политике, в которой применяется фильтр по допустимому сертификату клиента. 
@@ -99,7 +99,7 @@ ms.lasthandoff: 11/13/2017
  ![Проверка тега агента пользователя](./media/domain-joined.png)
 
 
-Теперь вы можете создавать [политики сеансов](session-policy-aad.md), позволяющие управлять приложениями на прокси-сервере.
+Теперь вы можете создавать [политики доступа](access-policy-aad.md) и [сеансов](session-policy-aad.md), позволяющие управлять приложениями прокси-сервера.
 
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Подключение AWS к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Amazon Web Services с помощью интерфейсов API соединителя.  
@@ -36,20 +36,12 @@ ms.lasthandoff: 09/28/2017
 
      ![Создание пользователя в AWS](./media/aws-create-user.png "Create user in AWS")
 
-5. На шаге **Разрешения** щелкните **Attach existing policies directly** (Присоединить существующие политики напрямую), а затем нажмите кнопку **Create policy** (Создать политику).
+5. Откройте вкладку "JSON".
 
-   ![Присоединение пользователя в AWS](./media/aws-attach-user-policy.png "Attach user policy in AWS")
+     ![AWS JSON](./media/aws-json.png "Вкладка AWS JSON")
 
-6.  В разделе **Create Policy** (Создание политики) выберите **Create Your Own Policy** (Создать собственную политику).
- 
-    ![Создание собственной политики в AWS](./media/aws-create-own-policy.png "Create policy in AWS")
- 
-7.  В разделе **Review Policy** (Просмотр политики) в поле **Policy Name** (Имя политики) введите имя, например CloudAppSecurityPolicy.
+6. Вставьте следующий сценарий в указанную область.
 
-    ![Просмотр политики в AWS](./media/aws-review-policy.png "Review policy in AWS")
-
-8. Вставьте следующий скрипт в поле **Policy Document** (Документ политики), а затем нажмите кнопку **Create policy** (Создать политику).
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ ms.lasthandoff: 09/28/2017
      }  
   
     ```  
-  
+
+     ![Код AWS](./media/aws-code.png "Код AWS")
+    
+6. Щелкните **Просмотр политики**.
+
+7. Укажите **Имя** и нажмите кнопку **Создать политику**.
+
+     ![Назначение имени для политики AWS](./media/aws-create-policy.png "Создание политики AWS")
+
 9. Вернитесь на экран **Add user** (Добавление пользователя), при необходимости обновите список, выберите только что созданного пользователя и нажмите кнопку **Next Review** (Далее — просмотр).
 
    ![Просмотр политики пользователя в AWS](./media/aws-review-user.png "Review user in AWS")

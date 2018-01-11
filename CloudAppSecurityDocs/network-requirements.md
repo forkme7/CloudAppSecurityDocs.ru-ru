@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 1/4/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: 27e14be8501964ea62d2e5df84d96a9553d30ad6
+ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="network-requirements"></a>Сетевые требования
 
@@ -40,15 +40,19 @@ ms.lasthandoff: 11/22/2017
 
 ## <a name="portal-access"></a>Доступ к порталу
 
-Для доступа к порталу Cloud App Security добавьте **исходящий порт 443** для следующих IP-адресов в список разрешений для брандмауэра:  
+Для доступа к порталу Cloud App Security добавьте **исходящий порт 443** для следующих IP-адресов и DNS-имен в список разрешений для брандмауэра.  
 
 
 > [!div class="mx-tableFixed"]
-|Центр обработки данных|IP-адреса|  
-|----|----|
-|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
-|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+|Центр обработки данных|IP-адреса|DNS-имя|
+|----|----|----|
+|США|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+|ЕС|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
+
+
+>[!NOTE]
+>Вместо подстановочного знака (\*) можно открыть только URL-адрес определенного клиента, например, с учетом приведенного выше снимка экрана, можно открыть mod244533.us.portal.cloudappsecurity.com.
 
 ## <a name="siem-agent-connection"></a>Подключение агента SIEM
 
@@ -58,29 +62,30 @@ ms.lasthandoff: 11/22/2017
 > [!div class="mx-tableFixed"]
 |Центр обработки данных|IP-адреса|  
 |----|----|
-|US1|13.91.91.243|
+|США|13.91.91.243|
 |US2|52.184.165.82|
-|EU1|52.174.56.180|
+|ЕС|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Доступ к соединителю приложений и интеграция с внешней системой защиты от потери данных
 
-Для подключения к сторонним приложениям и интеграции с внешними решениями защиты от потери данных следует разрешить Cloud App Security подключатся к следующим IP-адресам.
+
+### <a name="app-connector"></a>Соединитель приложений
+
+Для некоторых сторонних приложений, к которым обращается Cloud App Security, эти IP-адреса могут использоваться, чтобы позволить Cloud App Security собирать данные журналов и предоставлять доступ для консоли Cloud App Security. 
+
+> [!NOTE]
+>Вы можете увидеть эти IP-адреса в журналах действий поставщика, так как Cloud App Security выполняет с этих IP-адресов действия управления и проверки. 
+
+Для подключения к сторонним приложениям и интеграции с внешними решениями защиты от потери данных следует разрешить Cloud App Security подключаться со следующих IP-адресов.
 
 
 > [!div class="mx-tableFixed"]
 |Центр обработки данных|IP-адреса|  
 |----|----|
-|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|США|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-
-
-### <a name="app-connector"></a>Соединитель приложений
-Для некоторых сторонних приложений, к которым обращается Cloud App Security, эти IP-адреса могут использоваться, чтобы позволить Cloud App Security собирать данные журналов и предоставлять доступ для консоли Cloud App Security. 
-
-> [!NOTE]
->Вы можете увидеть эти IP-адреса в журналах действий поставщика, так как Cloud App Security выполняет с этих IP-адресов действия управления и проверки. 
-  
+|ЕС|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+ 
 
 ### <a name="dlp-integration"></a>Интеграция DLP
 
@@ -112,12 +117,12 @@ ms.lasthandoff: 11/22/2017
    
     |Центр обработки данных|URL-адрес|
     |----|----|
-    |US1|https://adaprodconsole.blob.core.windows.net/|
+    |США|https://adaprodconsole.blob.core.windows.net/|
     |US2|https://prod03use2console1.blob.core.windows.net/|
-    |EU1|https://prod02euwconsole1.blob.core.windows.net/|
+    |ЕС|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика в диапазон IP-адресов центра обработки данных Microsoft Azure через порт 443.
+> Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика по [диапазонам IP-адресов центра обработки данных Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) через порт 443.
 
 
 
