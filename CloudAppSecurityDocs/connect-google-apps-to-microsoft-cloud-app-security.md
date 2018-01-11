@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,14 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
-ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
+ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
-
   
   
 ## <a name="configure-g-suite"></a>Настройка G Suite  
@@ -44,9 +43,9 @@ ms.lasthandoff: 11/14/2017
   
      ![google3](./media/google3.png "google3")  
   
-5.  В разделе **API** отключите все перечисленные API-интерфейсы.  
+6.  В разделе **API** отключите все перечисленные API-интерфейсы.  
       
-6.  Щелкните **Library** (Библиотека) и включите следующие API (если API не отображается в списке **Popular APIs** (Популярные API), воспользуйтесь строкой поиска):  
+7.  Щелкните **Library** (Библиотека) и включите следующие API (если API не отображается в списке **Popular APIs** (Популярные API), воспользуйтесь строкой поиска):  
      
     -   Admin SDK (SDK администрирования)  
   
@@ -63,11 +62,11 @@ ms.lasthandoff: 11/14/2017
    > [!NOTE]  
    >  Проигнорируйте предупреждение об **учетных данных**.  
 
-7.  В списке **Enabled APIs** (Включенные API) должно быть пять элементов:  
+8.  В списке **Enabled APIs** (Включенные API) должно быть пять элементов:  
   
      ![включенные api google](./media/google5.png "google5")  
   
-8.  Щелкните **Credentials** (Учетные данные) и откройте вкладку **OAuth consent** (Получение согласия OAuth).
+9.  Щелкните **Credentials** (Учетные данные) и откройте вкладку **OAuth consent** (Получение согласия OAuth).
   
     -   В поле **Product name shown to users** (Имя продукта, отображаемое пользователям) введите **Microsoft Cloud App Security**.  
   
@@ -77,38 +76,38 @@ ms.lasthandoff: 11/14/2017
   
      ![Имя продукта Google](./media/google6.png "google6")  
   
-9. На вкладке **Credentials** (Учетные данные) щелкните стрелку рядом с полем **Create credentials** (Создать учетные данные).  
+10. На вкладке **Credentials** (Учетные данные) щелкните стрелку рядом с полем **Create credentials** (Создать учетные данные).  
   
      ![Учетные данные Google](./media/google7.png "google7")  
 
-10. Выберите пункт **Service account key** (Ключ учетной записи службы).
+11. Выберите пункт **Service account key** (Ключ учетной записи службы).
 
      ![Ключ учетной записи службы Google](./media/google8.png "google8")  
   
-11. В поле **Service account** (Учетная запись службы) выберите **New service account** (Новая учетная запись службы) и введите любое имя, например **Service account 1**. В разделе **Role** (Роль) выберите **Project** (Проект) и **Editor** (Редактор). В разделе **Key type** (Тип ключа) выберите **P12** и нажмите кнопку **Create** (Создать). Файл сертификата P12 будет сохранен на компьютере.
+12. В поле **Service account** (Учетная запись службы) выберите **New service account** (Новая учетная запись службы) и введите любое имя, например **Service account 1**. В разделе **Role** (Роль) выберите **Project** (Проект) и **Editor** (Редактор). В разделе **Key type** (Тип ключа) выберите **P12** и нажмите кнопку **Create** (Создать). Файл сертификата P12 будет сохранен на компьютере.
  
      ![Создание ключа учетной записи службы в Google](./media/google9.png "google9")  
   
-12.  Скопируйте присвоенное службе значение **Service account ID** (Идентификатор учетной записи службы) — оно понадобится позже.    
+13.  Скопируйте присвоенное службе значение **Service account ID** (Идентификатор учетной записи службы) — оно понадобится позже.    
         
-12. В правой части экрана **Credentials** (Учетные данные) щелкните **Manage service accounts** (Управление учетными записями служб).  
+14. В правой части экрана **Credentials** (Учетные данные) щелкните **Manage service accounts** (Управление учетными записями служб).  
      
     ![Данные учетной записи службы G Suite](./media/google10.png "G Suite credentials service account")  
   
-13. Щелкните три точки справа от созданной учетной записи службы и выберите **Edit** (Изменить).  
+15. Щелкните три точки справа от созданной учетной записи службы и выберите **Edit** (Изменить).  
   
      ![редактирование в google](./media/google11.png "редактирование в google")  
   
-15. Установите флажок **Enable G Suite Domain-wide Delegation** (Включить делегирование в рамках домена G Suite) и нажмите кнопку **Save** (Сохранить).  
+16. Установите флажок **Enable G Suite Domain-wide Delegation** (Включить делегирование в рамках домена G Suite) и нажмите кнопку **Save** (Сохранить).  
   
      ![Идентификатор учетной записи службы Google](./media/google12.png "google12")  
   
-16. Откройте меню Google, щелкнув три горизонтальные линии рядом с Google Cloud Platform. Выберите **Google Cloud Platform** и щелкните вкладку **APIs and services** (API-интерфейсы и службы) в меню слева.  
+17. Откройте меню Google, щелкнув три горизонтальные линии рядом с Google Cloud Platform. Выберите **Google Cloud Platform** и щелкните вкладку **APIs and services** (API-интерфейсы и службы) в меню слева.  
     
-17. На открывшейся панели мониторинга прокрутите список включенных API-интерфейсов и щелкните **API Google Drive**.   
+18. На открывшейся панели мониторинга прокрутите список включенных API-интерфейсов и щелкните **API Google Drive**.   
        ![Выбор Google Drive](./media/google14.png "google14")  
 
-18. Откройте вкладку **Drive UI Integration** (Интеграция пользовательского интерфейса диска) и введите следующие сведения:
+19. Откройте вкладку **Drive UI Integration** (Интеграция пользовательского интерфейса диска) и введите следующие сведения:
 
     -   **Application Name** (Имя приложения): Microsoft Cloud App Security.  
   
@@ -122,9 +121,11 @@ ms.lasthandoff: 11/14/2017
     
        ![Изменить Google Drive](./media/google15.png "google15")  
 
-19. Вернитесь к списку **Enabled APIs** (Включенные API-интерфейсы). Щелкните **Google Apps Marketplace SDK**. 
+20. Щелкните **Save changes** (Сохранить изменения).
+
+20. Вернитесь к списку **Enabled APIs** (Включенные API-интерфейсы). Щелкните **Google Apps Marketplace SDK**. 
       
-20. Откройте вкладку **Configuration** (Конфигурация). 
+21. Откройте вкладку **Configuration** (Конфигурация). 
   
     -   Скопируйте отображаемое сверху значение **Project number (App ID)** (Номер проекта — идентификатор приложения) для использования в дальнейшем.  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 11/14/2017
   
     -   Настройте четыре требуемых изображения в разделе **Application icons** (Значки приложения).  
   
-         Изображения можно найти по ссылке [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644).  
+         Изображения можно найти по ссылке [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826).  
   
     -   Задайте приведенные ниже значения **Support URLs** (URL-адреса поддержки):  
   
@@ -186,14 +187,14 @@ ms.lasthandoff: 11/14/2017
   
     -   Щелкните **Сохранить изменения**.  
   
-18. Перейдите на страницу [admin.google.com](https://admin.google.com/) и выберите **Security** (Безопасность). 
+22. Перейдите на страницу [admin.google.com](https://admin.google.com/) и выберите **Security** (Безопасность). 
    
       ![Безопасность Google](./media/googlesec.png "google security")  
  
-19. Выберите **API reference** (Справочник по API).  
+23. Выберите **API reference** (Справочник по API).  
        ![Включение доступа к API Google](./media/googleapi.png "google api")  
       
-20. Выберите **Enable API Access** (Включить доступ к API) и нажмите кнопку **Save changes** (Сохранить изменения).  
+24. Выберите **Enable API Access** (Включить доступ к API) и нажмите кнопку **Save changes** (Сохранить изменения).  
   
     ![справочник по api google](./media/googleapiref.png "google8")  
 
@@ -209,7 +210,7 @@ ms.lasthandoff: 11/14/2017
   
      ![Настройка G Suite в Cloud App Security](./media/gsuite-config-cas.png "Настройка G Suite в Cloud App Security")  
   
-    1.  **Service Account email address** (Адрес электронной почты учетной записи службы), скопированный на шаге 16.  
+    1.  **Service account ID** (Идентификатор учетной записи службы), скопированный на шаге 13.  
   
     2.  **Project number (App ID)** (Номер проекта — идентификатор приложения), скопированный в шаге 21.  
   

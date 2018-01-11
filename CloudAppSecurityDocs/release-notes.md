@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,29 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
+ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/07/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Новые возможности в Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-114"></a>Cloud App Security, выпуск 114
+Выпущен 7 января 2018 г.
+
+- Начиная с версии 114, мы постепенно реализуем возможность создавать и сохранять пользовательские запросы на страницах "Журнал действий" и "Обнаруженные приложения". Пользовательские запросы позволяют создавать шаблоны фильтров, которые можно повторно использовать для более подробного анализа. Кроме того, добавлена функция **предлагаемых запросов**, предоставляющая готовые шаблоны анализа для фильтрации действий и обнаруженных приложений. Функция **предлагаемых запросов** содержит пользовательские фильтры для идентификации рисков, таких как действия олицетворения, действия администраторов, рискованные и несоответствующие облачные приложения для хранения данных, корпоративные приложения с ненадежным шифрованием и угрозы безопасности. Вы можете использовать **предлагаемые запросы** в качестве отправной точки для создания запроса. Дополнительные сведения см. в разделах [Фильтры и запросы действий](activity-filters-queries.md) и [Фильтры и запросы обнаруженных приложений](discovered-app-queries.md).
+ 
+- Теперь вы можете проверить текущее состояние службы Cloud App Security, перейдя по адресу [status.cloudappsecurity.com](https://status.cloudappsecurity.com), или непосредственно на портале, выбрав **Справка**>**Состояние системы**. 
+ 
+
+## <a name="cloud-app-security-release-113"></a>Cloud App Security, выпуск 113
+Выпущен 25 декабря 2017 г.
+
+-   Мы рады сообщить о том, что Cloud App Security теперь обеспечивает более глубокую интеграцию с Azure Information Protection. Эта функция, находящаяся на этапе общедоступной предварительной версии, позволяет проверять и классифицировать файлы в облачных приложениях, а также автоматически применять метки Azure Information Protection для защиты. Она поддерживается в Box, SharePoint и OneDrive. Дополнительные сведения см. в разделе [Интеграция Azure Information Protection](azip-integration.md).
+
+-   Анализаторы журналов Cloud Discovery теперь поддерживают универсальные форматы: LEEF, CEF и WC3.
+
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security, выпуск 112
 Выпущен 10 декабря 2017 г.
