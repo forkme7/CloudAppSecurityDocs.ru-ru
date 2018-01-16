@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: 4e0732cce649b7d6c2767325e3c232c36b523fec
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-apps"></a>Подключение приложений 
 Соединители приложений используют API поставщиков приложений, чтобы расширить возможности видимости и контроля в Cloud App Security для приложений, к которым вы подключаетесь.  
@@ -82,7 +82,7 @@ Cloud App Security развертывается с правами системн
 |**Карантин**|✔|✔|Не применяются|Ожидается в ближайшее время|||Ожидается в ближайшее время||  
 |**Просмотр разрешений приложения**|✔|Не поддерживается поставщиком|Не применяются|✔||✔|Не поддерживается поставщиком||  
 |**Отмена разрешений приложения**|✔||Не применяются|✔||✔|Не применяются||  
-  
+|**Применение меток Azure Information Protection**|✔|✔|||||||  
   
 ## <a name="prerequisites"></a>Предварительные условия  
 

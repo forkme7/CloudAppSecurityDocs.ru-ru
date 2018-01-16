@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
-ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
+ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
@@ -25,7 +25,7 @@ ms.lasthandoff: 12/31/2017
   
 ## <a name="configure-g-suite"></a>Настройка G Suite  
   
-1.  Войдите на сайт [https://cloud.google.com/console/project](https://cloud.google.com/console/project) как суперадминистратор G Suite.  
+1.  Войдите на сайт <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a> как суперадминистратор G Suite.  
   
 2.  Щелкните **Create project** (Создать проект) для запуска нового проекта.  
   
@@ -113,7 +113,7 @@ ms.lasthandoff: 12/31/2017
   
     -   **Short Description & Long Description** (Короткое и длинное описание) (необязательно): Microsoft Cloud App Security обеспечивает видимость облачных приложений, помогая контролировать, анализировать и регулировать использование облачных приложений, защищать корпоративные данные, а также обнаруживать подозрительные действия для любого облачного приложения.  
   
-    -   Google требует отправить по крайней мере один значок приложения. Чтобы скачать ZIP-файл со значками Cloud App Security, перейдите по ссылке [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826). Затем в разделе **Application icon** (Значок приложения) перетащите изображения размером 128x128 и 32x32.  
+    -   Google требует отправить по крайней мере один значок приложения. Чтобы скачать ZIP-файл со значками Cloud App Security, перейдите по ссылке [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826). После этого в разделе **Значок приложения** нажмите кнопку **Выбрать** рядом с изображением 128x128 и перетащите его на экран контекстного меню. Нажмите кнопку **Выбрать** рядом с изображением 32x32 и перетащите его на экран контекстного меню.  
   
     -   Прокрутите страницу вниз до раздела **Drive Integration** (Интеграция диска) и введите следующие данные в поле **Open URL** (Открыть URL-адрес):  
   
@@ -184,7 +184,8 @@ ms.lasthandoff: 12/31/2017
            https://www.googleapis.com/auth/admin.directory.device.mobile  
   
            https://www.googleapis.com/auth/admin.directory.user  
-  
+
+    -   Когда G Suite запрашивает видимость, выберите **My domain** (Мой домен) (не общедоступный). 
     -   Щелкните **Сохранить изменения**.  
   
 22. Перейдите на страницу [admin.google.com](https://admin.google.com/) и выберите **Security** (Безопасность). 
