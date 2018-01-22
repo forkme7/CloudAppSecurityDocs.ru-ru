@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e69481693e961c759f6d3bfd09f2e70a345576f
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="activities"></a>Действия
 Cloud App Security информирует вас обо всех действиях, связанных с подключенными приложениями. После подключения Cloud App Security к приложению с помощью соединителя приложений Cloud App Security сканирует все произошедшие действия (интервал времени сканирования предыдущего периода зависит от приложения), а затем непрерывно получает новые действия в обновлениях. 
@@ -113,7 +113,7 @@ IP-адреса представляют собой критически важ�
 
 ## <a name="see-also"></a>См. также  
 [Ежедневные мероприятия для защиты облачной среды](daily-activities-to-protect-your-cloud-environment.md)   
-[Получить техническую поддержку можно на странице службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   

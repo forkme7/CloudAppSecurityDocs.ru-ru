@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 161fbf275bfea2ceafbb36e56b1ba91fcd564543
-ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
+ms.openlocfilehash: 03ace8d5bf61ed623ad90b3717c4d35b767498a3
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Установка и настройка в Ubuntu
 
@@ -167,7 +167,7 @@ ms.lasthandoff: 12/18/2017
 ![Настраиваемый непрерывный отчет](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>См. также
-[Устранение неполадок с развертыванием Docker для Cloud Discovery](troubleshoot-docker.md)
-[Вы можете получить техническую поддержку на странице технической поддержки Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+[Устранение неполадок при развертывании Docker для Cloud Discovery](troubleshoot-docker.md)
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)
 

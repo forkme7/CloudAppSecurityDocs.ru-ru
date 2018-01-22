@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4e0732cce649b7d6c2767325e3c232c36b523fec
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: b1bc4f7455736f57cf4bb43d8c7d7d020e749f7c
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="connect-apps"></a>Подключение приложений 
 Соединители приложений используют API поставщиков приложений, чтобы расширить возможности видимости и контроля в Cloud App Security для приложений, к которым вы подключаетесь.  
@@ -115,7 +115,7 @@ Cloud App Security развертывается с правами системн
   
 ## <a name="see-also"></a>См. также  
 [Ежедневные мероприятия для защиты облачной среды](daily-activities-to-protect-your-cloud-environment.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
 

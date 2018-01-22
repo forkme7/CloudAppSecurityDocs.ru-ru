@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 4526b93a0d95f4bd1cc0a97867ba585002408130
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="deploy-cloud-app-security"></a>Развертывание Cloud App Security
 Cloud App Security позволяет вам использовать ценные возможности, которые дают облачные приложения, сохраняя при этом контроль над ресурсами организации. Эта служба повышает прозрачность действий в облаке и помогает повысить безопасность корпоративных данных. В этом разделе представлено пошаговое руководство для настройки Cloud App Security и работы с ней.  
@@ -161,5 +161,5 @@ Cloud App Security позволяет вам использовать ценны
 ## <a name="see-also"></a>См. также
 
 Вы можете задать политики для [управления облачными приложениями при помощи политик](control-cloud-apps-with-policies.md).    
-Для получения технической поддержки перейдите на страницу [Служба технической поддержки Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
+
 Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на [портале Premier](https://premier.microsoft.com/).   

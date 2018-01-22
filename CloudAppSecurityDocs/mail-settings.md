@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b48266e4cddbb61c13df5f361d50bc4931e77258
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 ##  <a name="mailsettings"></a> Настройка уведомлений электронной почты  
 В строке меню щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Параметры почты**, чтобы задать параметры для уведомлений электронной почты, отправляемых из Cloud App Security администраторам, запрашивающим предупреждения, и уведомлений, отправляемых конечным пользователям по поводу нарушений, к которым они имеют отношение.  
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/28/2017
     
 ## <a name="see-also"></a>См. также  
 [Настройка Cloud Discovery](set-up-cloud-discovery.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   

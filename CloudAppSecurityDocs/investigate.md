@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ffb49e882856b144fff028c7b10167b5c55356f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="investigate"></a>Анализ
 После запуска Cloud App Security в облачной среде потребуется произвести исследование и анализ использования средств Cloud App Security, чтобы лучше понять, что именно происходит в этой среде. После, основываясь на особенностях конкретной среды и ее использовании, можно определить требования, необходимые для защиты организации от рисков.
@@ -152,7 +152,7 @@ ms.lasthandoff: 11/06/2017
 
      Если это допустимое событие, которое, возможно, будет повторяться, можно изменить политику, чтобы в будущем подобное событие не считалось нарушением.  
 
-## <a name="see-also"></a>См. также:  
+## <a name="see-also"></a>См. также статью  
 Сведения об управлении облачным приложением организации см. в разделе [Управление](control.md).   
-Для получения технической поддержки перейдите на страницу [Служба технической поддержки Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).  
+
 Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на [портале Premier](https://premier.microsoft.com/).  
