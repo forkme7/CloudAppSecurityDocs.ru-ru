@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/22/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc4a82602aabb8b493edefd1cb1456b81fff9d13
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Каковы различия между Microsoft Cloud App Security и Office 365 Cloud App Security?
 
@@ -38,7 +38,7 @@ Office 365 Cloud App Security — это средство Microsoft Cloud App 
 |----|----|----|----|
 |Cloud Discovery|Обнаруженные приложения |Более 15 000 облачных приложений  |Более 750 облачных приложений с функциональными возможностями, аналогичными Office 365|
 ||Развертывание для анализа обнаружения|Отправка журналов вручную и автоматически|Отправка журналов вручную|
-||Анонимизация журналов для обеспечения конфиденциальности пользователей|Да|Нет|
+||Анонимизация журналов для обеспечения конфиденциальности пользователей|Да||
 ||Доступ к полному каталогу облачных приложений|Да||
 ||Оценка рисков облачных приложений|Да||
 ||Анализ использования облачных приложений по каждому приложению, пользователю, IP-адрес|Да||
@@ -60,6 +60,6 @@ Office 365 Cloud App Security — это средство Microsoft Cloud App 
 ## <a name="see-also"></a>См. также  
 
 Основы см. в разделе [Начало работы с Cloud App Security](getting-started-with-cloud-app-security.md).    
-Для получения технической поддержки перейдите на страницу [Служба технической поддержки Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
+
 Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на [портале Premier](https://premier.microsoft.com/).   
 

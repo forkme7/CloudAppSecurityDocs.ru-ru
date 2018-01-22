@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abda59dfdde956447ea314f09ab00815ae717a38
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 0e771330feb92833e77c0699d33851d7d52d82ef
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="activity-policies"></a>Политики действий
 Политики действий позволяют применять разнообразные автоматизированные процессы, используя API поставщика приложения. Эти политики позволяют отслеживать определенные действия, выполняемые различными пользователями, либо неожиданно высокую частоту одного определенного типа действия.  
@@ -77,7 +77,7 @@ ms.lasthandoff: 11/06/2017
 -   Действия — политика предоставляет набор действий системы управления, которые могут применяться автоматически при обнаружении нарушений.  
 ## <a name="see-also"></a>См. также  
 [Политики защиты данных](data-protection-policies.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2bd354c817152735be5485b24202c8706163404e
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: cc5f5896a8a4abb69efff6deab94f7e55108eeff
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 ##  <a name="Adminsettings"></a> Настройка параметров администратора  
 Чтобы задать параметры администратора Cloud App Security, щелкните свое имя в строке меню на портале и выберите пункт **Параметры пользователей**. Вы можете настроить следующие параметры:  
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/28/2017
     
 ## <a name="see-also"></a>См. также  
 [Настройка Cloud Discovery](set-up-cloud-discovery.md)   
-[Получить техническую поддержку можно на странице службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
