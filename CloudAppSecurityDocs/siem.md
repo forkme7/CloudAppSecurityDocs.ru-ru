@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
-ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
+ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -184,8 +184,8 @@ ms.lasthandoff: 12/18/2017
 Агент SIEM — это единая конечная точка, которая поддерживает восстановление при простое до двух дней. Высокий уровень доступности можно также обеспечить, используя в качестве конечной точки клиента подсистему балансировки нагрузки.
 
 ## <a name="see-also"></a>См. также  
-[Устранение неполадок интеграции SIEM](troubleshooting-siem.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Устранение проблем, связанных с агентом SIEM](troubleshooting-siem.md)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Новые возможности в Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-115"></a>Cloud App Security, выпуск 115
+Выпущен 21 января 2018 г.
+
+-   В этом выпуске улучшен выбор папок в политике файлов. Теперь можно с легкостью просмотреть и выбрать несколько папок, которые нужно включить в политику. 
+-   На странице **Обнаруженные приложения** добавлены следующие возможности: 
+   - Функция массового добавления тегов позволяет применять пользовательские теги (в дополнение к санкционированным и несанкционированным тегам). 
+   - При **создании отчета об IP-адресах** экспортированные отчеты теперь включают сведения о том, откуда поступал трафик — из санкционированных или несанкционированных приложений. 
+-   Теперь вы можете запросить у службы поддержки Microsoft Cloud App Security новый соединитель приложения API непосредственно на странице **подключения приложения** на портале. 
+
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security, выпуск 114
 Выпущен 7 января 2018 г.
@@ -34,7 +44,7 @@ ms.lasthandoff: 01/07/2018
 
 -   Мы рады сообщить о том, что Cloud App Security теперь обеспечивает более глубокую интеграцию с Azure Information Protection. Эта функция, находящаяся на этапе общедоступной предварительной версии, позволяет проверять и классифицировать файлы в облачных приложениях, а также автоматически применять метки Azure Information Protection для защиты. Она поддерживается в Box, SharePoint и OneDrive. Дополнительные сведения см. в разделе [Интеграция Azure Information Protection](azip-integration.md).
 
--   Анализаторы журналов Cloud Discovery теперь поддерживают универсальные форматы: LEEF, CEF и WC3.
+-   Анализаторы журналов Cloud Discovery теперь поддерживают универсальные форматы LEEF, CEF и W3C.
 
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security, выпуск 112
@@ -629,7 +639,7 @@ ms.lasthandoff: 01/07/2018
 * При настройке отправки оповещения в случае нарушения политики теперь можно задать минимальный уровень серьезности, о котором следует оповещать. Можно использовать для этого параметр организации по умолчанию или задать параметр конкретного оповещения в качестве значения по умолчанию в организации.
 
 ## <a name="see-also"></a>См. также  
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
