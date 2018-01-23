@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad089d71975a83c2f41fb9a9694acb8d01defdc7
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: cf6bca7ff1e5ccb2bc2ed72a0c6f0e47942ed19a
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="network-requirements"></a>Сетевые требования
 
@@ -129,14 +129,14 @@ ms.lasthandoff: 01/15/2018
     |ЕС|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика по [диапазонам IP-адресов центра обработки данных Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) через порт 443.
-
+> - Если брандмауэр требует список доступа к статическим IP-адресам и не поддерживает добавление объектов в список разрешений на основе URL-адресов, разрешите сборщику журналируемых данных инициировать передачу исходящего трафика по [диапазонам IP-адресов центра обработки данных Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) через порт 443.
+>- Разрешите сборщику журналируемых данных инициировать передачу исходящего трафика на портал Cloud App Security.
 
 
 
 ## <a name="see-also"></a>См. также  
 [Ежедневные мероприятия для защиты облачной среды](daily-activities-to-protect-your-cloud-environment.md)   
-[Для получения технической поддержки посетите страницу службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
 

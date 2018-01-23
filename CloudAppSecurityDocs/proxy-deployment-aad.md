@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/17/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
-ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
+ms.openlocfilehash: 8825f83de2bb7b7cb2ff236f0bffeeaeddf4c7f6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Развертывание прокси-сервера для приложений Azure AD
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 12/18/2017
 
 
 ## <a name="see-also"></a>См. также  
-[Работа с прокси-сервером Cloud App Security](proxy-intro-aad.md)   
-[Получить техническую поддержку можно на странице службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Защита приложений с использованием прокси-сервера Microsoft Cloud App Security](proxy-intro-aad.md)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   

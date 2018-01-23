@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62694b685bb82074d74c72b4ec60f4e0e7436fd1
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 06ae1763918d44512ff52ad25ca0c0f77bcab3e9
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="session-policies"></a>Политики сеансов 
 
@@ -163,8 +163,8 @@ ms.lasthandoff: 12/20/2017
  
  
 ## <a name="see-also"></a>См. также  
-[Блокировка скачивания на неуправляемых устройствах с помощью функций прокси-сервера Azure Active Directory](use-case-proxy-block-session-aad.md)   
-[Получить техническую поддержку можно на странице службы технической поддержки Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Блокировка скачивания конфиденциальных данных с помощью прокси-сервера Microsoft Cloud App Security](use-case-proxy-block-session-aad.md)   
+
 [Клиенты с поддержкой Premier также могут выбрать Cloud App Security непосредственно на портале Premier.](https://premier.microsoft.com/)  
   
   
