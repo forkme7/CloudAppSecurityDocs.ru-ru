@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fb7f64198ad2b7cbdcf8f9ff25e38611255f1fcf
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Подключение ServiceNow к Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/16/2018
 >  Рекомендуем развернуть ServiceNow с помощью токенов приложения OAuth, которые доступны для Fuji и последующих выпусков (дополнительные сведения см. в соответствующей [документации по ServiceNow](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)). Для более ранних выпусков доступен [устаревший режим подключения](#legacy-servicenow-connection) с использованием имени пользователя и пароля.
 
  > [!NOTE]  
->  Cloud App Security поддерживает версии ServiceNow Eureka, Fiji, Geneva, Helsinki и Istanbul. Для подключения к ServiceNow с помощью Cloud App Security требуется роль **администратора**, а экземпляр ServiceNow должен поддерживать доступ к API.  Дополнительные сведений см. в [документации по ServiceNow](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+>  Cloud App Security поддерживает следующие версии ServiceNow: Eureka, Fiji, Geneva, Helsinki и Istanbul. Для подключения к ServiceNow с помощью Cloud App Security требуется роль **администратора**, а экземпляр ServiceNow должен поддерживать доступ к API.  Дополнительные сведения см. в [документации по продукту ServiceNow](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Как подключить ServiceNow к Cloud App Security с помощью OAuth
   
@@ -44,13 +44,13 @@ ms.lasthandoff: 01/16/2018
 
    ![Тип OAuth в ServiceNow](./media/servicenow-oauth-app-type.png)
 
-5. В разделе **Application Registries New record** (Новая запись в реестрах приложения) укажите следующие данные:
+5. В разделе **Application Registries New record** (Реестры приложения: новая запись) заполните следующие поля.
     
     - В поле **Name** (Имя) введите имя нового профиля OAuth, например CloudAppSecurity. 
     
-    - Значение в поле **Client ID** (Идентификатор клиента) будет создано автоматически. Скопируйте этот идентификатор — его потребуется вставить в Cloud App Security для завершения подключения.
+    - Поле **Client ID** (Идентификатор клиента) будет заполнено автоматически. Скопируйте этот идентификатор — его нужно будет вставить в Cloud App Security для подключения.
     
-    - В поле **Client Secret** (Секрет клиента) введите строку. Если оставить это поле пустым, автоматически будет создан произвольный секрет. Скопируйте и сохраните его для последующего использования. 
+    - В поле **Client Secret** (Секрет клиента) введите строку. Если оставить это поле пустым, будет автоматически создан случайный секрет. Скопируйте и сохраните его для последующего использования. 
     
     - Увеличьте значение в поле **Access Token Lifespan** (Время существования токена доступа) по крайней мере до 3600.
     
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/16/2018
   
      ![подключение servicenow](./media/connect-servicenow.png "подключение servicenow")  
   
-8.  Во всплывающем окне добавьте идентификатор пользователя, пароль, URL-адрес экземпляра ServiceNow, а также идентификатор клиента и секрет клиента. Чтобы найти свой идентификатор пользователя ServiceNow, на портале ServiceNow перейдите на вкладку **Users** (Пользователи) и найдите в таблице свое имя пользователя — оно отображается рядом с вашим идентификатором пользователя.
+8.  Во всплывающем окне укажите идентификатор пользователя, пароль, URL-адрес экземпляра ServiceNow, а также идентификатор клиента и секрет клиента. Чтобы найти свой идентификатор пользователя ServiceNow, на портале ServiceNow перейдите на вкладку **Пользователи** и найдите свое имя в таблице — оно отображается рядом с вашим идентификатором пользователя.
 
     ![Идентификатор пользователя ServiceNow](./media/servicenow-userid.png)
   
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/16/2018
 
     ![подключение servicenow](./media/connect-servicenow.png "подключение servicenow")   
 
-6.  На вкладке "API" страницы параметров ServiceNow добавьте идентификатор пользователя, пароль и URL-адрес экземпляра ServiceNow в соответствующих полях.   
+6.  На вкладке "API" страницы параметров ServiceNow укажите свой идентификатор пользователя, пароль и URL-адрес экземпляра ServiceNow в соответствующих полях.   
 
 7.  Нажмите кнопку **Подключить**.   
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/16/2018
 
 8.  Убедитесь, что подключение установлено, щелкнув элемент **Тестирование API**.   
   
-   Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Закрыть**.   
+   Проверка может занять несколько минут. После получения уведомления об успешном выполнении нажмите кнопку **Закрыть**.    
  После подключения ServiceNow вы получите события за 60 дней, предшествовавших подключению. 
 
 
