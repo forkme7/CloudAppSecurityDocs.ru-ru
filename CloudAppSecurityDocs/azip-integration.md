@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af2fc62de63eba4ca1f275be5cf4f8717047c063
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="azure-information-protection-integration"></a>Интеграция Azure Information Protection
 
@@ -91,7 +91,7 @@ Cloud App Security позволяет автоматически применя�
  ![защита приложения](./media/protect-app.png)
   
   >[!NOTE]
-  >Azure Information Protection защищает файлы размером не больше 50 МБ. 
+  >Когда Cloud App Security использует Azure Information Protection для защиты файлов, максимально поддерживаемый размер файла составляет 50 МБ. 
 
 2. Вам предлагается выбрать одну из корпоративных меток классификации для применения к файлу. После этого нажмите кнопку **Применить**. 
 ![метка классификации защиты](./media/protect-template.png)
