@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/28/2018
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
-ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
+ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Интеграция Azure Information Protection
 
@@ -35,6 +35,8 @@ Cloud App Security позволяет автоматически применя�
 
 
 ## <a name="prerequisites"></a>Предварительные условия
+
+- Для интеграции Azure Information Protection необходимо включить [соединитель приложений для Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 Сейчас Cloud App Security позволяет применять метки классификации Azure Information Protection для следующих типов файлов.
 
@@ -91,7 +93,7 @@ Cloud App Security позволяет автоматически применя�
  ![защита приложения](./media/protect-app.png)
   
   >[!NOTE]
-  >Когда Cloud App Security использует Azure Information Protection для защиты файлов, максимально поддерживаемый размер файла составляет 50 МБ. 
+  > В Cloud App Security можно применять Azure Information Protection к файлам размером до 50 МБ.  
 
 2. Вам предлагается выбрать одну из корпоративных меток классификации для применения к файлу. После этого нажмите кнопку **Применить**. 
 ![метка классификации защиты](./media/protect-template.png)

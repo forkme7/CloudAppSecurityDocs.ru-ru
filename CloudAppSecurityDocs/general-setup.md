@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/31/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7299b52fe26a079664489c0bc832dd898c2c6cfc
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="basic-setup"></a>Базовая настройка
 В следующей процедуре представлены инструкции по настройке портала Cloud App Security.
@@ -47,7 +47,9 @@ ms.lasthandoff: 01/24/2018
 > - Пользователи в доменах, не настроенных как внутренние, будут помечены как внешние, и их действия и файлы проверяться не будут.
 
 5. При интеграции с Azure Information Protection см. сведения в разделе [Интеграция с Azure Information Protection](azip-integration.md). 
-  
+
+ >[!NOTE]
+ > Для интеграции Azure Information Protection необходимо включить [соединитель приложений для Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
 6.  Если вы захотите создать резервную копию параметров портала, воспользуйтесь этим экраном. Щелкните **Экспортировать параметры портала**, чтобы создать файл JSON со всеми параметрами портала, включая правила политик, группы пользователей и диапазоны IP-адресов.  
   
