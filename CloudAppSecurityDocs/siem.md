@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="siem-integration"></a>Интеграция SIEM
     
@@ -74,6 +74,10 @@ ms.lasthandoff: 01/16/2018
   ![Параметры типов данных](./media/siem3.png)
 
 7. Скопируйте токен и сохраните его для последующего использования. После нажатия кнопки "Готово" и завершения работы мастера агент SIEM, добавленный в таблице, отобразится на странице SIEM. Этот агент будет иметь состояние **Created** (Создан). Впоследствии он будет подключен.
+
+> [!NOTE]
+> Любой создаваемый маркер привязывается к создавшему его администратору. Это означает, что при удалении администратора из Cloud App Security токен становится недействительным.
+
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Шаг 2: скачивание JAR-файла и его запуск на сервере
 
