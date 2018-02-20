@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/4/2018
+ms.date: 2/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
+ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Новые возможности в Microsoft Cloud App Security
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security, выпуск 116
 Выпущен 4 февраля 2018 г.
 
+- Политика обнаружения аномалий Cloud App Security дополнена новыми функциями **обнаружения на основе скриптов**, включая определение невозможного перемещения, действий с подозрительных IP-адресов и множественных неудачных попыток входа в систему. Новые политики включены автоматически, предоставляя готовые решения для обнаружения угроз в облачном окружении. Кроме того, эти новые политики предоставляют больше данных из подсистемы обнаружения Cloud App Security, чтобы вы могли ускорить исследование и анализировать угрозы по мере их появления. См. дополнительные сведения о [возможностях мгновенного анализа поведения и обнаружения аномалий](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
+
 - Постепенное развертывание: в Cloud App Security теперь выполняется корреляция между пользователями и их учетными записями для разных приложений SaaS. Это позволяет без труда исследовать все действия пользователей во всех их коррелированных приложениях SaaS, независимо от того, какие использовались приложения или учетные записи.  
 
 -   Постепенное развертывание: теперь Cloud App Security поддерживает несколько экземпляров одного подключенного приложения. Если у вас несколько экземпляров, к примеру, Salesforce (один для сбыта, а другой для маркетинга), можно подключить оба к Cloud App Security и управлять ими из одной консоли, чтобы создавать отдельные политики и проводить более глубокое исследование. 
 
-oul- Средства анализа Cloud Discovery теперь поддерживают еще два формата Checkpoint: XML and KPC.
+- Средства синтаксического анализа Cloud Discovery теперь поддерживают два дополнительных формата контрольных точек — XML и KPC.
 
 
 
