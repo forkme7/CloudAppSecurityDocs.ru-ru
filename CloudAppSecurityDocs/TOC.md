@@ -1,5 +1,6 @@
 # Общие сведения и знакомство с возможностями
 ## [Что такое Cloud App Security?](what-is-cloud-app-security.md)
+## [Cloud App Security: соответствие требованиям, надежность, защита и обеспечение конфиденциальности данных](cas-compliance-trust.md)
 ## [Новые возможности](release-notes.md)
 ## Сравнить
 ### [Office 365](editions-cloud-app-security-o365.md)
@@ -16,7 +17,7 @@
 ## [Развертывание Cloud Discovery](set-up-cloud-discovery.md)
 ### [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Настройка автоматической отправки журналов для непрерывных отчетов](discovery-docker.md)
-#### [Docker в Ubuntu в локальном режиме](discovery-docker-ubuntu.md)
+#### [Docker в Ubuntu и RHEL в локальном режиме](discovery-docker-ubuntu.md)
 #### [Docker в Ubuntu в Azure](discovery-docker-ubuntu-azure.md)
 #### [Использование виртуального модуля — устарело](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Использование настраиваемого средства синтаксического анализа журналов](custom-log-parser.md)
@@ -61,6 +62,7 @@
 #### [Политики файлов](data-protection-policies.md)
 ##### [Проверка содержимого](content-inspection.md)
 ##### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
+#### [Политики доступа](access-policy-aad.md)
 #### [Политики сеансов](session-policy-aad.md)
 #### [Ссылка на шаблон политики](policy-template-reference.md)
 ### [Управление подключенными приложениями](governance-actions.md)
