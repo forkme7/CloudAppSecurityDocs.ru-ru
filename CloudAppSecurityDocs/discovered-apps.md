@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 3/5/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="working-with-discovered-apps"></a>Работа с обнаруженными приложениями
 
@@ -52,6 +52,13 @@ ms.lasthandoff: 03/02/2018
 
 После получения результатов фильтрации можно [отменить санкционирование приложений и заблокировать их](governance-discovery.md) все сразу с помощью флажка группового действия. После отмены санкционирования приложений можно запретить их использование в среде с помощью скрипта блокировки.
 
+Cloud Discovery позволяет анализировать использование облака в организации и выявлять конкретные используемые экземпляры в обнаруженных поддоменах.
+     
+Например, вы можете оценивать различия между сайтами SharePoint.
+
+Это поддерживается только в брандмауэрах и прокси-серверах, которые содержат данные целевых URL-адресов. Список поддерживаемых устройств см. в описании [поддерживаемых брандмауэров и прокси-серверов](set-up-cloud-discovery#supported-firewalls-and-proxies).
+
+ ![Сведения о поддоменах](./media/discovery-domains.png) 
 
 ## <a name="exclude-entities"></a>Исключение сущностей  
 При наличии пользователей или IP-адресов, которые вызывают слишком много оповещений либо не должны учитываться, или приложений, относящихся к другой сфере деятельности, можно исключить их данные из анализируемых данных Cloud Discovery. Например, можно исключить все данные, исходящие от 127.0.0.1 или локального узла.  

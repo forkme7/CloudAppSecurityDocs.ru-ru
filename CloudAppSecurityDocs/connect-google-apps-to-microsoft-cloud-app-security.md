@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Подключение G Suite к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи G Suite с помощью интерфейсов API соединителя.
@@ -62,7 +62,9 @@ ms.lasthandoff: 01/21/2018
    > [!NOTE]  
    >  Проигнорируйте предупреждение об **учетных данных**.  
 
-8.  В списке **Enabled APIs** (Включенные API) должно быть пять элементов:  
+8. Щелкните "Включить" для каждого API-интерфейса.
+     ![Включение Google APPI](./media/google-api.png "google-api")  
+1. Здесь должно быть 5 **включенных API**, не забудьте отключить остальные API:
   
      ![включенные api google](./media/google5.png "google5")  
   
@@ -187,7 +189,7 @@ ms.lasthandoff: 01/21/2018
 
     -   В разделе **Visibility** (Видимость) выберите **My domain** (Мой домен) (не общедоступный). 
     -   Щелкните **Сохранить изменения**.  
-  
+        ![Видимость Google](./media/google-visibility.png "Видимость google")  
 22. Перейдите на страницу [admin.google.com](https://admin.google.com/) и выберите **Security** (Безопасность). 
    
       ![Безопасность Google](./media/googlesec.png "google security")  
@@ -219,7 +221,7 @@ ms.lasthandoff: 01/21/2018
   
     4.  Введите один **адрес электронной почты учетной записи администратора** вашего администратора G Suite.  
   
-    5.  При наличии учетной записи G Suite Unlimited установите этот флажок. Сведения о том, какие функции доступны в Cloud App Security для G Suite Unlimited, см. в руководстве по [включению мгновенной видимости, защиты и действий управления для приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  Если у вас есть учетная запись G Suite Business или Enterprise, установите этот флажок. Сведения о том, какие функции доступны в Cloud App Security для G Suite Business или Enterprise, можно найти в руководстве по [включению мгновенной видимости, защиты и действий управления для приложений](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Щелкните **Сохранить настройки**.  
   

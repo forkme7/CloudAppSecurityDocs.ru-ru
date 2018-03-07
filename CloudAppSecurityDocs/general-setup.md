@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: ff8f123a1bab8831071865422f8afa34e20e416b
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="basic-setup"></a>Базовая настройка
 В следующей процедуре представлены инструкции по настройке портала Cloud App Security.
@@ -32,10 +32,8 @@ ms.lasthandoff: 02/05/2018
   
 ## <a name="set-up-the-portal"></a>Настройка портала  
   
-1.  В строке меню на портале Cloud App Security щелкните значок параметров ![значок параметров](./media/settings-icon.png "значок параметров") и выберите пункт **Общие параметры**, чтобы настроить следующее:  
-     
-     ![общие параметры](./media/general-settings.png "общие параметры")  
-  
+1.  В строке меню на портале Cloud App Security щелкните значок шестеренки ![значок параметров](./media/settings-icon.png "settings icon") и выберите пункт **Параметры**, чтобы настроить сведения об организации.     
+
 3.  В разделе **Сведения об организации** важно указать значение в поле **Отображаемое имя организации**. Оно отображается в сообщениях электронной почты и на веб-страницах, отправляемых из системы.  
   
 4. Укажите **Имя среды** (клиент). Это особенно важно, если вы управляете несколькими клиентами.  

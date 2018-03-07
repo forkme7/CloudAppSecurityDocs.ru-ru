@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd4c2cc8a4382a5e3a50903499d098d1e90dce53
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ec381d45d9124220fd227f91d4e4c4673f127014
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Создание отчетов о снимках Cloud Discovery
 Перед тем как пытаться использовать автоматический сборщик журналируемых данных, важно отправить журнал вручную и позволить службе Cloud App Security произвести его анализ.
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/16/2018
 10. После отправки журналов появится уведомление о том, что обработка файлов журнала успешно завершена. На этом этапе можно просмотреть отчет, щелкнув ссылку в строке состояния либо значок параметров в виде шестеренки и выбрав пункт **Параметры Cloud Discovery**.   
   
      ![Вкладка параметров обнаружения](./media/discovery-settings-tab.png)
-11. Затем щелкните пункт **Управление отчетами о снимках** и выберите отчет о снимке.
+11. Затем щелкните пункт **Отчеты о снимках** и выберите нужный отчет о снимке.
  
 ![Управление отчетами о моментальных снимках](./media/snapshot-report-managment.png)
 

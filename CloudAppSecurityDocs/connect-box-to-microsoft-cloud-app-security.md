@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Подключение Box к Microsoft Cloud App Security
 Этот раздел содержит инструкции по подключению Cloud App Security к существующей учетной записи Box с помощью интерфейсов API соединителя приложений.  
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  Если вы ограничиваете разрешение на доступ для приложения, выполните следующий шаг. В противном случае переходите к шагу 2.  
   
-    -   В консоли администрирования Box щелкните значок параметров, за которым идет надпись **Business settings** (Бизнес-параметры).  
+    -   В консоли администрирования Box щелкните значок параметров, за которым расположена надпись **Business settings** (Параметры для Business) или **Enterprise settings** (Параметры для Enterprise).  
   
          ![бизнес-параметры box](./media/box-business-settings.png "бизнес-параметры box")  
   
