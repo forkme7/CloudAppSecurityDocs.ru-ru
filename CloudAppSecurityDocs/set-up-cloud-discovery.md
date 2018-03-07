@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
-ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
+ms.openlocfilehash: f8dabfd6a7e5d246c1c36dd29e023e294a266f5d
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-cloud-discovery"></a>Настройка Cloud Discovery
 Cloud Discovery анализирует журналы трафика на основе каталога облачных приложений Cloud App Security, включающего более 15 000 приложений, которые оцениваются по более чем 60 факторов риска. Это обеспечивает непрерывный контроль использования облачной среды, теневых ИТ-ресурсов и риска, который эти ресурсы представляют для организации.
@@ -69,7 +69,7 @@ Cloud Discovery анализирует журналы трафика на осн
  
 
 
-## <a name="supported-firewalls-and-proxies"></a>Поддерживаемые брандмауэры и прокси-серверы
+## Поддерживаемые брандмауэры и прокси-серверы <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda — брандмауэр веб-приложений (W3C)
 - Blue Coat Proxy SG — журнал доступа (W3C)
@@ -81,6 +81,7 @@ Cloud Discovery анализирует журналы трафика на осн
 - Cisco Meraki — журнал URL-адресов
 - Clavister NGFW (системный журнал)
 - Dell Sonicwall
+- Digital Arts i-FILTER
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -108,19 +109,20 @@ Cloud Discovery анализирует журналы трафика на осн
 |Barracuda|**Да**|**Да**|**Да**|**Да**|Нет|Нет|
 |Blue Coat|**Да**|Нет|**Да**|**Да**|**Да**|**Да**|
 |Контрольная точка|Нет|**Да**|Нет|**Да**|Нет|Нет|
-|Cisco ASA|Нет|**Да**|Нет|**Да**|**Да**|Нет|
+|Cisco ASA (Syslog)|Нет|**Да**|Нет|**Да**|**Да**|Нет|
 |Cisco Active Server Application с FirePOWER|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
 |Cisco FWSM|Нет|**Да**|Нет|**Да**|**Да**|Нет|
 |Cisco Ironport WSA|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
 |Cisco Meraki|**Да**|**Да**|Нет|**Да**|Нет|Нет||Cisco Scansafe|**Да**|Нет|**Да**|**Да**|**Да**|**Да**|
 |Clavister NGFW (системный журнал)|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
 |Dell SonicWall|**Да**|**Да**|Нет|**Да**|**Да**|**Да**|
+|Digital Arts i-FILTER|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
 |Fortigate|Нет|**Да**|Нет|**Да**|**Да**|**Да**|
 |Juniper SRX|Нет|**Да**|Нет|**Да**|**Да**|**Да**|
-|Juniper SSG|Нет|**Да**|Нет|**Да**|**Да**|**Да**|
+|Juniper SSG|Нет|**Да**|**Да**|**Да**|**Да**|**Да**|
 |McAfee SWG|**Да**|Нет|Нет|**Да**|**Да**|**Да**|
 |MS TMG|**Да**|Нет|**Да**|**Да**|**Да**|**Да**|
-|Palo Alto Networks|**Да**|**Да**|**Да**|**Да**|**Да**|**Да**|
+|Palo Alto Networks|Нет|**Да**|**Да**|**Да**|**Да**|**Да**|
 |Sophos|**Да**|**Да**|**Да**|**Да**|**Да**|Нет|
 |Squid (Common)|**Да**|Нет|**Да**|**Да**|Нет|**Да**|
 |Squid (Native)|**Да**|Нет|**Да**|**Да**|Нет|**Да**|
@@ -130,7 +132,7 @@ Cloud Discovery анализирует журналы трафика на осн
 
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
  
 [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 

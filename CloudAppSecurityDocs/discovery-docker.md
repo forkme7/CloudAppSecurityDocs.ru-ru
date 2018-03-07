@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 2/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f05fd8f548067c7e9ceb32c93e739072d682d15c
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: f9af164385b74f9742581e9879424e02409af34d
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Настройка автоматической отправки журналов для непрерывных отчетов
 
@@ -36,14 +36,14 @@ ms.lasthandoff: 11/13/2017
 
 Сборщик журналируемых данных поддерживает два режима развертывания:
 
--   **Контейнер**: работает в виде образа Docker в [локальной среде Ubuntu](discovery-docker-ubuntu.md) или [в среде Ubuntu в облаке Azure](discovery-docker-ubuntu-azure.md). 
+-   **Контейнер**: выполняется в виде образа Docker в [локальной среде Ubuntu](discovery-docker-ubuntu.md), в [Ubuntu на Azure](discovery-docker-ubuntu-azure.md) или в [локальной среде RHEL](discovery-docker-ubuntu.md). 
 
 -   **Виртуальное устройство**: [работает в виде образа через гипервизор Hyper-V или VMware.](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
  
 [Создание отчетов о снимках Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
