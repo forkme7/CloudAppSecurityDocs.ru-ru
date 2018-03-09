@@ -2,6 +2,7 @@
 ## [Что такое Cloud App Security?](what-is-cloud-app-security.md)
 ## [Cloud App Security: соответствие требованиям, надежность, защита и обеспечение конфиденциальности данных](cas-compliance-trust.md)
 ## [Новые возможности](release-notes.md)
+### [Архив с заметками о выпуске](release-note-archive.md)
 ## Сравнить
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
