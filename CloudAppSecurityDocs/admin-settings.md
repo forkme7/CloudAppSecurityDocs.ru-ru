@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc5f5896a8a4abb69efff6deab94f7e55108eeff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="Adminsettings"></a> Настройка параметров администратора  
 Чтобы задать параметры администратора Cloud App Security, щелкните свое имя в строке меню на портале и выберите пункт **Параметры пользователей**. Вы можете настроить следующие параметры:  
   
-1.  Щелкните **Параметры учетной записи**. Здесь можно настроить язык портала. Можно оставить язык портала по умолчанию или выбрать другой язык.  
+1.  Щелкните **Параметры учетной записи**. Здесь можно настроить и обновить пароль для доступа к порталу Cloud App Security.  
   
      ![пользовательские параметры](./media/custom-user-settings.png "пользовательские параметры")  
   
