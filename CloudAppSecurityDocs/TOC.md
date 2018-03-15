@@ -43,6 +43,7 @@
 ### [Защита файлов с помощью карантина администратора](use-case-admin-quarantine.md)
 ## Обнаружить
 ### [Работа с обнаруженными приложениями](discovered-apps.md)
+#### [Добавление пользовательских приложений в Cloud Discovery](cloud-discovery-custom-apps.md)
 #### [Фильтры и запросы обнаруженных приложений](discovered-app-queries.md)
 ### [Работа с оценкой рисков](risk-score.md)
 ## [Анализ](investigate.md)
