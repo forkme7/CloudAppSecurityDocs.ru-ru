@@ -41,6 +41,7 @@
 ### [Защита организации от программ-шантажистов](use-case-ransomware.md)
 ### [Блокировка скачивания конфиденциальной информации](use-case-proxy-block-session-aad.md)
 ### [Защита файлов с помощью карантина администратора](use-case-admin-quarantine.md)
+### [Автоматическое применение меток Azure Information Protection](use-case-information-protection.md)
 ## Обнаружить
 ### [Работа с обнаруженными приложениями](discovered-apps.md)
 #### [Добавление пользовательских приложений в Cloud Discovery](cloud-discovery-custom-apps.md)
