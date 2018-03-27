@@ -1,27 +1,31 @@
 ---
-title: "Как применять действия управления для контроля подключенных приложений | Документация Майкрософт"
-description: "В этом разделе перечисляются и описываются все действия системы управления, которые можно выполнять в Cloud App Security, и сообщения в журнале для их отслеживания."
-keywords: 
+title: Как применять действия управления для контроля подключенных приложений | Документация Майкрософт
+description: В этом разделе перечисляются и описываются все действия системы управления, которые можно выполнять в Cloud App Security, и сообщения в журнале для их отслеживания.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 8339081e7600faf417a35ff4a4318b60d84eece1
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="governing-connected-apps"></a>Управление подключенными приложениями
 Управление позволяет контролировать, что пользователи делают в различных приложениях в режиме реального времени. В подключенных приложениях можно применять возможности управления к файлам или действиям.
 Действия управления — встроенные действия, которые можно применять к файлам или действиям непосредственно из Cloud App Security, для управления тем, что пользователи делают при помощи подключенных приложений в режиме реального времени. 
+
+> [!NOTE]
+> Если Cloud App Security не удается выполнить с файлом действие управления из-за блокировки файла, действие автоматически повторяется. 
+
 
 ### <a name="file-governance-actions"></a>Действия системы управления файлами  
 
