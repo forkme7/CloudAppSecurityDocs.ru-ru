@@ -1,23 +1,23 @@
 ---
-title: "Настройка уведомлений электронной почты | Документация Майкрософт"
-description: "В этой статье содержатся сведения о том, как настроить уведомления электронной почты, отправленные из Cloud App Security."
-keywords: 
+title: Настройка уведомлений электронной почты | Документация Майкрософт
+description: В этой статье содержатся сведения о том, как настроить уведомления электронной почты, отправленные из Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> Настройка уведомлений электронной почты  
 
@@ -29,7 +29,9 @@ ms.lasthandoff: 03/08/2018
 2. **Адрес электронной почты отправителя**: учетная запись электронной почты, которую требуется использовать для отправки уведомления.  
    
    **Отображаемое имя отправителя**: имя, отображаемое в поле **От** сообщения электронной почты.  
-  
+   > [!NOTE]
+   > Согласно [протоколу rfc822](http://www.rfc-editor.org/rfc/rfc822.txt), отображаемое имя поддерживает только символы Юникода.
+
    **Адрес электронной почты для ответа**: учетная запись электронной почты, используемая для ответов на сообщения.  
   
      ![изменение параметров почты](./media/mail-settings-config.png "изменение параметров почты")  

@@ -1,23 +1,23 @@
 ---
-title: "Автоматическое применение меток классификации Azure Information Protection | Документы Майкрософт"
-description: "В этом разделе описывается процесс автоматического применения меток классификации Azure Information Protection в решении Microsoft Cloud App Security."
-keywords: 
+title: Автоматическое применение меток классификации Azure Information Protection | Документы Майкрософт
+description: В этом разделе описывается процесс автоматического применения меток классификации Azure Information Protection в решении Microsoft Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Автоматическое применение меток классификации Azure Information Protection  
 
@@ -86,8 +86,8 @@ Cloud App Security определяет, что доступ к сохранен
 4. Щелкните совпадение, чтобы увидеть, какие файлы защищены. Само совпадение будет замаскировано для защиты конфиденциальных данных. 
 
 >[!NOTE]
->На данный момент Cloud App Security поддерживает автоматическое применение меток Azure Information Protection в Box, SharePoint и OneDrive для бизнеса.
-
+> - На данный момент Cloud App Security поддерживает автоматическое применение меток Azure Information Protection в Box, SharePoint и OneDrive для бизнеса.
+> - Визуальная маркировка Cloud App Security появляется не сразу, а при открытии и первом сохранении документа в каком-либо приложении Office. Дополнительные сведения см. в разделе [Как настроить метку для визуальной маркировки в Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
  ## <a name="see-also"></a>См. также  
 [Ежедневные мероприятия для защиты облачной среды](daily-activities-to-protect-your-cloud-environment.md)   

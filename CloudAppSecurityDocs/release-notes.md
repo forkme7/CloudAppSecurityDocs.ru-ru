@@ -1,26 +1,31 @@
 ---
-title: "Новые возможности в Cloud App Security | Документация Майкрософт"
-description: "В этом регулярно обновляемом разделе можно узнать, какие новые возможности появились в последнем выпуске Cloud App Security."
-keywords: 
+title: Новые возможности в Cloud App Security | Документация Майкрософт
+description: В этом регулярно обновляемом разделе можно узнать, какие новые возможности появились в последнем выпуске Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08a798bb20830afcbdb498c2ac72787873f72fab
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Новые возможности в Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-119"></a>Cloud App Security, выпуск 119
+Выпущен: 18 марта 2018 г.
+
+-   Страница диапазонов IP-адресов отображает встроенные IP-адреса, обнаруживаемые Cloud App Security. Сюда входят адреса определенных облачных служб, например Azure и Office 365, а также веб-канал Threat Intelligence, который автоматически добавляет сведения об известных подозрительных IP-адресах. 
+-   Теперь если Cloud App Security не удается выполнить с файлом действие управления из-за блокировки файла, действие автоматически повторяется. 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security, выпуск 118
 Выпущен: 4 марта 2018 г.

@@ -1,30 +1,30 @@
 ---
-title: "Настройка автоматической отправки журналов для непрерывных отчетов | Документы Майкрософт"
-description: "Из этой статьи вы узнаете, как настроить автоматическую отправку журналов для непрерывных отчетов в Cloud App Security, используя Docker в среде Ubuntu, развернутой на локальном сервере."
-keywords: 
+title: Настройка автоматической отправки журналов для непрерывных отчетов | Документы Майкрософт
+description: Из этой статьи вы узнаете, как настроить автоматическую отправку журналов для непрерывных отчетов в Cloud App Security, используя Docker в среде Ubuntu, развернутой на локальном сервере.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 13110a717b907decd2bafc938a01548f16d7bd76
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
+ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker в Ubuntu и локальная среда RHEL
 
 
 ## <a name="technical-requirements"></a>Технические требования
 
--   ОС: Ubuntu 14.04 или более поздние версии (стабильная версия Docker с поддержкой Ubuntu 17.10 недоступна)
+-   ОС: Ubuntu 14.04 и более поздние версии (стабильная версия Docker с поддержкой Ubuntu 17.10 недоступна) или RHEL 7.2 и более поздние версии 
 
 -   Место на диске: 250 ГБ
 
