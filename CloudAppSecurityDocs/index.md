@@ -1,15 +1,15 @@
 ---
 layout: LandingPage
-description: Узнайте, как использовать Cloud App Security.
-ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
-ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
+description: Узнайте, как использовать Microsoft Cloud App Security.
+ms.openlocfilehash: 63bdaefbb58fed837aa9d9ce363801693b3eafbf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="cloud-app-security-documentation"></a>Документация по Cloud App Security
+# <a name="microsoft-cloud-app-security-documentation"></a>Документация по Microsoft Cloud App Security
 
-Cloud App Security — это защита корпоративного уровня для ваших веб-приложений.
+Microsoft Cloud App Security — это защита корпоративного уровня для ваших веб-приложений.
 Даже если вы не пользуетесь облаком, им пользуются ваши сотрудники. Как утвержденные, так и неутвержденные облачные приложения можно защитить на уровне, ранее присущем локальным системам, чтобы достичь большей четкости, повышенной управляемости и улучшенной защиты от проблем безопасности в облаке.
 
 <ul class="panelContent cardsFTitle">
@@ -24,7 +24,7 @@ Cloud App Security — это защита корпоративного уров
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Дополнительные сведения о Cloud App Security</h3>
+                        <h3>Дополнительные сведения о Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ Cloud App Security — это защита корпоративного уров
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Контроль использования облачных приложений с помощью Cloud App Security</h3>
+                        <h3>Контроль использования облачных приложений с помощью Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ Cloud App Security — это защита корпоративного уров
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Дополнительные сведения о Cloud App Security</h3>
+                        <h3>Дополнительные сведения о Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ Cloud App Security — это защита корпоративного уров
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Поддержка Cloud App Security</h3>
+                        <h3>Поддержка Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
