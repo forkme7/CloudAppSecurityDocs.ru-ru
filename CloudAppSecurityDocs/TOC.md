@@ -38,7 +38,6 @@
 # Используйте
 ## [Работа с панелью мониторинга](daily-activities-to-protect-your-cloud-environment.md)
 ## Сценарии
-### [Защита организации от программ-шантажистов](use-case-ransomware.md)
 ### [Блокировка скачивания конфиденциальной информации](use-case-proxy-block-session-aad.md)
 ### [Защита файлов с помощью карантина администратора](use-case-admin-quarantine.md)
 ### [Автоматическое применение меток Azure Information Protection](use-case-information-protection.md)
@@ -52,7 +51,6 @@
 #### [Фильтры и запросы действий](activity-filters-queries.md)
 ### [Файлы](file-filters.md)
 ### [Учетные записи](accounts.md)
-### [Справочник по встроенным отчетам](built-in-report-reference.md)
 ### [Управление разрешениями приложения](manage-app-permissions.md)
 ### [Мониторинг приложений](monitor-alerts.md)
 #### [Управление оповещениями](managing-alerts.md)
@@ -65,8 +63,9 @@
 #### [Политики файлов](data-protection-policies.md)
 ##### [Проверка содержимого](content-inspection.md)
 ##### [Работа с подсистемой регулярных выражений](working-with-the-regex-engine.md)
-#### [Политики доступа](access-policy-aad.md)
-#### [Политики сеансов](session-policy-aad.md)
+#### Политики условного доступа для управления приложениями
+##### [Политики доступа](access-policy-aad.md)
+##### [Политики сеансов](session-policy-aad.md)
 #### [Ссылка на шаблон политики](policy-template-reference.md)
 ### [Управление подключенными приложениями](governance-actions.md)
 ### [Управление обнаруженными приложениями](governance-discovery.md)
