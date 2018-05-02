@@ -33,8 +33,8 @@
 ### [Подключение Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Подключение ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Подключение Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [Защита приложений с помощью прокси-сервера](proxy-intro-aad.md)
-### [Развертывание прокси-сервера для приложений Azure AD](proxy-deployment-aad.md)
+## [Защита приложений с помощью условного доступа для управления приложениями](proxy-intro-aad.md)
+### [Развертывание условного доступа для управления приложениями Azure AD](proxy-deployment-aad.md)
 # Используйте
 ## [Работа с панелью мониторинга](daily-activities-to-protect-your-cloud-environment.md)
 ## Сценарии
